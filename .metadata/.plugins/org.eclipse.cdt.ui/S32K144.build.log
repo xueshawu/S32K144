@@ -1,0 +1,468 @@
+17:49:36 **** Build of configuration Debug for project S32K144 ****
+make -j8 all 
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.c
+Executing target #1 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.c
+Executing target #3 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.c
+Executing target #2 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.c
+Executing target #4 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.c"
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.c"
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.c
+Executing target #5 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.c
+Invoking: Standard S32DS C Compiler
+Executing target #8 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.c
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.c"
+Executing target #6 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.c"
+Executing target #7 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.c
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.c"
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_Cfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_Cfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Adc_PBcfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/CDD_Mcl_PBcfg.c
+ 
+ 
+ 
+ 
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.c
+Executing target #9 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.c
+Executing target #10 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.c
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.c
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.c"
+Executing target #11 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.c"
+Building file: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.c
+Executing target #12 ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.c
+Invoking: Standard S32DS C Compiler
+Building file: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.c"
+Invoking: Standard S32DS C Compiler
+Executing target #13 ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c
+arm-none-eabi-gcc "@EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.args" -MMD -MP -MF"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.d" -MT"EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.o" -c -o "EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.o" "../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.c"
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_Cfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Gpt_PBcfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_Cfg.c
+ 
+ 
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc.args" -MMD -MP -MF"Mcal/Adc_TS_T40D2M10I1R0/src/Adc.d" -MT"Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o" "../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c"
+Building file: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c
+Executing target #14 ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_Cfg.c
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.args" -MMD -MP -MF"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.d" -MT"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o" "../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c"
+ 
+Building file: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c
+Building file: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c
+Executing target #15 ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c
+Executing target #16 ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.args" -MMD -MP -MF"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.d" -MT"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o" "../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c"
+ 
+arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.args" -MMD -MP -MF"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.d" -MT"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o" "../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c"
+Finished building: ../EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Pwm_PBcfg.c
+Building file: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c
+ 
+Building file: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c
+Executing target #17 ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c
+Building file: ../Mcal/Det_TS_T40D2M10I1R0/src/Det.c
+Executing target #18 ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c
+Invoking: Standard S32DS C Compiler
+Executing target #19 ../Mcal/Det_TS_T40D2M10I1R0/src/Det.c
+arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.args" -MMD -MP -MF"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.d" -MT"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o" "../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.args" -MMD -MP -MF"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.d" -MT"Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o" "../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Det_TS_T40D2M10I1R0/src/Det.args" -MMD -MP -MF"Mcal/Det_TS_T40D2M10I1R0/src/Det.d" -MT"Mcal/Det_TS_T40D2M10I1R0/src/Det.o" -c -o "Mcal/Det_TS_T40D2M10I1R0/src/Det.o" "../Mcal/Det_TS_T40D2M10I1R0/src/Det.c"
+Building file: ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c
+Executing target #20 ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Dio_TS_T40D2M10I1R0/src/Dio.args" -MMD -MP -MF"Mcal/Dio_TS_T40D2M10I1R0/src/Dio.d" -MT"Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o" -c -o "Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o" "../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c"
+Finished building: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c
+Finished building: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c
+ 
+Finished building: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c
+Finished building: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c
+ 
+ 
+ 
+Building file: ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c
+Building file: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c
+Building file: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c
+Executing target #21 ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c
+Executing target #22 ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c
+Finished building: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c
+Finished building: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.args" -MMD -MP -MF"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.d" -MT"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o" "../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c"
+ 
+ 
+Finished building: ../Mcal/Det_TS_T40D2M10I1R0/src/Det.c
+Invoking: Standard S32DS C Compiler
+Executing target #23 ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c
+ 
+arm-none-eabi-gcc "@Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.args" -MMD -MP -MF"Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.d" -MT"Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o" -c -o "Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o" "../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.args" -MMD -MP -MF"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.d" -MT"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o" "../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c"
+Building file: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c
+Finished building: ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c
+Executing target #24 ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c
+Building file: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c
+ 
+Invoking: Standard S32DS C Compiler
+Executing target #25 ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c
+arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.args" -MMD -MP -MF"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.d" -MT"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o" "../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c"
+Building file: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c
+Invoking: Standard S32DS C Compiler
+Executing target #26 ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c
+arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.args" -MMD -MP -MF"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.d" -MT"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o" "../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c"
+Building file: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.args" -MMD -MP -MF"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.d" -MT"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o" "../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c"
+Executing target #27 ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.args" -MMD -MP -MF"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.d" -MT"Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o" "../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c"
+Executing target #28 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.c"
+Finished building: ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c
+Finished building: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c
+ 
+ 
+Finished building: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.c
+ 
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.c
+Executing target #29 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.c
+Finished building: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c
+Executing target #30 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.c
+Finished building: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c
+ 
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.c"
+Finished building: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c
+Finished building: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c
+ 
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.c
+ 
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.c
+Executing target #31 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.c
+Executing target #32 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.c
+Executing target #33 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.c"
+Executing target #34 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.c"
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.c"
+ 
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.c
+Executing target #35 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU_Irq.c
+Executing target #36 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.c"
+Invoking: Standard S32DS C Compiler
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CMU.c
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.c"
+ 
+ 
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.c
+Executing target #37 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_CortexM4.c
+Invoking: Standard S32DS C Compiler
+Executing target #38 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.c
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.c"
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.c"
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.c
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW_Irq.c
+ 
+Executing target #39 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.c
+ 
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.c
+Invoking: Standard S32DS C Compiler
+Building file: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.c
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.c"
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.c
+Executing target #41 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC_Irq.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.c
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.c"
+ 
+ 
+Executing target #40 ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.c
+Building file: ../Mcal/Port_TS_T40D2M10I1R0/src/Port.c
+Building file: ../Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.c
+Invoking: Standard S32DS C Compiler
+Executing target #42 ../Mcal/Port_TS_T40D2M10I1R0/src/Port.c
+arm-none-eabi-gcc "@Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.args" -MMD -MP -MF"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.d" -MT"Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o" -c -o "Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o" "../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.c"
+Executing target #43 ../Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Port_TS_T40D2M10I1R0/src/Port.args" -MMD -MP -MF"Mcal/Port_TS_T40D2M10I1R0/src/Port.d" -MT"Mcal/Port_TS_T40D2M10I1R0/src/Port.o" -c -o "Mcal/Port_TS_T40D2M10I1R0/src/Port.o" "../Mcal/Port_TS_T40D2M10I1R0/src/Port.c"
+Building file: ../Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM_Irq.c
+Executing target #44 ../Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.c
+ 
+ 
+arm-none-eabi-gcc "@Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.args" -MMD -MP -MF"Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.d" -MT"Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.o" -c -o "Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.o" "../Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.args" -MMD -MP -MF"Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.d" -MT"Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o" -c -o "Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o" "../Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.c"
+Building file: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.c
+Building file: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.c
+Executing target #45 ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.c
+Invoking: Standard S32DS C Compiler
+ 
+Executing target #46 ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.c
+arm-none-eabi-gcc "@Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.args" -MMD -MP -MF"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.d" -MT"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.o" -c -o "Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.o" "../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.c"
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.args" -MMD -MP -MF"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.d" -MT"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.o" -c -o "Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.o" "../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.c"
+ 
+Building file: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.c
+Finished building: ../Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.c
+Executing target #47 ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.c
+Building file: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.c
+ 
+Invoking: Standard S32DS C Compiler
+Executing target #48 ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.c
+arm-none-eabi-gcc "@Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.args" -MMD -MP -MF"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.d" -MT"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.o" -c -o "Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.o" "../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.c"
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c
+Invoking: Standard S32DS C Compiler
+Executing target #49 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c
+arm-none-eabi-gcc "@Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.args" -MMD -MP -MF"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.d" -MT"Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.o" -c -o "Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.o" "../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.c"
+Finished building: ../Mcal/Port_TS_T40D2M10I1R0/src/Port.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c"
+ 
+Finished building: ../Mcal/Port_TS_T40D2M10I1R0/src/Port_Ipw.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c
+ 
+Finished building: ../Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.c
+Executing target #50 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c
+ 
+Invoking: Standard S32DS C Compiler
+Executing target #51 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c"
+Finished building: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm.c
+Executing target #52 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c
+ 
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c"
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c"
+Finished building: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_FlexIO.c
+ 
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c
+Executing target #53 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c
+Executing target #54 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c
+Finished building: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ipw.c
+Invoking: Standard S32DS C Compiler
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c"
+Finished building: ../Mcal/Pwm_TS_T40D2M10I1R0/src/Pwm_Ftm.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c"
+ 
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c
+Executing target #55 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c
+Executing target #56 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c"
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c"
+ 
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c
+ 
+Executing target #57 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c
+ 
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c"
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c
+Executing target #58 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c
+Executing target #59 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c"
+Executing target #60 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c
+Invoking: Standard S32DS C Compiler
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c"
+ 
+ 
+Invoking: Standard S32DS C Compiler
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c
+Executing target #61 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c
+Executing target #62 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c"
+Invoking: Standard S32DS C Compiler
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c"
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c"
+ 
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c
+Executing target #63 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c
+Executing target #64 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c"
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c"
+ 
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c
+Executing target #65 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c
+ 
+Invoking: Standard S32DS C Compiler
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c
+ 
+Executing target #66 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c"
+ 
+Invoking: Standard S32DS C Compiler
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c"
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c
+Executing target #67 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c
+ 
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c"
+ 
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c
+Executing target #68 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c
+Invoking: Standard S32DS C Compiler
+Executing target #70 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c"
+ 
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c"
+Executing target #69 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c
+Building file: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c
+Executing target #71 ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c
+Invoking: Standard S32DS C Compiler
+ 
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.args" -MMD -MP -MF"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.d" -MT"Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o" "../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c"
+Building file: ../Project_Settings/Startup_Code/startup.c
+Executing target #72 ../Project_Settings/Startup_Code/startup.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/startup.args" -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+ 
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c
+Building file: ../Project_Settings/Startup_Code/startup_S32K144.S
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c
+ 
+Executing target #73 ../Project_Settings/Startup_Code/startup_S32K144.S
+ 
+Building file: ../Project_Settings/Startup_Code/system_S32K144.c
+Invoking: Standard S32DS Assembler
+Building file: ../src/Appl.c
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/startup_S32K144.args" -c -o "Project_Settings/Startup_Code/startup_S32K144.o" "../Project_Settings/Startup_Code/startup_S32K144.S"
+Executing target #74 ../Project_Settings/Startup_Code/system_S32K144.c
+Executing target #75 ../src/Appl.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Project_Settings/Startup_Code/system_S32K144.args" -MMD -MP -MF"Project_Settings/Startup_Code/system_S32K144.d" -MT"Project_Settings/Startup_Code/system_S32K144.o" -c -o "Project_Settings/Startup_Code/system_S32K144.o" "../Project_Settings/Startup_Code/system_S32K144.c"
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@src/Appl.args" -MMD -MP -MF"src/Appl.d" -MT"src/Appl.o" -c -o "src/Appl.o" "../src/Appl.c"
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c
+ 
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c
+ 
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c
+Finished building: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c
+ 
+ 
+Finished building: ../Project_Settings/Startup_Code/startup_S32K144.S
+ 
+Finished building: ../src/Appl.c
+ 
+Finished building: ../Project_Settings/Startup_Code/startup.c
+Finished building: ../Project_Settings/Startup_Code/system_S32K144.c
+ 
+ 
+Building target: S32K144.elf
+Executing target #76 S32K144.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "S32K144.elf" "@S32K144.args"   
+Finished building target: S32K144.elf
+ 
+Executing target #77 S32K144.siz
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley  S32K144.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1584	      0	   3072	   4656	   1230	S32K144.elf
+Finished building: S32K144.siz
+ 
+
+17:49:46 Build Finished (took 9s.823ms)
+

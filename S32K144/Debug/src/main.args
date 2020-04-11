@@ -1,0 +1,17 @@
+-DCPU_S32K144HFT0VLLT
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include"
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include/arm"
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include"
+-I"C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include/arm"
+-I"C:/SW/S32K14x/S32DSv2.0/hello/include"
+-O0
+-g3
+-Wall
+-c
+-fmessage-length=0
+-ffunction-sections
+-fdata-sections
+-mcpu=cortex-m4
+-mthumb
+-specs=ewl_c9x_noio.specs
+--sysroot="C:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2"

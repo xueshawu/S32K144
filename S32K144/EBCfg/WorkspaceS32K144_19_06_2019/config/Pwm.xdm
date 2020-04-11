@@ -1,0 +1,1082 @@
+<?xml version='1.0'?>
+<datamodel version="6.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/14/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/14/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:cd="http://www.tresos.de/_projects/DataModel2/08/customdata.xsd" 
+         xmlns:f="http://www.tresos.de/_projects/DataModel2/14/formulaexpr.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
+         xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="Pwm" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="Pwm" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_T40D2M10I1R0/Pwm"/>
+              <a:a name="IMPORTER_INFO" value="Pwm"/>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="Pwm"/>
+              </d:var>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Pwm"/>
+                <d:var name="ArReleaseMajorVersion" type="INTEGER" value="4">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="ArReleaseMinorVersion" type="INTEGER" value="3">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="ArReleaseRevisionVersion" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="ModuleId" type="INTEGER" value="121">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="SwMinorVersion" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="SwPatchVersion" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="43">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="PwmChannelConfigSet" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Pwm"/>
+                <d:lst name="PwmChannel" type="MAP">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                  <d:ctr name="Pwm_Rgb_Blue" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:ref name="PwmFlexIOChannel" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                    <d:var name="PwmChannelClass" type="ENUMERATION" 
+                           value="PWM_FIXED_PERIOD">
+                      <a:a name="ENABLE" value="true"/>
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmChannelId" type="INTEGER" value="1">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmDutycycleDefault" type="INTEGER" 
+                           value="16384">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmHwIP" type="ENUMERATION" value="FTM">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmIdleState" type="ENUMERATION" 
+                           value="PWM_LOW">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPeriodDefault" type="FLOAT" value="0.01">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPeriodInTicks" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPolarity" type="ENUMERATION" 
+                           value="PWM_HIGH">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:ref name="PwmFtmChannel" type="REFERENCE" 
+                           value="ASPath:/Pwm/Pwm/PwmChannelConfigSet/PwmFtmModule_0/PwmFtmChannels_1">
+                      <a:a name="ENABLE" value="true"/>
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:ref>
+                    <d:var name="PwmNotification" type="FUNCTION-NAME" 
+                           value="NULL">
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:ref name="PwmMcuClockReferencePoint" type="REFERENCE" 
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_SYS_CLK">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:ref>
+                  </d:ctr>
+                  <d:ctr name="Pwm_Rgb_Red" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:ref name="PwmFlexIOChannel" type="REFERENCE" >
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:ref>
+                    <d:var name="PwmChannelClass" type="ENUMERATION" 
+                           value="PWM_FIXED_PERIOD">
+                      <a:a name="ENABLE" value="true"/>
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmChannelId" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmDutycycleDefault" type="INTEGER" 
+                           value="16384">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmHwIP" type="ENUMERATION" value="FTM">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmIdleState" type="ENUMERATION" 
+                           value="PWM_LOW">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPeriodDefault" type="FLOAT" value="0.01">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPeriodInTicks" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPolarity" type="ENUMERATION" 
+                           value="PWM_HIGH">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:ref name="PwmFtmChannel" type="REFERENCE" 
+                           value="ASPath:/Pwm/Pwm/PwmChannelConfigSet/PwmFtmModule_0/PwmFtmChannels_0">
+                      <a:a name="ENABLE" value="true"/>
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:ref>
+                    <d:var name="PwmNotification" type="FUNCTION-NAME" 
+                           value="NULL">
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:ref name="PwmMcuClockReferencePoint" type="REFERENCE" 
+                           value="ASPath:/Mcu/Mcu/McuModuleConfiguration/McuClockSettingConfig_0/McuClockReferencePoint_SYS_CLK">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:ref>
+                  </d:ctr>
+                </d:lst>
+                <d:lst name="PwmFtmModule" type="MAP">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                  <d:ctr name="PwmFtmModule_0" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="FtmModule" type="ENUMERATION" value="FTM_0">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmDeadTimeCount" type="INTEGER" value="0">
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="DeadTimePrescaler" type="ENUMERATION" 
+                           value="PRESC_1">
+                      <a:a name="ENABLE" value="false"/>
+                      <a:a name="IMPORTER_INFO" value="@DEF"/>
+                    </d:var>
+                    <d:var name="PwmBDMEnable" type="ENUMERATION" 
+                           value="CNT_ON_OUTPUTS_ON">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmChanEdgeAlignment" type="ENUMERATION" 
+                           value="PWM_EDGE_ALIGNED">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmClockSelection" type="ENUMERATION" 
+                           value="PWM_SYSTEM_CLOCK">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmFtmFaultFunctionality" type="ENUMERATION" 
+                           value="FLTCTRL_DISABLED">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPrescaler" type="ENUMERATION" 
+                           value="PRESC_128">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmPrescaler_Alternate" type="ENUMERATION" 
+                           value="PRESC_1">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmReloadFrequency" type="ENUMERATION" 
+                           value="LDFQ_EACH1">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmUpdatedEndPeriod" type="BOOLEAN" 
+                           value="true">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmUpdatedMiddlePeriod" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:ctr name="PwmExternalTriggerSettings" 
+                           type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      <d:var name="PwmEnableExternalTriggerChannel0" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel1" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel2" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel3" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel4" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel5" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel6" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableExternalTriggerChannel7" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmEnableInitializationTrigger" 
+                             type="BOOLEAN" value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                    </d:ctr>
+                    <d:ctr name="PwmFtmChannelFaultSettings" 
+                           type="IDENTIFIABLE">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      <d:var name="PwmDisableOutputOnFault0" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmDisableOutputOnFault1" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmDisableOutputOnFault2" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmDisableOutputOnFault3" type="BOOLEAN" 
+                             value="false">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmFilterValue" type="INTEGER" value="0">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:var name="PwmFtmFaultOutputState" type="ENUMERATION" 
+                             value="SAFE_VALUES">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      </d:var>
+                      <d:ctr name="PwmFtmChannelFault0Settings" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        <d:var name="PwmEnableFault0Filter" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault0Notification" 
+                               type="FUNCTION-NAME" value="NULL">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault0Polarity" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="PwmFtmChannelFault1Settings" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        <d:var name="PwmEnableFault1Filter" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault1Notification" 
+                               type="FUNCTION-NAME" value="NULL">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault1Polarity" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="PwmFtmChannelFault2Settings" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        <d:var name="PwmEnableFault2Filter" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault2Notification" 
+                               type="FUNCTION-NAME" value="NULL">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault2Polarity" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="PwmFtmChannelFault3Settings" 
+                             type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        <d:var name="PwmEnableFault3Filter" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault3Notification" 
+                               type="FUNCTION-NAME" value="NULL">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFault3Polarity" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:ctr>
+                    <d:lst name="PwmFtmChannels" type="MAP">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                      <d:ctr name="PwmFtmChannels_0" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        <d:var name="ChannelCombDeadTimeEn" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="ChannelEdgeSetup" type="ENUMERATION" 
+                               value="INDEPENDENT">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFtmChannelId" type="ENUMERATION" 
+                               value="FTM_0_CH_0">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmPhaseShift" type="INTEGER" value="0">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                      </d:ctr>
+                      <d:ctr name="PwmFtmChannels_1" type="IDENTIFIABLE">
+                        <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        <d:var name="ChannelCombDeadTimeEn" type="BOOLEAN" 
+                               value="false">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="ChannelEdgeSetup" type="ENUMERATION" 
+                               value="INDEPENDENT">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmFtmChannelId" type="ENUMERATION" 
+                               value="FTM_0_CH_2">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                        <d:var name="PwmPhaseShift" type="INTEGER" value="0">
+                          <a:a name="IMPORTER_INFO" value="Pwm"/>
+                        </d:var>
+                      </d:ctr>
+                    </d:lst>
+                  </d:ctr>
+                </d:lst>
+                <d:lst name="PwmFlexIOModule" type="MAP"/>
+              </d:ctr>
+              <d:ctr name="PwmConfigurationOfOptApiServices" 
+                     type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Pwm"/>
+                <d:var name="PwmDeInitApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmDisableTrigger" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmEnableTrigger" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmForceOutputToZeroApi" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmGetChannelStateApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmGetOutputState" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetDutyCycle" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetDutyCycle_NoUpdate" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetOutputToIdle" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetPeriodAndDuty" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetPeriodAndDuty_NoUpdate" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetPhaseShift" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSetPhaseShiftNoUpdate" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmSwResetCounter" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmVersionInfoApi" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="PwmGeneral" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="Pwm"/>
+                <d:var name="PwmPeriodUpdatedEndperiod" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PwmLowPowerStatesSupport" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PwmPowerStateAsynchTransitionMode" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PwmEnableUserModeSupport" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="PwmIndex" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="EnableMaskingOperations" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmDevErrorDetect" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmDutycycleUpdatedEndperiod" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmEnableDualClockMode" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmEnablePhaseShift" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmFaultSupport" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmFtmEnableExtTrigger" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmMultiChannelSynch" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:var name="PwmNotificationSupported" type="BOOLEAN" 
+                       value="true">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                </d:var>
+                <d:lst name="PwmHwConfiguration" type="MAP">
+                  <a:a name="IMPORTER_INFO" value="Pwm"/>
+                  <d:ctr name="PwmHwConfiguration_0" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FLEXIO_0_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_1" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="true">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_0_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_10" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_FAULT_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_11" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_0_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_12" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_1_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_13" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_2_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_14" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_3_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_15" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_4_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_16" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_5_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_17" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_6_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_18" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_CH_7_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_19" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_TOF_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_2" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_1_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_20" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_1_FAULT_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_21" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="true">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_0_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_22" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_1_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_23" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_2_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_24" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_3_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_25" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_4_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_26" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_5_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_27" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_6_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_28" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_CH_7_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_29" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_TOF_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_3" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="true">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_2_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_30" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_2_FAULT_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_31" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_0_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_32" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_1_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_33" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_2_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_34" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_3_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_35" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_4_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_36" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_5_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_37" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_6_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_38" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_CH_7_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_39" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_TOF_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_4" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_3_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_40" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_3_FAULT_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_5" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_4_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_6" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_5_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_7" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_6_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_8" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_CH_7_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="PwmHwConfiguration_9" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    <d:var name="PwmChannelIsUsed" type="BOOLEAN" value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptEnable" type="BOOLEAN" 
+                           value="false">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                    <d:var name="PwmInterruptHwId" type="ENUMERATION" 
+                           value="PWM_FTM_0_TOF_ISR">
+                      <a:a name="IMPORTER_INFO" value="Pwm"/>
+                    </d:var>
+                  </d:ctr>
+                </d:lst>
+                <d:lst name="PwmPowerStateConfig" type="MAP"/>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

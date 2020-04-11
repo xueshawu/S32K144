@@ -1,0 +1,54 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../../../makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS_QUOTED += \
+"../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c" \
+"../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c" \
+
+C_SRCS += \
+../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c \
+../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c \
+
+OBJS_OS_FORMAT += \
+./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o \
+./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o \
+
+C_DEPS_QUOTED += \
+"./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.d" \
+"./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.d" \
+
+OBJS += \
+./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o \
+./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o \
+
+OBJS_QUOTED += \
+"./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o" \
+"./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o" \
+
+C_DEPS += \
+./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.d \
+./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.d \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o: ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #18 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Dio_TS_T40D2M10I1R0/src/Dio.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o: ../Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #19 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

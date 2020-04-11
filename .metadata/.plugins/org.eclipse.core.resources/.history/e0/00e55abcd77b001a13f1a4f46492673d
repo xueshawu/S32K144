@@ -1,0 +1,114 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../../../makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS_QUOTED += \
+"../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c" \
+"../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c" \
+"../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c" \
+"../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c" \
+"../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c" \
+"../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c" \
+
+C_SRCS += \
+../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c \
+../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c \
+../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c \
+../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c \
+../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c \
+../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c \
+
+OBJS_OS_FORMAT += \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o \
+
+C_DEPS_QUOTED += \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.d" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.d" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.d" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.d" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.d" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.d" \
+
+OBJS += \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o \
+
+OBJS_QUOTED += \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o" \
+"./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o" \
+
+C_DEPS += \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.d \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.d \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.d \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.d \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.d \
+./Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.d \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #20 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #21 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ftm.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #22 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Ipw.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #23 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_LPit.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #24 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_Lptmr.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o: ../Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #25 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Gpt_TS_T40D2M10I1R0/src/Gpt_SRtc.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

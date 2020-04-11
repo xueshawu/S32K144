@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<state modified="Sat Apr 11 17:43:40 CST 2020">
+<dreisoft.tresos.launcher2.api.views.ErrorLog show_error="true" show_info="false" show_warning="true" timestamp_filter="1586597841315"/>
+<dreisoft.tresos.launcher2.project.wizard.internal.ModuleConfigWizardPage/>
+<dreisoft.tresos.launcher2.gui.dialogs.ModuleConfigurationDialog dreisoft.tresos.launcher2.gui.dialogs.ModuleConfigurationDialog_SashForm_0="260" dreisoft.tresos.launcher2.gui.dialogs.ModuleConfigurationDialog_SashForm_1="340" dreisoft.tresos.launcher2.gui.dialogs.ModuleConfigurationDialog_SashForm_2="400" dreisoft.tresos.launcher2.gui.dialogs.ModuleConfigurationDialog_Shell_height="853" dreisoft.tresos.launcher2.gui.dialogs.ModuleConfigurationDialog_Shell_width="1127"/>
+</state>

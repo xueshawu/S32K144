@@ -1,0 +1,114 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../../../makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS_QUOTED += \
+"../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c" \
+"../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c" \
+"../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c" \
+"../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c" \
+"../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c" \
+"../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c" \
+
+C_SRCS += \
+../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c \
+../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c \
+../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c \
+../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c \
+../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c \
+../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c \
+
+OBJS_OS_FORMAT += \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o \
+
+C_DEPS_QUOTED += \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc.d" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.d" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.d" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.d" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.d" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.d" \
+
+OBJS += \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o \
+
+OBJS_QUOTED += \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o" \
+"./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o" \
+
+C_DEPS += \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc.d \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.d \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.d \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.d \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.d \
+./Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.d \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #11 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #12 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #13 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Adc12bsarv2_Irq.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #14 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Ipw.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #15 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o: ../Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #16 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Adc_TS_T40D2M10I1R0/src/Adc_Pdb_Irq.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

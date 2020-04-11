@@ -1,0 +1,39 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../../../makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS_QUOTED += \
+"../Mcal/Det_TS_T40D2M10I1R0/src/Det.c" \
+
+C_SRCS += \
+../Mcal/Det_TS_T40D2M10I1R0/src/Det.c \
+
+OBJS_OS_FORMAT += \
+./Mcal/Det_TS_T40D2M10I1R0/src/Det.o \
+
+C_DEPS_QUOTED += \
+"./Mcal/Det_TS_T40D2M10I1R0/src/Det.d" \
+
+OBJS += \
+./Mcal/Det_TS_T40D2M10I1R0/src/Det.o \
+
+OBJS_QUOTED += \
+"./Mcal/Det_TS_T40D2M10I1R0/src/Det.o" \
+
+C_DEPS += \
+./Mcal/Det_TS_T40D2M10I1R0/src/Det.d \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Mcal/Det_TS_T40D2M10I1R0/src/Det.o: ../Mcal/Det_TS_T40D2M10I1R0/src/Det.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #17 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Det_TS_T40D2M10I1R0/src/Det.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Det_TS_T40D2M10I1R0/src/Det.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

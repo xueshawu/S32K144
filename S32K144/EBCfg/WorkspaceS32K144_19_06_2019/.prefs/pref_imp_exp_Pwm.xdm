@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<datamodel version="6.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/14/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/14/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr name="General">
+    <a:a name="DEF" value="XPath:/PreferencesSchema/General"/>
+    <d:lst name="ImportersExporters" type="MAP">
+      <d:ctr name="Pwm">
+        <d:var name="Id" value="AutosarImporterExporter"/>
+        <d:var name="Mode" value="import"/>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+  <d:ctr name="ImporterExporterAdditions">
+    <a:a name="DEF" value="XPath:/PreferencesSchema/ImporterExporterAdditions"/>
+    <d:lst name="AutosarImportersExporters" type="MAP">
+      <d:ctr name="Pwm">
+        <d:var name="FileName" 
+               value="C:\Users\nxf35061\Desktop\epcs32k144\Pwm.epc"/>
+        <d:var name="ContentType" value="asc:4.3.0"/>
+        <d:var name="Validation" value="FALSE"/>
+        <d:var name="pathMapping" value="FALSE"/>
+        <d:var name="pathMappingAuto" value="FALSE"/>
+        <d:lst name="pathMappings" type="MAP"/>
+        <d:var name="Strategy" value="Replace"/>
+        <d:var name="ConfigClassPreCompile" value="FALSE"/>
+        <d:var name="ConfigClassLink" value="FALSE"/>
+        <d:var name="ConfigClassPostBuild" value="FALSE"/>
+        <d:var name="ConfigClassPostBuildSelectable" value="FALSE">
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="OverwriteMode" value="FALSE"/>
+        <d:var name="AllVariants" value="FALSE"/>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

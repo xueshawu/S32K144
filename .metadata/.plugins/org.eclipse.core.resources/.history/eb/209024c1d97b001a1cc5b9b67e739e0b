@@ -1,0 +1,369 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../../../makefile.local
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS_QUOTED += \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c" \
+"../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c" \
+
+C_SRCS += \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c \
+../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c \
+
+OBJS_OS_FORMAT += \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o \
+
+C_DEPS_QUOTED += \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.d" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.d" \
+
+OBJS += \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o \
+
+OBJS_QUOTED += \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o" \
+"./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o" \
+
+C_DEPS += \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.d \
+./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.d \
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #47 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Adc.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #48 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Can.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #49 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Crcu.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #50 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Dio.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #51 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eep.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #52 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Eth.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #53 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fee.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #54 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fls.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #55 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Fr.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #56 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Gpt.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #57 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_I2c.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #58 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Icu.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #59 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Iseled.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #60 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Lin.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #61 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcem.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #62 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcl.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #63 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Mcu.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #64 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Ocu.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #65 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Port.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #66 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Pwm.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #67 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #68 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o: ../Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #69 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
