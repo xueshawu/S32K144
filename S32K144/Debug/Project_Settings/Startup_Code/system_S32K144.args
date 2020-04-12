@@ -1,4 +1,5 @@
 -DCPU_S32K144HFT0VLLT
+-DDISABLE_WDOG
 -DAUTOSAR_OS_NOT_USED
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"
