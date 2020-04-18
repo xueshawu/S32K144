@@ -417,7 +417,7 @@ static CONST( Mcu_SCG_RegisterConfigType, MCU_CONST) SOSC_ClockConfigPB0_0[MCU_N
         (
             SCG_SOSCCFG_HIGH_FREQ_RANGE_U32 |
             SCG_SOSCCFG_INTERNAL_OSCILLATOR_U32 |
-            SCG_SOSCCFG_LOW_POWER_OPERATION_U32
+            SCG_SOSCCFG_HIGH_GAIN_OPERATION_U32
         )
     },
     /* SCG_SOSCDIV settings. */
@@ -523,7 +523,7 @@ static CONST( Mcu_SCG_RegisterConfigType, MCU_CONST) SPLL_ClockConfigPB0_0[MCU_N
         SCG_SPLLCFG_ADDR32,
         (
             SCG_SPLLCFG_PREDIV_U32((uint32)0U) |
-            SCG_SPLLCFG_MULT_U32((uint32)24U)
+            SCG_SPLLCFG_MULT_U32((uint32)12U)
         )
     },
     /* SCG_SPLLDIV settings. */
@@ -577,7 +577,7 @@ static CONST( Mcu_SCG_ClockConfigType, MCU_CONST) SCG_ClockConfigPB0_0 =
     /* High Speed Run Clock Config(SCG_HCCR) */
     (
         SCG_SCS_SPLL_U32 |
-        SCG_DIVCORE_U32((uint32)1U) |
+        SCG_DIVCORE_U32((uint32)0U) |
         SCG_DIVBUS_U32((uint32)1U) |
         SCG_DIVSLOW_U32((uint32)3U)
     ),

@@ -308,7 +308,7 @@ static CONST(Pwm_Ftm_ModuleConfigType, PWM_CONST) Pwm_Ftm_ModuleConfig_PB[PWM_FT
         PWM_FTM_0,
         
         /** @brief Default period value: , freq = 100.0 Hz: FTM_0_MOD register*/
-        ((Pwm_PeriodType) 6250)
+        ((Pwm_PeriodType) 8750)
             
 #if (PWM_FAULT_SUPPORTED == STD_ON)
         ,
