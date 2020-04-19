@@ -1,0 +1,216 @@
+/***************************************************************************
+ *
+ * ORTI: Declaration Section Single Core Version ("2.2")
+ *
+ **************************************************************************/
+VERSION {
+  KOIL = "2.2";
+  OSSEMANTICS = "ORTI", "2.2";
+};
+
+IMPLEMENTATION ERIKA3 {
+  OS {
+    /* Here for each task a small description and its pointer */
+    TOTRACE ENUM "void *" [
+      "TimerISR" = "&osEE_tdb_array[0U]",
+      "ButtonsISR" = "&osEE_tdb_array[1U]",
+      "Task1" = "&osEE_tdb_array[2U]",
+      "Task2" = "&osEE_tdb_array[3U]",
+      "Idle" = "&osEE_tdb_array[4U]"
+    ] RUNNINGTASK, "Running Task or ISR2 Identification";
+
+    ENUM  [ 
+      "BASIC" = 0,
+      "EXTENDED" = 1,
+      "ISR2" = 2,
+      "IDLE" = 3
+    ] RUNNININGTYPE, "Running Entity Type";
+
+    ENUM "unsigned char" [
+      "Not Running (0)" = 0,
+      "1" = 1,
+      "2" = 2,
+      "ISR2 1" = 128,
+      "ISR2 2" = 129
+    ] RUNNINGPRIORITY, "Priority of Running Task";
+
+    TOTRACE ENUM "int" [
+      "ActivateTask" = 0,
+      "TerminateTask" = 2,
+      "ChainTask" = 4,
+      "Schedule" = 6,
+      "GetTaskID" = 8,
+      "GetTaskState" = 10,
+      "DisableAllInterrupts" = 12,
+      "EnableAllInterrupts" = 14,
+      "SuspendAllInterrupts" = 16,
+      "ResumeAllInterrupts" = 18,
+      "SuspendOSInterrupts" = 20,
+      "ResumeOSInterrupts" = 22,
+      "GetResource" = 24,
+      "ReleaseResource" = 26,
+      "GetActiveApplicationMode" = 70,
+      "ShutdownOS" = 72,
+      "StartOS" = 74,
+      "TaskBody" = 78,
+      "ISR2Body" = 80,
+      "Action" = 82,
+      "Kernel" = 84,
+      "Invalid" = 86
+    ] SERVICETRACE, "OS Services Watch";
+
+    /* Please note int and not unsigned char */
+    ENUM "int" [
+      "E_OK" = 0,
+      "E_OS_ACCESS" = 1,
+      "E_OS_CALLEVEL" = 2,
+      "E_OS_ID" = 3,
+      "E_OS_LIMIT" = 4,
+      "E_OS_NOFUNC" = 5,
+      "E_OS_RESOURCE" = 6,
+      "E_OS_STATE" = 7,
+      "E_OS_VALUE" = 8,
+      "E_OS_SERVICEID" = 9,
+      "E_OS_ILLEGAL_ADDRESS" = 10,
+      "E_OS_MISSINGEND" = 11,
+      "E_OS_DISABLEDINT" = 12,
+      "E_OS_STACKFAULT" = 13,
+      "E_OS_PARAM_POINTER" = 14,
+      "E_OS_PROTECTION_MEMORY" = 15,
+      "E_OS_PROTECTION_TIME" = 16,
+      "E_OS_PROTECTION_ARRIVAL" = 17,
+      "E_OS_PROTECTION_LOCKED" = 18,
+      "E_OS_PROTECTION_EXCEPTION" = 19,
+      "E_OS_SPINLOCK" = 20,
+      "E_OS_INTERFERENCE_DEADLOCK" = 21,
+      "E_OS_NESTING_DEADLOCK" = 22,
+      /* Multicore */
+      "E_OS_CORE" = 23,
+      /* Implementation specific errors: they must start with E_OS_SYS_ */
+      /* Error during StartOS */
+      "E_OS_SYS_INIT" = 24,
+      "E_OS_SYS_SUSPEND_NESTING_LIMIT" = 25,
+      /* Error Codes for Dynamic APIs */
+      "E_OS_SYS_TASK" = 26,
+      "E_OS_SYS_STACK" = 27,
+      "E_OS_SYS_ACT" = 28
+    ] LASTERROR, "Last error";
+
+    ENUM "unsigned char" [
+      "OSDEFAULTAPPMODE" = 0
+    ] CURRENTAPPMODE, "Current application mode";
+  }, "OS";
+
+  TASK {
+    ENUM "unsigned char" [
+      "Idle (0)" = 0,
+      "1" = 1,
+      "2" = 2,
+      "ISR2 1" = 128,
+      "ISR2 2" = 129
+    ] PRIORITY , "Current priority";
+    ENUM [
+      "SUSPENDED" = 0,
+      "READY"     = 1,
+      "READY"     = 2, /* OSEE_TASK_READY_STACKED */
+      "WAITING"   = 3,
+      "RUNNING"   = 4,
+      "RUNNING"   = 5  /* OSEE_TASK_CHAINED */
+    ] STATE, "Task State";
+    ENUM "unsigned int" [
+      "System Stack" : System_Stack = "1"
+    ] STACK, "Task Stack";
+
+    CTYPE "int" CURRENTACTIVATIONS, "Current activations";
+  }, "TASKs";
+
+  ISR2 {
+    ENUM "unsigned char" [
+      "Idle (0)" = 0,
+      "ISR2 1" = 128,
+      "ISR2 2" = 129
+    ] PRIORITY , "Current priority";
+    ENUM [
+      "SUSPENDED" = 0,
+      "READY"     = 1,
+      "READY"     = 2, /* OSEE_TASK_READY_STACKED */
+      "RUNNING"   = 4,
+    ] STATE, "Task State";
+    ENUM "unsigned int" [
+      "System Stack" : System_Stack = "1"
+    ] STACK, "Task Stack";
+  }, "ISR2s";
+
+  STACK {
+    CTYPE SIZE, "Stack Size (Byte)";
+    CTYPE "unsigned int *" BASEADDRESS, "Base Address";
+    STRING STACKDIRECTION, "Stack Direction";
+    CTYPE "unsigned int" FILLPATTERN, "Stack Fill Pattern";
+  }, "Stacks";
+
+  RESOURCE {
+    ENUM "void *" [
+      "TimerISR" = "&osEE_tdb_array[0U]",
+      "ButtonsISR" = "&osEE_tdb_array[1U]",
+      "Task1" = "&osEE_tdb_array[2U]",
+      "Task2" = "&osEE_tdb_array[3U]",
+      "Idle" = "&osEE_tdb_array[4U]"
+    ] LOCKER, "Resource Locker";
+    STRING PRIORITY, "Ceiling priority";
+  }, "Resources";
+}; /* END OF IMPLEMENTATION */
+
+/******************************************************************************
+ *
+ * ORTI: Information Section
+ *
+ *****************************************************************************/
+OS ERIKA3 {
+  RUNNINGTASK = "osEE_ccb_var.p_curr"; /* Running TASK or ISR2 */
+  RUNNININGTYPE = "osEE_ccb_var.p_curr->task_type";
+  RUNNINGPRIORITY = "osEE_ccb_var.p_curr->p_tcb->current_prio";
+  SERVICETRACE = "osEE_ccb_var.service_id";
+  LASTERROR = "osEE_ccb_var.last_error";
+  CURRENTAPPMODE = "osEE_ccb_var.app_mode";
+};
+
+/* TASKs & ISR2 */
+TASK Task1 {
+  PRIORITY = "osEE_tcb_array[2].current_prio";
+  STATE = "osEE_tcb_array[2].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array[2].current_num_of_act";  /* 1 = max activations */
+  STACK = "(1)";
+};
+
+TASK Task2 {
+  PRIORITY = "osEE_tcb_array[3].current_prio";
+  STATE = "osEE_tcb_array[3].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array[3].current_num_of_act";  /* 1 = max activations */
+  STACK = "(1)";
+};
+
+ISR2 TimerISR {
+  PRIORITY = "osEE_tcb_array[0].current_prio";
+  STATE = "osEE_tcb_array[0].status";
+  STACK = "(1)";
+};
+
+ISR2 ButtonsISR {
+  PRIORITY = "osEE_tcb_array[1].current_prio";
+  STATE = "osEE_tcb_array[1].status";
+  STACK = "(1)";
+};
+
+/* Stacks */
+STACK System_Stack {
+  SIZE = "0x400";
+  STACKDIRECTION = "DOWN";
+  BASEADDRESS = "&__StackLimit";
+  FILLPATTERN = "0xA5A5A5A5";
+};
+
+/* Resources */
+RESOURCE RES_SCHEDULER {
+  LOCKER = "osEE_res_cb_array[0U].p_owner";
+  PRIORITY = 2;
+};

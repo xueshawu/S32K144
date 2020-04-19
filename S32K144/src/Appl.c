@@ -4,7 +4,7 @@
  * @Autor: Archie
  * @Date: 2020-04-11 15:43:56
  * @LastEditors: Archie
- * @LastEditTime: 2020-04-11 20:11:46
+ * @LastEditTime: 2020-04-19 14:01:02
  */
 /*
  * hello.c              Copyright NXP 2016
@@ -17,32 +17,30 @@
 #include "Mcu.h"
 #include "Port.h"
 #include "Dio.h"
+//#include "ee_cortex_m_irq.h" /*因为MCAL的compiler.h头文件的问题，因此如果要包含os相关的，必须放在MCAL的头文件之后 */
 
-#define PTD0  0         /* Port PTD0, bit 0: FRDM EVB output to blue LED */
-#define PTC12 12        /* Port PTC12, bit 12: FRDM EVB input from BTN0 [SW2] */
-
-static void WDOG_disable (void)
+void ErrorHook(StatusType Error)
 {
-  WDOG->CNT=0xD928C520;    /*Unlock watchdog*/
-  WDOG->TOVAL=0x0000FFFF;  /*Maximum timeout value*/
-  WDOG->CS = 0x00002100;   /*Disable watchdog*/
+  return;
+} 
+
+
+void idle_hook (void)
+{
+
 }
 
-int main(void) {
-  int counter = 0;
-  WDOG_disable();             /* Disable Watchdog in case it is not done in startup code */
-                              /* Enable clocks to peripherals (PORT modules) */
+
+
+int main(void) 
+{
+  Dio_LevelType led_blue = STD_LOW;
   Mcu_Init(&McuModuleConfiguration);
   Mcu_InitClock(0);
   Port_Init(&PortConfigSet);
-
-  for(;;) {
-    if (Dio_ReadChannel(DioConf_DioChannel_Dio_Key1) == STD_HIGH) {   /* If Pad Data Input = 1 (BTN0 [SW2] pushed) */
-      Dio_WriteChannel(DioConf_DioChannel_Dio_Rgb_Green, STD_LOW); 
-    }
-    else {                          /* If BTN0 was not pushed */
-        Dio_WriteChannel(DioConf_DioChannel_Dio_Rgb_Green, STD_HIGH); 
-    }
-    counter++;
+  
+  Dio_WriteChannel(DioConf_DioChannel_Dio_Rgb_Green,led_blue);
+  for(;;) 
+  {
   }
 }

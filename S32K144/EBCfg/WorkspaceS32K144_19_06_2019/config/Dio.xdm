@@ -37,15 +37,9 @@
                 <d:var name="ModuleId" type="INTEGER" value="120">
                   <a:a name="IMPORTER_INFO" value="@DEF"/>
                 </d:var>
-                <d:var name="SwMajorVersion" type="INTEGER" value="1">
-                  <a:a name="IMPORTER_INFO" value="@DEF"/>
-                </d:var>
-                <d:var name="SwMinorVersion" type="INTEGER" value="0">
-                  <a:a name="IMPORTER_INFO" value="@DEF"/>
-                </d:var>
-                <d:var name="SwPatchVersion" type="INTEGER" value="1">
-                  <a:a name="IMPORTER_INFO" value="@DEF"/>
-                </d:var>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1"/>
+                <d:var name="SwMinorVersion" type="INTEGER" value="0"/>
+                <d:var name="SwPatchVersion" type="INTEGER" value="1"/>
                 <d:var name="VendorApiInfix" type="STRING" value="">
                   <a:a name="ENABLE" value="false"/>
                   <a:a name="IMPORTER_INFO" value="@DEF"/>
@@ -58,8 +52,7 @@
                 <a:a name="IMPORTER_INFO" value="Dio"/>
                 <d:lst name="DioPort" type="MAP">
                   <a:a name="IMPORTER_INFO" value="Dio"/>
-                  <d:ctr name="DioPort_0" type="IDENTIFIABLE">
-                    <a:a name="IMPORTER_INFO" value="Dio"/>
+                  <d:ctr name="DioPORTC" type="IDENTIFIABLE">
                     <d:var name="DioPortId" type="INTEGER" value="2">
                       <a:a name="IMPORTER_INFO" value="Dio"/>
                     </d:var>
@@ -80,8 +73,7 @@
                     </d:lst>
                     <d:lst name="DioChannelGroup" type="MAP"/>
                   </d:ctr>
-                  <d:ctr name="DioPort_2" type="IDENTIFIABLE">
-                    <a:a name="IMPORTER_INFO" value="Dio"/>
+                  <d:ctr name="DioPORTD" type="IDENTIFIABLE">
                     <d:var name="DioPortId" type="INTEGER" value="3">
                       <a:a name="IMPORTER_INFO" value="Dio"/>
                     </d:var>
@@ -89,9 +81,7 @@
                       <a:a name="IMPORTER_INFO" value="Dio"/>
                       <d:ctr name="Dio_Rgb_Green" type="IDENTIFIABLE">
                         <a:a name="IMPORTER_INFO" value="Dio"/>
-                        <d:var name="DioChannelId" type="INTEGER" value="16">
-                          <a:a name="IMPORTER_INFO" value="Dio"/>
-                        </d:var>
+                        <d:var name="DioChannelId" type="INTEGER" value="0"/>
                       </d:ctr>
                     </d:lst>
                     <d:lst name="DioChannelGroup" type="MAP"/>

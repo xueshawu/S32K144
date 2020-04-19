@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<com.eu.evidence.rtdruid3.oil.settings:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.eu.evidence.rtdruid3.oil.settings="http://com.eu.evidence.rtdruid3.oil.settings">
+  <applOilFiles>conf.oil</applOilFiles>
+  <autoInclude>C:\Program Files (x86)\GNU Tools Arm Embedded\9 2019-q4-major/arm-none-eabi/include</autoInclude>
+  <autoInclude>C:\Program Files (x86)\GNU Tools Arm Embedded\9 2019-q4-major/lib/gcc/arm-none-eabi/4.9.3/include</autoInclude>
+</com.eu.evidence.rtdruid3.oil.settings:Project>

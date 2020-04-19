@@ -18,6 +18,7 @@ Common symbol       size              file
 
 Det_ErrorId         0x1               ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
 Det_RuntimeErrorId  0x1               ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+osEE_kcb_var        0x4               ./Os/S32K144EVB/out/ee_applcfg.o
 Det_RuntimeModuleId
                     0x2               ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
 Det_TransientFaultId
@@ -56,6 +57,63 @@ Discarded input sections
  .debug_frame   0x00000000       0x30 D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_start.o
  .ARM.attributes
                 0x00000000       0x33 D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_start.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/TaskEntity.o
+ .text          0x00000000        0x0 ./src/TaskEntity.o
+ .data          0x00000000        0x0 ./src/TaskEntity.o
+ .bss           0x00000000        0x0 ./src/TaskEntity.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .group         0x00000000        0x8 ./src/InterruptServices.o
+ .text          0x00000000        0x0 ./src/InterruptServices.o
+ .data          0x00000000        0x0 ./src/InterruptServices.o
+ .bss           0x00000000        0x0 ./src/InterruptServices.o
+ .debug_macro   0x00000000      0x874 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x52 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0xa0 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x16 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0xd6 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x34 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x28 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x3a ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x58 ./src/InterruptServices.o
+ .debug_macro   0x00000000       0x7b ./src/InterruptServices.o
  .group         0x00000000        0x8 ./src/Appl.o
  .group         0x00000000        0x8 ./src/Appl.o
  .group         0x00000000        0x8 ./src/Appl.o
@@ -120,6 +178,18 @@ Discarded input sections
  .text          0x00000000        0x0 ./src/Appl.o
  .data          0x00000000        0x0 ./src/Appl.o
  .bss           0x00000000        0x0 ./src/Appl.o
+ .text.ErrorHook
+                0x00000000       0x18 ./src/Appl.o
+ .debug_macro   0x00000000      0x874 ./src/Appl.o
+ .debug_macro   0x00000000       0x52 ./src/Appl.o
+ .debug_macro   0x00000000       0xa0 ./src/Appl.o
+ .debug_macro   0x00000000       0x16 ./src/Appl.o
+ .debug_macro   0x00000000       0x64 ./src/Appl.o
+ .debug_macro   0x00000000      0x185 ./src/Appl.o
+ .debug_macro   0x00000000      0x140 ./src/Appl.o
+ .debug_macro   0x00000000       0x9d ./src/Appl.o
+ .debug_macro   0x00000000       0x10 ./src/Appl.o
+ .debug_macro   0x00000000       0x28 ./src/Appl.o
  .group         0x00000000        0x8 ./Project_Settings/Startup_Code/system_S32K144.o
  .group         0x00000000        0x8 ./Project_Settings/Startup_Code/system_S32K144.o
  .group         0x00000000        0x8 ./Project_Settings/Startup_Code/system_S32K144.o
@@ -205,6 +275,1110 @@ Discarded input sections
  .debug_macro   0x00000000     0xdf8d ./Project_Settings/Startup_Code/startup.o
  .debug_macro   0x00000000      0x978 ./Project_Settings/Startup_Code/startup.o
  .debug_macro   0x00000000       0x22 ./Project_Settings/Startup_Code/startup.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/out/ee_applcfg.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/out/ee_applcfg.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/out/ee_applcfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_info    0x00000000      0x8c9 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_abbrev  0x00000000      0x117 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_aranges
+                0x00000000       0x18 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_line    0x00000000      0x4fc ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .debug_str     0x00000000    0x14d47 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .ARM.attributes
+                0x00000000       0x33 ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .text.osEE_cortex_m_mcu_system_init
+                0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_info    0x00000000      0x8c9 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_abbrev  0x00000000      0x117 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_aranges
+                0x00000000       0x18 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_line    0x00000000      0x4f5 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .debug_str     0x00000000    0x14d40 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .ARM.attributes
+                0x00000000       0x33 ./Os/S32K144EVB/erika/src/ee_oscfg.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_task_event_reset_mask
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_task_get_curr_core
+                0x00000000       0x18 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_scheduler_task_insert_rq
+                0x00000000       0x48 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_scheduler_task_activated
+                0x00000000       0xac ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_scheduler_task_insert
+                0x00000000       0x44 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_scheduler_task_block_current
+                0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_scheduler_task_unblocked
+                0x00000000       0x7c ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .text.osEE_task_activated
+                0x00000000       0x40 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_sn_alloc
+                0x00000000       0x2c ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_get_kernel
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_lock_core
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_unlock_core
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_idle_task_start
+                0x00000000       0x20 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_std_cpu_startos
+                0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_get_curr_task
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_is_valid_tid
+                0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_is_valid_res_id
+                0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_call_startup_hook
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_call_shutdown_hook
+                0x00000000       0x18 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_call_error_hook
+                0x00000000       0x18 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_set_service_id
+                0x00000000       0x18 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_shutdown_os_extra
+                0x00000000        0xc ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_shutdown_os
+                0x00000000       0x30 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.DisableAllInterrupts
+                0x00000000       0x38 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.EnableAllInterrupts
+                0x00000000       0x40 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.SuspendAllInterrupts
+                0x00000000       0x78 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.ResumeAllInterrupts
+                0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.SuspendOSInterrupts
+                0x00000000       0x90 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.ResumeOSInterrupts
+                0x00000000       0x5c ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.StartOS  0x00000000      0x160 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.GetActiveApplicationMode
+                0x00000000       0x48 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.ActivateTask
+                0x00000000       0x8c ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.ChainTask
+                0x00000000      0x120 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.Schedule
+                0x00000000       0x98 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.GetResource
+                0x00000000       0xfc ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.ReleaseResource
+                0x00000000      0x130 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.ShutdownOS
+                0x00000000       0x68 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.GetTaskID
+                0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.GetTaskState
+                0x00000000       0xbc ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.GetISRID
+                0x00000000       0x2c ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .text.osEE_get_curr_core
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .text.osEE_cortex_m_stack_init
+                0x00000000       0x94 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .text.osEE_cortex_m_system_init
+                0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_info    0x00000000      0x9d3 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_abbrev  0x00000000      0x1d6 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_aranges
+                0x00000000       0x30 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_ranges  0x00000000       0x20 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_line    0x00000000      0x569 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_str     0x00000000    0x14dce ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .debug_frame   0x00000000       0x70 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .ARM.attributes
+                0x00000000       0x33 ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .text.osEE_cortex_m_isr1_stub
+                0x00000000       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .group         0x00000000        0x8 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .text          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000      0x874 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x52 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0xa0 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0xd6 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x34 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0xf1 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x50 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x3a ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x58 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x7b ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x64 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000      0x185 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000      0x140 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x9d ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x88 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000      0x1af ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0xd9 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x16 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x11 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x10 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000      0x2a1 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000      0x816 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x1c ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x55 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000     0x15d9 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00000000       0x2f ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .data          0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+ .bss           0x00000000        0x0 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .text          0x00000000        0x0 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .data          0x00000000        0x0 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .bss           0x00000000        0x0 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_info    0x00000000       0x21 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_abbrev  0x00000000       0x13 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_aranges
+                0x00000000       0x18 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_macro   0x00000000       0x2c ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_macro   0x00000000      0x874 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_macro   0x00000000       0x52 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_macro   0x00000000       0xa0 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_macro   0x00000000       0x16 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_line    0x00000000       0xcd ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .debug_str     0x00000000     0x29a4 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .comment       0x00000000       0x71 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .ARM.attributes
+                0x00000000       0x33 ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .group         0x00000000        0x8 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .text          0x00000000        0x0 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .data          0x00000000        0x0 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .bss           0x00000000        0x0 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_info    0x00000000       0x21 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_abbrev  0x00000000       0x13 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_aranges
+                0x00000000       0x18 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x00000000       0x2c ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x00000000      0x874 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x00000000       0x52 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x00000000       0xa0 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_macro   0x00000000       0x16 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_line    0x00000000       0xc4 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .debug_str     0x00000000     0x299b ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .comment       0x00000000       0x71 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
+ .ARM.attributes
+                0x00000000       0x33 ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
  .group         0x00000000        0x8 ./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o
  .group         0x00000000        0x8 ./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o
  .group         0x00000000        0x8 ./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o
@@ -9561,6 +10735,8 @@ Discarded input sections
  .text          0x00000000        0x0 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
  .data          0x00000000        0x0 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
  .bss           0x00000000        0x0 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .text.Dio_Gpio_ReadChannel
+                0x00000000       0x48 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
  .text.Dio_Gpio_ReadPort
                 0x00000000       0x2c ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
  .text.Dio_Gpio_WritePort
@@ -9614,6 +10790,8 @@ Discarded input sections
  .text          0x00000000        0x0 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
  .data          0x00000000        0x0 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
  .bss           0x00000000        0x0 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .text.Dio_ReadChannel
+                0x00000000       0x24 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
  .text.Dio_ReadPort
                 0x00000000       0x24 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
  .text.Dio_WritePort
@@ -10784,7 +11962,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x42 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
  .debug_macro   0x00000000       0x42 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
  .debug_line    0x00000000      0x27d ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
- .debug_str     0x00000000     0x54d9 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
+ .debug_str     0x00000000     0x54d7 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
  .comment       0x00000000       0x71 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
  .ARM.attributes
                 0x00000000       0x33 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Dio_Cfg.o
@@ -11270,10 +12448,29 @@ m_data_2         0x20000000         0x00007000         rw
 Linker script and memory map
 
 LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_start.o
+LOAD ./src/TaskEntity.o
+LOAD ./src/InterruptServices.o
 LOAD ./src/Appl.o
 LOAD ./Project_Settings/Startup_Code/system_S32K144.o
 LOAD ./Project_Settings/Startup_Code/startup_S32K144.o
 LOAD ./Project_Settings/Startup_Code/startup.o
+LOAD ./Os/S32K144EVB/out/ee_applcfg.o
+LOAD ./Os/S32K144EVB/erika/src/ee_std_hal_init.o
+LOAD ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+LOAD ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+LOAD ./Os/S32K144EVB/erika/src/ee_oscfg.o
+LOAD ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+LOAD ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+LOAD ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+LOAD ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+LOAD ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+LOAD ./Os/S32K144EVB/erika/src/ee_cortex_m_system.o
+LOAD ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+LOAD ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+LOAD ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+LOAD ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+LOAD ./Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o
+LOAD ./Os/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o
 LOAD ./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Wdg.o
 LOAD ./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_Spi.o
 LOAD ./Mcal/Rte_TS_T40D2M10I1R0/src/SchM_RamTst.o
@@ -11370,7 +12567,7 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
  .FlashConfig   0x00000400       0x10 ./Project_Settings/Startup_Code/startup_S32K144.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x15e0
+.text           0x00000410     0x2310
                 0x00000410                . = ALIGN (0x4)
  *(.text)
  .text          0x00000410       0x44 ./Project_Settings/Startup_Code/startup_S32K144.o
@@ -11387,7 +12584,6 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
                 0x00000450                FTFC_Fault_IRQHandler
                 0x00000450                FTM0_Ch6_Ch7_IRQHandler
                 0x00000450                Reserved114_IRQHandler
-                0x00000450                PendSV_Handler
                 0x00000450                NMI_Handler
                 0x00000450                Reserved89_IRQHandler
                 0x00000450                ERM_double_fault_IRQHandler
@@ -11406,7 +12602,6 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
                 0x00000450                ADC0_IRQHandler
                 0x00000450                FTM2_Ch4_Ch5_IRQHandler
                 0x00000450                UsageFault_Handler
-                0x00000450                FTM0_Ovf_Reload_IRQHandler
                 0x00000450                DefaultISR
                 0x00000450                DMA9_IRQHandler
                 0x00000450                Reserved58_IRQHandler
@@ -11456,7 +12651,6 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
                 0x00000450                Reserved83_IRQHandler
                 0x00000450                FTM0_Fault_IRQHandler
                 0x00000450                Reserved48_IRQHandler
-                0x00000450                SVC_Handler
                 0x00000450                ERM_single_fault_IRQHandler
                 0x00000450                FTM2_Fault_IRQHandler
                 0x00000450                FTM0_Ch2_Ch3_IRQHandler
@@ -11502,136 +12696,295 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
                 0x00000450                CAN0_Wake_Up_IRQHandler
                 0x00000450                CMP0_IRQHandler
                 0x00000450                Reserved52_IRQHandler
-                0x00000450                PORTC_IRQHandler
                 0x00000450                DMA6_IRQHandler
                 0x00000450                FTM1_Ch0_Ch1_IRQHandler
                 0x00000450                FLEXIO_IRQHandler
                 0x00000450                DMA1_IRQHandler
                 0x00000450                Reserved113_IRQHandler
+ .text          0x00000454       0x6c ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+                0x00000454                osEE_set_switch_context_pri
+                0x0000046c                osEE_cortex_m_trigger_pend_sv
+                0x00000474                PendSV_Handler
+                0x0000048c                osEE_cortex_m_thread_end
+                0x00000490                SVC_Handler
+ .text          0x000004c0       0x8c ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+                0x000004c0                osEE_hal_save_ctx_and_restore_ctx
+                0x000004dc                osEE_hal_restore_ctx
+                0x000004fc                osEE_hal_ready2stacked
+                0x00000508                osEE_hal_save_ctx_and_ready2stacked
+                0x00000524                osEE_hal_terminate_ctx
+                0x0000052c                osEE_cortex_m_restore_ctx
  *(.text*)
- .text.WDOG_disable
-                0x00000454       0x2c ./src/Appl.o
- .text.main     0x00000480       0x50 ./src/Appl.o
-                0x00000480                main
+ .text.FuncTask1
+                0x0000054c        0xc ./src/TaskEntity.o
+                0x0000054c                FuncTask1
+ .text.FuncTask2
+                0x00000558        0xc ./src/TaskEntity.o
+                0x00000558                FuncTask2
+ .text.ButtonsISR
+                0x00000564        0xc ./src/InterruptServices.o
+                0x00000564                ButtonsISR
+ .text.TimerISR
+                0x00000570        0xc ./src/InterruptServices.o
+                0x00000570                TimerISR
+ .text.idle_hook
+                0x0000057c        0xc ./src/Appl.o
+                0x0000057c                idle_hook
+ .text.main     0x00000588       0x30 ./src/Appl.o
+                0x00000588                main
  .text.SystemInit
-                0x000004d0       0x30 ./Project_Settings/Startup_Code/system_S32K144.o
-                0x000004d0                SystemInit
+                0x000005b8       0x30 ./Project_Settings/Startup_Code/system_S32K144.o
+                0x000005b8                SystemInit
  .text.init_data_bss
-                0x00000500       0xf4 ./Project_Settings/Startup_Code/startup.o
-                0x00000500                init_data_bss
+                0x000005e8       0xf4 ./Project_Settings/Startup_Code/startup.o
+                0x000005e8                init_data_bss
+ .text.osEE_change_context_from_running
+                0x000006dc       0x44 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+                0x000006dc                osEE_change_context_from_running
+ .text.osEE_change_context_from_task_end
+                0x00000720       0x38 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+                0x00000720                osEE_change_context_from_task_end
+ .text.osEE_idle_task_terminate
+                0x00000758       0x50 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+                0x00000758                osEE_idle_task_terminate
+ .text.PORTC_IRQHandler
+                0x000007a8        0xc ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+                0x000007a8                PORTC_IRQHandler
+ .text.FTM0_Ovf_Reload_IRQHandler
+                0x000007b4        0xc ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+                0x000007b4                FTM0_Ovf_Reload_IRQHandler
+ .text.osEE_call_post_task_hook
+                0x000007c0       0x14 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .text.osEE_scheduler_stk_next
+                0x000007d4       0x4c ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .text.osEE_scheduler_rq_insert
+                0x00000820       0x28 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+                0x00000820                osEE_scheduler_rq_insert
+ .text.osEE_scheduler_core_rq_preempt_stk
+                0x00000848       0xa0 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+                0x00000848                osEE_scheduler_core_rq_preempt_stk
+ .text.osEE_sn_priority_insert
+                0x000008e8       0xb0 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+                0x000008e8                osEE_sn_priority_insert
+ .text.osEE_scheduler_core_pop_running
+                0x00000998       0x5c ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+                0x00000998                osEE_scheduler_core_pop_running
+ .text.osEE_sn_alloc
+                0x000009f4       0x2c ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_sn_release
+                0x00000a20       0x24 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_get_curr_core
+                0x00000a44       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_lock_core
+                0x00000a58       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_unlock_core
+                0x00000a6c       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .text.osEE_scheduler_task_terminated
+                0x00000a80       0xd8 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+                0x00000a80                osEE_scheduler_task_terminated
+ .text.osEE_scheduler_task_preemption_point
+                0x00000b58       0x58 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+                0x00000b58                osEE_scheduler_task_preemption_point
+ .text.osEE_scheduler_task_set_running
+                0x00000bb0       0x84 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+                0x00000bb0                osEE_scheduler_task_set_running
+ .text.osEE_get_curr_core
+                0x00000c34       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_get_kernel
+                0x00000c48       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_hal_terminate_activation
+                0x00000c5c       0x18 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_begin_primitive
+                0x00000c74       0x38 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_end_primitive
+                0x00000cac       0x20 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_call_error_hook
+                0x00000ccc       0x18 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_set_service_id
+                0x00000ce4       0x18 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_stack_monitoring
+                0x00000cfc       0x14 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_release_all_m
+                0x00000d10       0x4c ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_scheduler_task_not_terminated
+                0x00000d5c       0xa4 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .text.osEE_scheduler_task_wrapper_restore
+                0x00000e00       0x40 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+                0x00000e00                osEE_scheduler_task_wrapper_restore
+ .text.osEE_scheduler_task_wrapper_run
+                0x00000e40       0x54 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+                0x00000e40                osEE_scheduler_task_wrapper_run
+ .text.osEE_idle_hook_wrapper
+                0x00000e94       0x54 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+                0x00000e94                osEE_idle_hook_wrapper
+ .text.osEE_get_kernel
+                0x00000ee8       0x14 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .text.osEE_task_end
+                0x00000efc       0x44 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+                0x00000efc                osEE_task_end
+ .text.osEE_activate_isr2
+                0x00000f40       0x38 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+                0x00000f40                osEE_activate_isr2
+ .text.osEE_get_curr_core
+                0x00000f78       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_hal_terminate_activation
+                0x00000f8c       0x18 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_orti_trace_service_entry
+                0x00000fa4       0x28 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_orti_trace_service_exit
+                0x00000fcc       0x2c ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_begin_primitive
+                0x00000ff8       0x38 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_end_primitive
+                0x00001030       0x20 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.osEE_stack_monitoring
+                0x00001050       0x14 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .text.TerminateTask
+                0x00001064       0xa4 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+                0x00001064                TerminateTask
+ .text.osEE_get_curr_core
+                0x00001108       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .text.osEE_cortex_m_change_context_from_task_end
+                0x0000111c       0x74 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+                0x0000111c                osEE_cortex_m_change_context_from_task_end
+ .text.osEE_cortex_m_isr2_stub
+                0x00001190       0x58 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+                0x00001190                osEE_cortex_m_isr2_stub
+ .text.osEE_get_curr_core
+                0x000011e8       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .text.osEE_get_kernel
+                0x000011fc       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .text.osEE_cortex_m_scheduler_task_end
+                0x00001210       0x88 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+                0x00001210                osEE_cortex_m_scheduler_task_end
  .text.Port_Port_Ci_Init
-                0x000005f4      0x390 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
-                0x000005f4                Port_Port_Ci_Init
+                0x00001298      0x390 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+                0x00001298                Port_Port_Ci_Init
  .text.Port_Init
-                0x00000984       0x34 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
-                0x00000984                Port_Init
+                0x00001628       0x34 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+                0x00001628                Port_Init
  .text.Mcu_SMC_AllowedModesConfig
-                0x000009b8       0x24 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
-                0x000009b8                Mcu_SMC_AllowedModesConfig
+                0x0000165c       0x24 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+                0x0000165c                Mcu_SMC_AllowedModesConfig
  .text.Mcu_SIM_Init
-                0x000009dc       0x98 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
-                0x000009dc                Mcu_SIM_Init
+                0x00001680       0x98 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+                0x00001680                Mcu_SIM_Init
  .text.Mcu_SIM_ClockConfig
-                0x00000a74       0x6c ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
-                0x00000a74                Mcu_SIM_ClockConfig
+                0x00001718       0x6c ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+                0x00001718                Mcu_SIM_ClockConfig
  .text.Mcu_SCG_SystemClockInit
-                0x00000ae0       0x44 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
-                0x00000ae0                Mcu_SCG_SystemClockInit
+                0x00001784       0x44 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x00001784                Mcu_SCG_SystemClockInit
  .text.Mcu_SCG_DropSystemClockToSirc
-                0x00000b24       0xb0 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
-                0x00000b24                Mcu_SCG_DropSystemClockToSirc
+                0x000017c8       0xb0 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x000017c8                Mcu_SCG_DropSystemClockToSirc
  .text.Mcu_SCG_SoscInit
-                0x00000bd4       0x80 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
-                0x00000bd4                Mcu_SCG_SoscInit
+                0x00001878       0x80 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x00001878                Mcu_SCG_SoscInit
  .text.Mcu_SCG_SircInit
-                0x00000c54       0x7c ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
-                0x00000c54                Mcu_SCG_SircInit
+                0x000018f8       0x7c ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x000018f8                Mcu_SCG_SircInit
  .text.Mcu_SCG_FircInit
-                0x00000cd0       0x84 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
-                0x00000cd0                Mcu_SCG_FircInit
+                0x00001974       0x84 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x00001974                Mcu_SCG_FircInit
  .text.Mcu_SCG_SpllInit
-                0x00000d54       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
-                0x00000d54                Mcu_SCG_SpllInit
+                0x000019f8       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x000019f8                Mcu_SCG_SpllInit
  .text.Mcu_RCM_ResetInit
-                0x00000da4       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
-                0x00000da4                Mcu_RCM_ResetInit
+                0x00001a48       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+                0x00001a48                Mcu_RCM_ResetInit
  .text.Mcu_PMC_PowerInit
-                0x00000ddc       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
-                0x00000ddc                Mcu_PMC_PowerInit
+                0x00001a80       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+                0x00001a80                Mcu_PMC_PowerInit
  .text.Mcu_PCC_PeripheralConfig
-                0x00000e2c       0xac ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
-                0x00000e2c                Mcu_PCC_PeripheralConfig
+                0x00001ad0       0xac ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+                0x00001ad0                Mcu_PCC_PeripheralConfig
  .text.Mcu_Ipw_Init
-                0x00000ed8       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
-                0x00000ed8                Mcu_Ipw_Init
+                0x00001b7c       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+                0x00001b7c                Mcu_Ipw_Init
  .text.Mcu_Ipw_InitClock
-                0x00000f10       0xbc ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
-                0x00000f10                Mcu_Ipw_InitClock
+                0x00001bb4       0xbc ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+                0x00001bb4                Mcu_Ipw_InitClock
  .text.Mcu_Init
-                0x00000fcc       0xc0 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
-                0x00000fcc                Mcu_Init
+                0x00001c70       0xc0 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+                0x00001c70                Mcu_Init
  .text.Mcu_InitClock
-                0x0000108c       0x40 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
-                0x0000108c                Mcu_InitClock
- .text.Dio_Gpio_ReadChannel
-                0x000010cc       0x48 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
-                0x000010cc                Dio_Gpio_ReadChannel
+                0x00001d30       0x40 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+                0x00001d30                Mcu_InitClock
  .text.Dio_Gpio_WriteChannel
-                0x00001114       0x68 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
-                0x00001114                Dio_Gpio_WriteChannel
- .text.Dio_ReadChannel
-                0x0000117c       0x24 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
-                0x0000117c                Dio_ReadChannel
+                0x00001d70       0x68 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+                0x00001d70                Dio_Gpio_WriteChannel
  .text.Dio_WriteChannel
-                0x000011a0       0x24 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
-                0x000011a0                Dio_WriteChannel
+                0x00001dd8       0x24 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+                0x00001dd8                Dio_WriteChannel
  .text.Det_ReportError
-                0x000011c4       0x54 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
-                0x000011c4                Det_ReportError
+                0x00001dfc       0x54 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+                0x00001dfc                Det_ReportError
  *(.rodata)
  *(.rodata*)
+ .rodata.osEE_sdb_array
+                0x00001e50        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_tdb_array
+                0x00001e58       0x8c ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_tdb_ptr_array
+                0x00001ee4       0x14 ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_res_db_array
+                0x00001ef8        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_res_db_ptr_array
+                0x00001f00        0x4 ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_tdb_ptr_autostart_OSDEFAULTAPPMODE
+                0x00001f04        0x4 ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_autostart_tdb_array
+                0x00001f08        0x8 ./Os/S32K144EVB/out/ee_applcfg.o
+ .rodata.osEE_cdb_var
+                0x00001f10       0x20 ./Os/S32K144EVB/out/ee_applcfg.o
+                0x00001f10                osEE_cdb_var
+ .rodata.osEE_kdb_var
+                0x00001f30       0x14 ./Os/S32K144EVB/out/ee_applcfg.o
+                0x00001f30                osEE_kdb_var
  .rodata.Port_UnUsedPin
-                0x00001218        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+                0x00001f44        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
  .rodata.Port_aPinConfigDefault
-                0x00001220      0x590 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+                0x00001f4c      0x590 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
  .rodata.PortConfigSet
-                0x000017b0       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
-                0x000017b0                PortConfigSet
+                0x000024dc       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+                0x000024dc                PortConfigSet
+ *fill*         0x000024f4        0x4 
  .rodata.Mcu_Ram_ConfigPB0
-                0x000017c8       0x20 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000024f8       0x20 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.Mcu_Mode_ConfigPB0
-                0x000017e8        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x00002518        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SIM_ClockConfigPB0_0
-                0x000017f0        0xc ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x00002520        0xc ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SOSC_ClockConfigPB0_0
-                0x000017fc       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x0000252c       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SIRC_ClockConfigPB0_0
-                0x00001814       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x00002544       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.FIRC_ClockConfigPB0_0
-                0x0000182c       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x0000255c       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SPLL_ClockConfigPB0_0
-                0x00001844       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x00002574       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SCG_ClockConfigPB0_0
-                0x0000185c       0x20 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x0000258c       0x20 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.PCC_aRegistersConfigPB0_0
-                0x0000187c      0x100 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000025ac      0x100 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.PCC_ClockConfigPB0_0
-                0x0000197c        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026ac        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.Mcu_ClockConfigPB0
-                0x00001984       0x14 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026b4       0x14 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.RCM_ResetConfigPB0
-                0x00001998        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026c8        0x8 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SIM_ConfigPB0
-                0x000019a0       0x1c ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026d0       0x1c ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.PMC_ConfigPB0
-                0x000019bc        0x4 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026ec        0x4 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.SMC_ConfigPB0
-                0x000019c0        0x4 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026f0        0x4 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.Mcu_HwIPsConfigPB0
-                0x000019c4       0x10 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000026f4       0x10 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
  .rodata.McuModuleConfiguration
-                0x000019d4       0x1c ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
-                0x000019d4                McuModuleConfiguration
+                0x00002704       0x1c ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x00002704                McuModuleConfiguration
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
@@ -11639,64 +12992,64 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
  *(.eh_frame)
  *(.init)
  *(.fini)
-                0x000019f0                . = ALIGN (0x4)
+                0x00002720                . = ALIGN (0x4)
 
-.vfp11_veneer   0x000019f0        0x0
+.vfp11_veneer   0x00002720        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x000019f0        0x0
+.v4_bx          0x00002720        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x000019f0        0x0
+.iplt           0x00002720        0x0
  .iplt          0x00000000        0x0 D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_start.o
 
-.rel.dyn        0x000019f0        0x0
+.rel.dyn        0x00002720        0x0
  .rel.iplt      0x00000000        0x0 D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_start.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x000019f0        0x0
-                0x000019f0                __exidx_start = .
+.ARM            0x00002720        0x0
+                0x00002720                __exidx_start = .
  *(.ARM.exidx*)
-                0x000019f0                __exidx_end = .
+                0x00002720                __exidx_end = .
 
-.ctors          0x000019f0        0x0
-                0x000019f0                __CTOR_LIST__ = .
+.ctors          0x00002720        0x0
+                0x00002720                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x000019f0                __CTOR_END__ = .
+                0x00002720                __CTOR_END__ = .
 
-.dtors          0x000019f0        0x0
-                0x000019f0                __DTOR_LIST__ = .
+.dtors          0x00002720        0x0
+                0x00002720                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x000019f0                __DTOR_END__ = .
+                0x00002720                __DTOR_END__ = .
 
-.preinit_array  0x000019f0        0x0
-                0x000019f0                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00002720        0x0
+                0x00002720                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x000019f0                PROVIDE (__preinit_array_end, .)
+                0x00002720                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x000019f0        0x0
-                0x000019f0                PROVIDE (__init_array_start, .)
+.init_array     0x00002720        0x0
+                0x00002720                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
-                0x000019f0                PROVIDE (__init_array_end, .)
+                0x00002720                PROVIDE (__init_array_end, .)
 
-.fini_array     0x000019f0        0x0
-                0x000019f0                PROVIDE (__fini_array_start, .)
+.fini_array     0x00002720        0x0
+                0x00002720                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
-                0x000019f0                PROVIDE (__fini_array_end, .)
-                0x000019f0                __etext = .
-                0x000019f0                __DATA_ROM = .
+                0x00002720                PROVIDE (__fini_array_end, .)
+                0x00002720                __etext = .
+                0x00002720                __DATA_ROM = .
 
 .interrupts_ram
                 0x1fff8000      0x400
@@ -11711,93 +13064,105 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
                 0x1fff8000                __VECTOR_RAM = DEFINED (__flash_vector_table__)?ORIGIN (m_interrupts):__VECTOR_RAM__
                 0x00000400                __RAM_VECTOR_TABLE_SIZE = DEFINED (__flash_vector_table__)?0x0:(__interrupts_ram_end__ - __interrupts_ram_start__)
 
-.data           0x1fff8400        0x0 load address 0x000019f0
+.data           0x1fff8400       0x68 load address 0x00002720
                 0x1fff8400                . = ALIGN (0x4)
                 0x1fff8400                __DATA_RAM = .
                 0x1fff8400                __data_start__ = .
  *(.data)
  *(.data*)
+ .data.osEE_tcb_array
+                0x1fff8400       0x28 ./Os/S32K144EVB/out/ee_applcfg.o
+ .data.osEE_sn_array
+                0x1fff8428       0x20 ./Os/S32K144EVB/out/ee_applcfg.o
+ .data.osEE_ccb_var
+                0x1fff8448       0x20 ./Os/S32K144EVB/out/ee_applcfg.o
+                0x1fff8448                osEE_ccb_var
  *(.jcr*)
-                0x1fff8400                . = ALIGN (0x4)
-                0x1fff8400                __data_end__ = .
-                0x000019f0                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
-                0x000019f0                __CODE_ROM = __DATA_END
+                0x1fff8468                . = ALIGN (0x4)
+                0x1fff8468                __data_end__ = .
+                0x00002788                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x00002788                __CODE_ROM = __DATA_END
 
-.igot.plt       0x1fff8400        0x0
+.igot.plt       0x1fff8468        0x0 load address 0x00002788
  .igot.plt      0x00000000        0x0 D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_start.o
 
-.code           0x1fff8400        0x0 load address 0x000019f0
-                0x1fff8400                . = ALIGN (0x4)
-                0x1fff8400                __CODE_RAM = .
-                0x1fff8400                __code_start__ = .
+.code           0x1fff8468        0x0 load address 0x00002788
+                0x1fff8468                . = ALIGN (0x4)
+                0x1fff8468                __CODE_RAM = .
+                0x1fff8468                __code_start__ = .
  *(.code_ram)
-                0x1fff8400                . = ALIGN (0x4)
-                0x1fff8400                __code_end__ = .
-                0x000019f0                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
+                0x1fff8468                . = ALIGN (0x4)
+                0x1fff8468                __code_end__ = .
+                0x00002788                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
 
 .customSectionBlock
  *(.customSection)
 
-.bss            0x20000000       0x3c
+.bss            0x20000000       0x50
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                __BSS_START = .
                 0x20000000                __bss_start__ = .
  *(.bss)
  *(.bss*)
+ .bss.osEE_scb_array
+                0x20000000        0x4 ./Os/S32K144EVB/out/ee_applcfg.o
+ .bss.osEE_res_cb_array
+                0x20000004        0xc ./Os/S32K144EVB/out/ee_applcfg.o
  .bss.Port_Port_Ci_au16GpioDirChangeability
-                0x20000000       0x14 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+                0x20000010       0x14 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
  .bss.Port_pConfig
-                0x20000014        0x4 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
-                0x20000014                Port_pConfig
+                0x20000024        0x4 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+                0x20000024                Port_pConfig
  .bss.Mcu_pClockConfig
-                0x20000018        0x4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+                0x20000028        0x4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
  .bss.Mcu_au8ClockConfigIds
-                0x2000001c        0x1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- *fill*         0x2000001d        0x3 
+                0x2000002c        0x1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ *fill*         0x2000002d        0x3 
  .bss.Mcu_au8ModeConfigIds
-                0x20000020        0x1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- *fill*         0x20000021        0x3 
+                0x20000030        0x1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ *fill*         0x20000031        0x3 
  .bss.Mcu_au8RamConfigIds
-                0x20000024        0x1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- *fill*         0x20000025        0x3 
+                0x20000034        0x1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ *fill*         0x20000035        0x3 
  .bss.Mcu_pConfigPtr
-                0x20000028        0x4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
-                0x20000028                Mcu_pConfigPtr
+                0x20000038        0x4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+                0x20000038                Mcu_pConfigPtr
  *(COMMON)
- COMMON         0x2000002c       0x10 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
-                0x2000002c                Det_ErrorId
-                0x2000002d                Det_RuntimeErrorId
-                0x2000002e                Det_RuntimeModuleId
-                0x20000030                Det_TransientFaultId
-                0x20000031                Det_InstanceId
-                0x20000032                Det_TransientApiId
-                0x20000033                Det_ApiId
-                0x20000034                Det_TransientModuleId
-                0x20000036                Det_RuntimeApiId
-                0x20000038                Det_ModuleId
-                0x2000003a                Det_TransientInstanceId
-                0x2000003b                Det_RuntimeInstanceId
-                0x2000003c                . = ALIGN (0x4)
-                0x2000003c                __bss_end__ = .
-                0x2000003c                __BSS_END = .
+ COMMON         0x2000003c        0x4 ./Os/S32K144EVB/out/ee_applcfg.o
+                0x2000003c                osEE_kcb_var
+ COMMON         0x20000040       0x10 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+                0x20000040                Det_ErrorId
+                0x20000041                Det_RuntimeErrorId
+                0x20000042                Det_RuntimeModuleId
+                0x20000044                Det_TransientFaultId
+                0x20000045                Det_InstanceId
+                0x20000046                Det_TransientApiId
+                0x20000047                Det_ApiId
+                0x20000048                Det_TransientModuleId
+                0x2000004a                Det_RuntimeApiId
+                0x2000004c                Det_ModuleId
+                0x2000004e                Det_TransientInstanceId
+                0x2000004f                Det_RuntimeInstanceId
+                0x20000050                . = ALIGN (0x4)
+                0x20000050                __bss_end__ = .
+                0x20000050                __BSS_END = .
 
-.heap           0x2000003c      0x404
-                0x20000040                . = ALIGN (0x8)
- *fill*         0x2000003c        0x4 
-                0x20000040                __end__ = .
-                0x20000040                PROVIDE (end, .)
-                0x20000040                PROVIDE (_end, .)
-                0x20000040                PROVIDE (__end, .)
-                0x20000040                __HeapBase = .
-                0x20000440                . = (. + HEAP_SIZE)
- *fill*         0x20000040      0x400 
-                0x20000440                __HeapLimit = .
-                0x20000440                __heap_limit = .
+.heap           0x20000050      0x400
+                0x20000050                . = ALIGN (0x8)
+                0x20000050                __end__ = .
+                0x20000050                PROVIDE (end, .)
+                0x20000050                PROVIDE (_end, .)
+                0x20000050                PROVIDE (__end, .)
+                0x20000050                __HeapBase = .
+                0x20000450                . = (. + HEAP_SIZE)
+ *fill*         0x20000050      0x400 
+                0x20000450                __HeapLimit = .
+                0x20000450                __heap_limit = .
 
-.stack          0x20000440      0x400
-                0x20000440                . = ALIGN (0x8)
-                0x20000840                . = (. + STACK_SIZE)
- *fill*         0x20000440      0x400 
+.stack          0x20000450      0x400
+                0x20000450                . = ALIGN (0x8)
+                0x20000850                . = (. + STACK_SIZE)
+ *fill*         0x20000450      0x400 
                 0x20007000                __StackTop = (ORIGIN (m_data_2) + 0x7000)
                 0x20006c00                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20007000                PROVIDE (__stack, __StackTop)
@@ -11806,346 +13171,528 @@ LOAD D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/lib/armv7e-m/__arm_end.o
                 0x00000000       0x31
  *(.ARM.attributes)
  .ARM.attributes
-                0x00000000       0x33 ./src/Appl.o
+                0x00000000       0x33 ./src/TaskEntity.o
  .ARM.attributes
-                0x00000033       0x33 ./Project_Settings/Startup_Code/system_S32K144.o
+                0x00000033       0x33 ./src/InterruptServices.o
  .ARM.attributes
-                0x00000066       0x1b ./Project_Settings/Startup_Code/startup_S32K144.o
+                0x00000066       0x33 ./src/Appl.o
  .ARM.attributes
-                0x00000081       0x33 ./Project_Settings/Startup_Code/startup.o
+                0x00000099       0x33 ./Project_Settings/Startup_Code/system_S32K144.o
  .ARM.attributes
-                0x000000b4       0x33 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+                0x000000cc       0x1b ./Project_Settings/Startup_Code/startup_S32K144.o
  .ARM.attributes
-                0x000000e7       0x33 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+                0x000000e7       0x33 ./Project_Settings/Startup_Code/startup.o
  .ARM.attributes
-                0x0000011a       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+                0x0000011a       0x33 ./Os/S32K144EVB/out/ee_applcfg.o
  .ARM.attributes
-                0x0000014d       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+                0x0000014d       0x33 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
  .ARM.attributes
-                0x00000180       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x00000180       0x33 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
  .ARM.attributes
-                0x000001b3       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+                0x000001b3       0x33 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
  .ARM.attributes
-                0x000001e6       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+                0x000001e6       0x33 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
  .ARM.attributes
-                0x00000219       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+                0x00000219       0x33 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
  .ARM.attributes
-                0x0000024c       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+                0x0000024c       0x33 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
  .ARM.attributes
-                0x0000027f       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+                0x0000027f       0x33 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
  .ARM.attributes
-                0x000002b2       0x33 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+                0x000002b2       0x33 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
  .ARM.attributes
-                0x000002e5       0x33 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+                0x000002e5       0x21 ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
  .ARM.attributes
-                0x00000318       0x33 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+                0x00000306       0x33 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
  .ARM.attributes
-                0x0000034b       0x33 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+                0x00000339       0x21 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
  .ARM.attributes
-                0x0000037e       0x33 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x0000035a       0x33 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .ARM.attributes
+                0x0000038d       0x33 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .ARM.attributes
+                0x000003c0       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .ARM.attributes
+                0x000003f3       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .ARM.attributes
+                0x00000426       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .ARM.attributes
+                0x00000459       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .ARM.attributes
+                0x0000048c       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .ARM.attributes
+                0x000004bf       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .ARM.attributes
+                0x000004f2       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .ARM.attributes
+                0x00000525       0x33 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .ARM.attributes
+                0x00000558       0x33 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .ARM.attributes
+                0x0000058b       0x33 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .ARM.attributes
+                0x000005be       0x33 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .ARM.attributes
+                0x000005f1       0x33 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .ARM.attributes
+                0x00000624       0x33 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(S32K144.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x4666
- .debug_info    0x00000000      0x82d ./src/Appl.o
- .debug_info    0x0000082d      0x500 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_info    0x00000d2d       0x8f ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_info    0x00000dbc      0x3eb ./Project_Settings/Startup_Code/startup.o
- .debug_info    0x000011a7      0x62e ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_info    0x000017d5      0x3d1 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_info    0x00001ba6      0x18d ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_info    0x00001d33      0x183 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_info    0x00001eb6      0x34b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_info    0x00002201      0x236 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_info    0x00002437      0x115 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_info    0x0000254c      0x137 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_info    0x00002683      0x65b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_info    0x00002cde      0x861 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_info    0x0000353f      0x293 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_info    0x000037d2      0x266 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_info    0x00003a38      0x277 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
- .debug_info    0x00003caf      0x2a5 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
- .debug_info    0x00003f54      0x712 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+.debug_info     0x00000000     0xc39f
+ .debug_info    0x00000000       0x92 ./src/TaskEntity.o
+ .debug_info    0x00000092       0x4c ./src/InterruptServices.o
+ .debug_info    0x000000de      0x80f ./src/Appl.o
+ .debug_info    0x000008ed      0x500 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_info    0x00000ded       0x8f ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_info    0x00000e7c      0x3eb ./Project_Settings/Startup_Code/startup.o
+ .debug_info    0x00001267      0xab1 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_info    0x00001d18      0x9fe ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_info    0x00002716      0x906 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_info    0x0000301c      0xc26 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_info    0x00003c42      0xe5f ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_info    0x00004aa1      0xcc5 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_info    0x00005766      0x9ba ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_info    0x00006120     0x18d5 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_info    0x000079f5      0xa55 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_info    0x0000844a       0x8d ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+ .debug_info    0x000084d7      0x980 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_info    0x00008e57       0x89 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+ .debug_info    0x00008ee0      0x62e ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_info    0x0000950e      0x3d1 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_info    0x000098df      0x18d ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_info    0x00009a6c      0x183 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_info    0x00009bef      0x34b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_info    0x00009f3a      0x236 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_info    0x0000a170      0x115 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_info    0x0000a285      0x137 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_info    0x0000a3bc      0x65b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_info    0x0000aa17      0x861 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_info    0x0000b278      0x293 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_info    0x0000b50b      0x266 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_info    0x0000b771      0x277 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .debug_info    0x0000b9e8      0x2a5 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_info    0x0000bc8d      0x712 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
 
-.debug_abbrev   0x00000000     0x1115
- .debug_abbrev  0x00000000      0x133 ./src/Appl.o
- .debug_abbrev  0x00000133      0x118 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_abbrev  0x0000024b       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_abbrev  0x0000025f      0x101 ./Project_Settings/Startup_Code/startup.o
- .debug_abbrev  0x00000360      0x1ba ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_abbrev  0x0000051a      0x119 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_abbrev  0x00000633       0xb6 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_abbrev  0x000006e9       0xba ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_abbrev  0x000007a3      0x121 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_abbrev  0x000008c4       0xe1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_abbrev  0x000009a5       0x91 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_abbrev  0x00000a36       0xae ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_abbrev  0x00000ae4      0x121 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_abbrev  0x00000c05      0x14e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_abbrev  0x00000d53       0xc7 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_abbrev  0x00000e1a       0xc7 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_abbrev  0x00000ee1       0x90 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
- .debug_abbrev  0x00000f71       0xd7 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
- .debug_abbrev  0x00001048       0xcd ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+.debug_abbrev   0x00000000     0x2533
+ .debug_abbrev  0x00000000       0x45 ./src/TaskEntity.o
+ .debug_abbrev  0x00000045       0x2f ./src/InterruptServices.o
+ .debug_abbrev  0x00000074      0x148 ./src/Appl.o
+ .debug_abbrev  0x000001bc      0x118 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_abbrev  0x000002d4       0x14 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_abbrev  0x000002e8      0x101 ./Project_Settings/Startup_Code/startup.o
+ .debug_abbrev  0x000003e9      0x140 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_abbrev  0x00000529      0x153 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_abbrev  0x0000067c      0x14b ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_abbrev  0x000007c7      0x1e4 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_abbrev  0x000009ab      0x221 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_abbrev  0x00000bcc      0x2bc ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_abbrev  0x00000e88      0x1b9 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_abbrev  0x00001041      0x37d ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_abbrev  0x000013be      0x23c ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_abbrev  0x000015fa       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+ .debug_abbrev  0x0000160e      0x15c ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_abbrev  0x0000176a       0x14 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+ .debug_abbrev  0x0000177e      0x1ba ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_abbrev  0x00001938      0x119 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_abbrev  0x00001a51       0xb6 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_abbrev  0x00001b07       0xba ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_abbrev  0x00001bc1      0x121 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_abbrev  0x00001ce2       0xe1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_abbrev  0x00001dc3       0x91 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_abbrev  0x00001e54       0xae ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_abbrev  0x00001f02      0x121 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_abbrev  0x00002023      0x14e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_abbrev  0x00002171       0xc7 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_abbrev  0x00002238       0xc7 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_abbrev  0x000022ff       0x90 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .debug_abbrev  0x0000238f       0xd7 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_abbrev  0x00002466       0xcd ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
 
-.debug_aranges  0x00000000      0x3e8
+.debug_aranges  0x00000000      0x848
  .debug_aranges
-                0x00000000       0x28 ./src/Appl.o
+                0x00000000       0x28 ./src/TaskEntity.o
  .debug_aranges
-                0x00000028       0x30 ./Project_Settings/Startup_Code/system_S32K144.o
+                0x00000028       0x28 ./src/InterruptServices.o
  .debug_aranges
-                0x00000058       0x20 ./Project_Settings/Startup_Code/startup_S32K144.o
+                0x00000050       0x30 ./src/Appl.o
  .debug_aranges
-                0x00000078       0x20 ./Project_Settings/Startup_Code/startup.o
+                0x00000080       0x30 ./Project_Settings/Startup_Code/system_S32K144.o
  .debug_aranges
-                0x00000098       0x48 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+                0x000000b0       0x20 ./Project_Settings/Startup_Code/startup_S32K144.o
  .debug_aranges
-                0x000000e0       0x40 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+                0x000000d0       0x20 ./Project_Settings/Startup_Code/startup.o
  .debug_aranges
-                0x00000120       0x28 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+                0x000000f0       0x18 ./Os/S32K144EVB/out/ee_applcfg.o
  .debug_aranges
-                0x00000148       0x28 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+                0x00000108       0x30 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
  .debug_aranges
-                0x00000170       0x60 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+                0x00000138       0x30 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
  .debug_aranges
-                0x000001d0       0x30 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+                0x00000168       0x48 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
  .debug_aranges
-                0x00000200       0x20 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+                0x000001b0       0x90 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
  .debug_aranges
-                0x00000220       0x20 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+                0x00000240       0x80 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
  .debug_aranges
-                0x00000240       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+                0x000002c0       0x38 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
  .debug_aranges
-                0x00000290       0x58 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+                0x000002f8      0x158 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
  .debug_aranges
-                0x000002e8       0x48 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+                0x00000450       0x38 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
  .debug_aranges
-                0x00000330       0x48 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+                0x00000488       0x20 ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
  .debug_aranges
-                0x00000378       0x40 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+                0x000004a8       0x30 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
  .debug_aranges
-                0x000003b8       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+                0x000004d8       0x20 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
  .debug_aranges
-                0x000003d0       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+                0x000004f8       0x48 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_aranges
+                0x00000540       0x40 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_aranges
+                0x00000580       0x28 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_aranges
+                0x000005a8       0x28 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_aranges
+                0x000005d0       0x60 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_aranges
+                0x00000630       0x30 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_aranges
+                0x00000660       0x20 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_aranges
+                0x00000680       0x20 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_aranges
+                0x000006a0       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_aranges
+                0x000006f0       0x58 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_aranges
+                0x00000748       0x48 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_aranges
+                0x00000790       0x48 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_aranges
+                0x000007d8       0x40 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .debug_aranges
+                0x00000818       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_aranges
+                0x00000830       0x18 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
 
-.debug_ranges   0x00000000      0x298
- .debug_ranges  0x00000000       0x18 ./src/Appl.o
- .debug_ranges  0x00000018       0x20 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_ranges  0x00000038       0x10 ./Project_Settings/Startup_Code/startup.o
- .debug_ranges  0x00000048       0x38 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_ranges  0x00000080       0x30 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_ranges  0x000000b0       0x18 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_ranges  0x000000c8       0x18 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_ranges  0x000000e0       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_ranges  0x00000130       0x20 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_ranges  0x00000150       0x10 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_ranges  0x00000160       0x10 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_ranges  0x00000170       0x40 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_ranges  0x000001b0       0x48 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_ranges  0x000001f8       0x38 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_ranges  0x00000230       0x38 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_ranges  0x00000268       0x30 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+.debug_ranges   0x00000000      0x5f0
+ .debug_ranges  0x00000000       0x18 ./src/TaskEntity.o
+ .debug_ranges  0x00000018       0x18 ./src/InterruptServices.o
+ .debug_ranges  0x00000030       0x20 ./src/Appl.o
+ .debug_ranges  0x00000050       0x20 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_ranges  0x00000070       0x10 ./Project_Settings/Startup_Code/startup.o
+ .debug_ranges  0x00000080       0x20 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_ranges  0x000000a0       0x20 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_ranges  0x000000c0       0x38 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_ranges  0x000000f8       0x80 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_ranges  0x00000178       0x70 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_ranges  0x000001e8       0x28 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_ranges  0x00000210      0x148 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_ranges  0x00000358       0x28 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_ranges  0x00000380       0x20 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_ranges  0x000003a0       0x38 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_ranges  0x000003d8       0x30 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_ranges  0x00000408       0x18 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_ranges  0x00000420       0x18 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_ranges  0x00000438       0x50 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_ranges  0x00000488       0x20 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_ranges  0x000004a8       0x10 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_ranges  0x000004b8       0x10 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_ranges  0x000004c8       0x40 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_ranges  0x00000508       0x48 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_ranges  0x00000550       0x38 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_ranges  0x00000588       0x38 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_ranges  0x000005c0       0x30 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
 
-.debug_macro    0x00000000    0x17907
- .debug_macro   0x00000000      0x328 ./src/Appl.o
- .debug_macro   0x00000328      0x874 ./src/Appl.o
- .debug_macro   0x00000b9c       0x52 ./src/Appl.o
- .debug_macro   0x00000bee       0xa0 ./src/Appl.o
- .debug_macro   0x00000c8e       0x16 ./src/Appl.o
- .debug_macro   0x00000ca4       0x19 ./src/Appl.o
- .debug_macro   0x00000cbd       0x64 ./src/Appl.o
- .debug_macro   0x00000d21      0x185 ./src/Appl.o
- .debug_macro   0x00000ea6      0x140 ./src/Appl.o
- .debug_macro   0x00000fe6       0x9d ./src/Appl.o
- .debug_macro   0x00001083       0x10 ./src/Appl.o
- .debug_macro   0x00001093      0x15b ./src/Appl.o
- .debug_macro   0x000011ee       0x28 ./src/Appl.o
- .debug_macro   0x00001216       0x58 ./src/Appl.o
- .debug_macro   0x0000126e     0xdf8d ./src/Appl.o
- .debug_macro   0x0000f1fb      0x7d7 ./src/Appl.o
- .debug_macro   0x0000f9d2       0x3b ./src/Appl.o
- .debug_macro   0x0000fa0d       0xa4 ./src/Appl.o
- .debug_macro   0x0000fab1       0x89 ./src/Appl.o
- .debug_macro   0x0000fb3a       0x6b ./src/Appl.o
- .debug_macro   0x0000fba5       0x67 ./src/Appl.o
- .debug_macro   0x0000fc0c       0xaf ./src/Appl.o
- .debug_macro   0x0000fcbb      0x35f ./src/Appl.o
- .debug_macro   0x0001001a       0x58 ./src/Appl.o
- .debug_macro   0x00010072       0x2e ./src/Appl.o
- .debug_macro   0x000100a0      0x1fa ./src/Appl.o
- .debug_macro   0x0001029a       0x4c ./src/Appl.o
- .debug_macro   0x000102e6       0xe4 ./src/Appl.o
- .debug_macro   0x000103ca       0x2e ./src/Appl.o
- .debug_macro   0x000103f8       0x34 ./src/Appl.o
- .debug_macro   0x0001042c       0x3a ./src/Appl.o
- .debug_macro   0x00010466       0x34 ./src/Appl.o
- .debug_macro   0x0001049a       0x34 ./src/Appl.o
- .debug_macro   0x000104ce       0x3a ./src/Appl.o
- .debug_macro   0x00010508       0x2e ./src/Appl.o
- .debug_macro   0x00010536       0x2e ./src/Appl.o
- .debug_macro   0x00010564       0x74 ./src/Appl.o
- .debug_macro   0x000105d8       0x35 ./src/Appl.o
- .debug_macro   0x0001060d       0x42 ./src/Appl.o
- .debug_macro   0x0001064f       0x42 ./src/Appl.o
- .debug_macro   0x00010691       0x42 ./src/Appl.o
- .debug_macro   0x000106d3       0x42 ./src/Appl.o
- .debug_macro   0x00010715       0x42 ./src/Appl.o
- .debug_macro   0x00010757       0x42 ./src/Appl.o
- .debug_macro   0x00010799       0x46 ./src/Appl.o
- .debug_macro   0x000107df       0x92 ./src/Appl.o
- .debug_macro   0x00010871       0x40 ./src/Appl.o
- .debug_macro   0x000108b1      0xe90 ./src/Appl.o
- .debug_macro   0x00011741       0x42 ./src/Appl.o
- .debug_macro   0x00011783       0x42 ./src/Appl.o
- .debug_macro   0x000117c5       0x42 ./src/Appl.o
- .debug_macro   0x00011807       0x42 ./src/Appl.o
- .debug_macro   0x00011849       0x96 ./src/Appl.o
- .debug_macro   0x000118df       0x42 ./src/Appl.o
- .debug_macro   0x00011921       0x42 ./src/Appl.o
- .debug_macro   0x00011963       0x52 ./src/Appl.o
- .debug_macro   0x000119b5       0xc8 ./src/Appl.o
- .debug_macro   0x00011a7d       0x42 ./src/Appl.o
- .debug_macro   0x00011abf       0x42 ./src/Appl.o
- .debug_macro   0x00011b01       0xab ./src/Appl.o
- .debug_macro   0x00011bac       0x42 ./src/Appl.o
- .debug_macro   0x00011bee       0x42 ./src/Appl.o
- .debug_macro   0x00011c30       0xe9 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_macro   0x00011d19       0x10 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_macro   0x00011d29       0x6d ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_macro   0x00011d96      0x978 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_macro   0x0001270e       0x22 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_macro   0x00012730       0x1c ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_macro   0x0001274c       0xea ./Project_Settings/Startup_Code/startup.o
- .debug_macro   0x00012836      0x22e ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012a64       0xd0 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012b34       0x8c ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012bc0       0x35 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012bf5       0xb1 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012ca6       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012ce8       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_macro   0x00012d2a      0x22f ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_macro   0x00012f59       0xd6 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_macro   0x0001302f       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_macro   0x00013071       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_macro   0x000130b3      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_macro   0x00013222       0x2e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_macro   0x00013250       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_macro   0x00013285       0x19 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_macro   0x0001329e      0x104 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_macro   0x000133a2      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_macro   0x00013511       0x2e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_macro   0x0001353f       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_macro   0x00013574       0x19 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_macro   0x0001358d      0x7c4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_macro   0x00013d51      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_macro   0x00013ec0       0x34 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_macro   0x00013ef4       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_macro   0x00013f29       0x43 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_macro   0x00013f6c      0x5f4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_macro   0x00014560      0x191 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_macro   0x000146f1      0x275 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_macro   0x00014966       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_macro   0x000149a8       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_macro   0x000149ea      0x24d ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_macro   0x00014c37       0x34 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_macro   0x00014c6b      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_macro   0x00014dda       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_macro   0x00014e0f       0x12 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_macro   0x00014e21      0x30c ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_macro   0x0001512d      0x330 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x0001545d       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x00015498       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x000154d3       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x0001550e       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x00015549      0x312 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x0001585b      0x5fa ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x00015e55       0xea ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x00015f3f       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x00015f74       0x19 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_macro   0x00015f8d      0x2a0 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_macro   0x0001622d       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_macro   0x00016268       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_macro   0x000162aa       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_macro   0x000162ec      0x1d5 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_macro   0x000164c1       0x4c ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_macro   0x0001650d       0x3a ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_macro   0x00016547       0xab ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_macro   0x000165f2       0x5f ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_macro   0x00016651      0x1a4 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_macro   0x000167f5       0xce ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_macro   0x000168c3       0x98 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
- .debug_macro   0x0001695b      0x1aa ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
- .debug_macro   0x00016b05       0x42 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
- .debug_macro   0x00016b47       0x42 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
- .debug_macro   0x00016b89      0x22f ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
- .debug_macro   0x00016db8      0x27b ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
- .debug_macro   0x00017033      0x7ca ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
- .debug_macro   0x000177fd      0x10a ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+.debug_macro    0x00000000    0x1a916
+ .debug_macro   0x00000000      0x191 ./src/TaskEntity.o
+ .debug_macro   0x00000191      0x874 ./src/TaskEntity.o
+ .debug_macro   0x00000a05       0x52 ./src/TaskEntity.o
+ .debug_macro   0x00000a57       0xa0 ./src/TaskEntity.o
+ .debug_macro   0x00000af7       0x16 ./src/TaskEntity.o
+ .debug_macro   0x00000b0d       0xd6 ./src/TaskEntity.o
+ .debug_macro   0x00000be3       0x34 ./src/TaskEntity.o
+ .debug_macro   0x00000c17       0x28 ./src/TaskEntity.o
+ .debug_macro   0x00000c3f       0xf1 ./src/TaskEntity.o
+ .debug_macro   0x00000d30       0x50 ./src/TaskEntity.o
+ .debug_macro   0x00000d80       0x3a ./src/TaskEntity.o
+ .debug_macro   0x00000dba       0x58 ./src/TaskEntity.o
+ .debug_macro   0x00000e12       0x7b ./src/TaskEntity.o
+ .debug_macro   0x00000e8d       0x64 ./src/TaskEntity.o
+ .debug_macro   0x00000ef1      0x185 ./src/TaskEntity.o
+ .debug_macro   0x00001076      0x140 ./src/TaskEntity.o
+ .debug_macro   0x000011b6       0x9d ./src/TaskEntity.o
+ .debug_macro   0x00001253       0x88 ./src/TaskEntity.o
+ .debug_macro   0x000012db       0x16 ./src/TaskEntity.o
+ .debug_macro   0x000012f1       0x28 ./src/TaskEntity.o
+ .debug_macro   0x00001319       0x10 ./src/TaskEntity.o
+ .debug_macro   0x00001329       0x16 ./src/TaskEntity.o
+ .debug_macro   0x0000133f       0x16 ./src/TaskEntity.o
+ .debug_macro   0x00001355      0x1af ./src/TaskEntity.o
+ .debug_macro   0x00001504       0x10 ./src/TaskEntity.o
+ .debug_macro   0x00001514       0xd3 ./src/TaskEntity.o
+ .debug_macro   0x000015e7       0x10 ./src/TaskEntity.o
+ .debug_macro   0x000015f7       0x10 ./src/TaskEntity.o
+ .debug_macro   0x00001607       0xce ./src/InterruptServices.o
+ .debug_macro   0x000016d5       0xeb ./src/InterruptServices.o
+ .debug_macro   0x000017c0       0x4a ./src/InterruptServices.o
+ .debug_macro   0x0000180a      0x2a1 ./src/InterruptServices.o
+ .debug_macro   0x00001aab      0x816 ./src/InterruptServices.o
+ .debug_macro   0x000022c1      0x31c ./src/Appl.o
+ .debug_macro   0x000025dd       0x19 ./src/Appl.o
+ .debug_macro   0x000025f6      0x15b ./src/Appl.o
+ .debug_macro   0x00002751       0x58 ./src/Appl.o
+ .debug_macro   0x000027a9     0xdf8d ./src/Appl.o
+ .debug_macro   0x00010736      0x7d7 ./src/Appl.o
+ .debug_macro   0x00010f0d       0x3b ./src/Appl.o
+ .debug_macro   0x00010f48       0xa4 ./src/Appl.o
+ .debug_macro   0x00010fec       0x89 ./src/Appl.o
+ .debug_macro   0x00011075       0x6b ./src/Appl.o
+ .debug_macro   0x000110e0       0x67 ./src/Appl.o
+ .debug_macro   0x00011147       0xaf ./src/Appl.o
+ .debug_macro   0x000111f6      0x35f ./src/Appl.o
+ .debug_macro   0x00011555       0x58 ./src/Appl.o
+ .debug_macro   0x000115ad       0x2e ./src/Appl.o
+ .debug_macro   0x000115db      0x1fa ./src/Appl.o
+ .debug_macro   0x000117d5       0x4c ./src/Appl.o
+ .debug_macro   0x00011821       0xe4 ./src/Appl.o
+ .debug_macro   0x00011905       0x2e ./src/Appl.o
+ .debug_macro   0x00011933       0x34 ./src/Appl.o
+ .debug_macro   0x00011967       0x3a ./src/Appl.o
+ .debug_macro   0x000119a1       0x34 ./src/Appl.o
+ .debug_macro   0x000119d5       0x34 ./src/Appl.o
+ .debug_macro   0x00011a09       0x3a ./src/Appl.o
+ .debug_macro   0x00011a43       0x2e ./src/Appl.o
+ .debug_macro   0x00011a71       0x2e ./src/Appl.o
+ .debug_macro   0x00011a9f       0x74 ./src/Appl.o
+ .debug_macro   0x00011b13       0x35 ./src/Appl.o
+ .debug_macro   0x00011b48       0x42 ./src/Appl.o
+ .debug_macro   0x00011b8a       0x42 ./src/Appl.o
+ .debug_macro   0x00011bcc       0x42 ./src/Appl.o
+ .debug_macro   0x00011c0e       0x42 ./src/Appl.o
+ .debug_macro   0x00011c50       0x42 ./src/Appl.o
+ .debug_macro   0x00011c92       0x42 ./src/Appl.o
+ .debug_macro   0x00011cd4       0x46 ./src/Appl.o
+ .debug_macro   0x00011d1a       0x92 ./src/Appl.o
+ .debug_macro   0x00011dac       0x40 ./src/Appl.o
+ .debug_macro   0x00011dec      0xe90 ./src/Appl.o
+ .debug_macro   0x00012c7c       0x42 ./src/Appl.o
+ .debug_macro   0x00012cbe       0x42 ./src/Appl.o
+ .debug_macro   0x00012d00       0x42 ./src/Appl.o
+ .debug_macro   0x00012d42       0x42 ./src/Appl.o
+ .debug_macro   0x00012d84       0x96 ./src/Appl.o
+ .debug_macro   0x00012e1a       0x42 ./src/Appl.o
+ .debug_macro   0x00012e5c       0x42 ./src/Appl.o
+ .debug_macro   0x00012e9e       0x52 ./src/Appl.o
+ .debug_macro   0x00012ef0       0xc8 ./src/Appl.o
+ .debug_macro   0x00012fb8       0x42 ./src/Appl.o
+ .debug_macro   0x00012ffa       0x42 ./src/Appl.o
+ .debug_macro   0x0001303c       0xab ./src/Appl.o
+ .debug_macro   0x000130e7       0x42 ./src/Appl.o
+ .debug_macro   0x00013129       0x42 ./src/Appl.o
+ .debug_macro   0x0001316b       0xe9 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_macro   0x00013254       0x10 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_macro   0x00013264       0x6d ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_macro   0x000132d1      0x978 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_macro   0x00013c49       0x22 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_macro   0x00013c6b       0x1c ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_macro   0x00013c87       0xea ./Project_Settings/Startup_Code/startup.o
+ .debug_macro   0x00013d71      0x207 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00013f78       0xd9 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00014051       0x16 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00014067       0x11 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00014078       0x10 ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_macro   0x00014088      0x2a1 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_macro   0x00014329      0x2af ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_macro   0x000145d8      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_macro   0x00014879      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_macro   0x00014b1a      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_macro   0x00014dbb      0x2a1 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_macro   0x0001505c      0x2a7 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_macro   0x00015303      0x2a1 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_macro   0x000155a4      0x2a1 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_macro   0x00015845      0x22e ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015a73       0xd0 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015b43       0x8c ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015bcf       0x35 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015c04       0xb1 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015cb5       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015cf7       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_macro   0x00015d39      0x22f ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_macro   0x00015f68       0xd6 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_macro   0x0001603e       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_macro   0x00016080       0x42 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_macro   0x000160c2      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_macro   0x00016231       0x2e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_macro   0x0001625f       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_macro   0x00016294       0x19 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_macro   0x000162ad      0x104 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_macro   0x000163b1      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_macro   0x00016520       0x2e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_macro   0x0001654e       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_macro   0x00016583       0x19 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_macro   0x0001659c      0x7c4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_macro   0x00016d60      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_macro   0x00016ecf       0x34 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_macro   0x00016f03       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_macro   0x00016f38       0x43 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_macro   0x00016f7b      0x5f4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_macro   0x0001756f      0x191 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_macro   0x00017700      0x275 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_macro   0x00017975       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_macro   0x000179b7       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_macro   0x000179f9      0x24d ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_macro   0x00017c46       0x34 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_macro   0x00017c7a      0x16f ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_macro   0x00017de9       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_macro   0x00017e1e       0x12 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_macro   0x00017e30      0x30c ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_macro   0x0001813c      0x330 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x0001846c       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x000184a7       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x000184e2       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x0001851d       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x00018558      0x312 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x0001886a      0x5fa ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x00018e64       0xea ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x00018f4e       0x35 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x00018f83       0x19 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_macro   0x00018f9c      0x2a0 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_macro   0x0001923c       0x3b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_macro   0x00019277       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_macro   0x000192b9       0x42 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_macro   0x000192fb      0x1d5 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_macro   0x000194d0       0x4c ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_macro   0x0001951c       0x3a ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_macro   0x00019556       0xab ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_macro   0x00019601       0x5f ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_macro   0x00019660      0x1a4 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_macro   0x00019804       0xce ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_macro   0x000198d2       0x98 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .debug_macro   0x0001996a      0x1aa ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_macro   0x00019b14       0x42 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_macro   0x00019b56       0x42 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_macro   0x00019b98      0x22f ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+ .debug_macro   0x00019dc7      0x27b ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+ .debug_macro   0x0001a042      0x7ca ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+ .debug_macro   0x0001a80c      0x10a ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
 
-.debug_line     0x00000000     0x40a9
- .debug_line    0x00000000      0x5af ./src/Appl.o
- .debug_line    0x000005af      0x296 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_line    0x00000845       0x83 ./Project_Settings/Startup_Code/startup_S32K144.o
- .debug_line    0x000008c8      0x25b ./Project_Settings/Startup_Code/startup.o
- .debug_line    0x00000b23      0x502 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_line    0x00001025      0x3a3 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_line    0x000013c8      0x312 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_line    0x000016da      0x2fe ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_line    0x000019d8      0x43b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_line    0x00001e13      0x332 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_line    0x00002145      0x3b8 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_line    0x000024fd      0x2f9 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_line    0x000027f6      0x4ba ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_line    0x00002cb0      0x494 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_line    0x00003144      0x3a9 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_line    0x000034ed      0x30f ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_line    0x000037fc      0x216 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
- .debug_line    0x00003a12      0x2c6 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
- .debug_line    0x00003cd8      0x3d1 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+.debug_line     0x00000000     0x83e1
+ .debug_line    0x00000000      0x355 ./src/TaskEntity.o
+ .debug_line    0x00000355      0x23d ./src/InterruptServices.o
+ .debug_line    0x00000592      0x5bd ./src/Appl.o
+ .debug_line    0x00000b4f      0x296 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_line    0x00000de5       0x83 ./Project_Settings/Startup_Code/startup_S32K144.o
+ .debug_line    0x00000e68      0x25b ./Project_Settings/Startup_Code/startup.o
+ .debug_line    0x000010c3      0x42f ./Os/S32K144EVB/out/ee_applcfg.o
+ .debug_line    0x000014f2      0x559 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_line    0x00001a4b      0x53e ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_line    0x00001f89      0x5db ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_line    0x00002564      0x699 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_line    0x00002bfd      0x673 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_line    0x00003270      0x557 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_line    0x000037c7      0xa9d ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_line    0x00004264      0x594 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_line    0x000047f8       0xa0 ./Os/S32K144EVB/erika/src/ee_cortex_m_irq_asm.o
+ .debug_line    0x00004898      0x54b ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_line    0x00004de3       0x78 ./Os/S32K144EVB/erika/src/ee_cortex_m_asm.o
+ .debug_line    0x00004e5b      0x502 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_line    0x0000535d      0x3a3 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_line    0x00005700      0x312 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_line    0x00005a12      0x2fe ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_line    0x00005d10      0x43b ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_line    0x0000614b      0x332 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_line    0x0000647d      0x3b8 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_line    0x00006835      0x2f9 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_line    0x00006b2e      0x4ba ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_line    0x00006fe8      0x494 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_line    0x0000747c      0x3a9 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_line    0x00007825      0x30f ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_line    0x00007b34      0x216 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .debug_line    0x00007d4a      0x2c6 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_line    0x00008010      0x3d1 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
 
-.debug_str      0x00000000    0x7e4ba
- .debug_str     0x00000000    0x69ec8 ./src/Appl.o
-                              0x69fee (size before relaxing)
- .debug_str     0x00069ec8     0x4890 ./Project_Settings/Startup_Code/system_S32K144.o
+.debug_str      0x00000000    0x8fe9f
+ .debug_str     0x00000000     0x6069 ./src/TaskEntity.o
+                               0x60ed (size before relaxing)
+ .debug_str     0x00006069     0x4e69 ./src/InterruptServices.o
+                               0x8f1d (size before relaxing)
+ .debug_str     0x0000aed2    0x65ef5 ./src/Appl.o
+                              0x69fea (size before relaxing)
+ .debug_str     0x00070dc7     0x48a9 ./Project_Settings/Startup_Code/system_S32K144.o
                               0x624fc (size before relaxing)
- .debug_str     0x0006e758      0x120 ./Project_Settings/Startup_Code/startup.o
+ .debug_str     0x00075670      0x120 ./Project_Settings/Startup_Code/startup.o
                               0x62442 (size before relaxing)
- .debug_str     0x0006e878     0x251e ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_str     0x00075790      0xb0d ./Os/S32K144EVB/out/ee_applcfg.o
+                               0xbad6 (size before relaxing)
+ .debug_str     0x0007629d     0x9448 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+                              0x14dd4 (size before relaxing)
+ .debug_str     0x0007f6e5      0x13c ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+                              0x14e56 (size before relaxing)
+ .debug_str     0x0007f821      0x1c4 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+                              0x14eeb (size before relaxing)
+ .debug_str     0x0007f9e5      0x2b6 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+                              0x15000 (size before relaxing)
+ .debug_str     0x0007fc9b      0x219 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+                              0x14f6b (size before relaxing)
+ .debug_str     0x0007feb4       0x71 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+                              0x14db5 (size before relaxing)
+ .debug_str     0x0007ff25      0x260 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+                              0x1527f (size before relaxing)
+ .debug_str     0x00080185       0xa4 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+                              0x14e2d (size before relaxing)
+ .debug_str     0x00080229       0x47 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+                              0x14dc2 (size before relaxing)
+ .debug_str     0x00080270     0x251e ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
                                0xd4f7 (size before relaxing)
- .debug_str     0x00070d96      0x504 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_str     0x0008278e      0x504 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
                                0xb943 (size before relaxing)
- .debug_str     0x0007129a      0xaaf ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_str     0x00082c92      0xaaf ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
                                0x8c4a (size before relaxing)
- .debug_str     0x00071d49     0x403e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_str     0x00083741     0x403e ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
                                0xc290 (size before relaxing)
- .debug_str     0x00075d87     0x33f8 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_str     0x0008777f     0x33f8 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
                                0xb648 (size before relaxing)
- .debug_str     0x0007917f     0x16b4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_str     0x0008ab77     0x16b4 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
                                0x9811 (size before relaxing)
- .debug_str     0x0007a833      0x258 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_str     0x0008c22b      0x258 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
                                0x98c5 (size before relaxing)
- .debug_str     0x0007aa8b     0x1967 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_str     0x0008c483     0x1967 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
                                0x9aec (size before relaxing)
- .debug_str     0x0007c3f2      0xdd1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_str     0x0008ddea      0xdd1 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
                                0xe2bf (size before relaxing)
- .debug_str     0x0007d1c3      0x2ae ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_str     0x0008ebbb      0x2ae ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
                                0x8b35 (size before relaxing)
- .debug_str     0x0007d471      0x86d ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
-                               0x7f58 (size before relaxing)
- .debug_str     0x0007dcde      0x151 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
-                               0x69c9 (size before relaxing)
- .debug_str     0x0007de2f      0x213 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+ .debug_str     0x0008ee69      0x85a ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+                               0x7f56 (size before relaxing)
+ .debug_str     0x0008f6c3      0x151 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+                               0x69c7 (size before relaxing)
+ .debug_str     0x0008f814      0x213 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
                                0x466b (size before relaxing)
- .debug_str     0x0007e042      0x20b ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
+ .debug_str     0x0008fa27      0x20b ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
                                0xb1de (size before relaxing)
- .debug_str     0x0007e24d      0x26d ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
+ .debug_str     0x0008fc32      0x26d ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
                               0x12344 (size before relaxing)
 
 .comment        0x00000000       0x70
- .comment       0x00000000       0x70 ./src/Appl.o
+ .comment       0x00000000       0x70 ./src/TaskEntity.o
                                  0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./src/InterruptServices.o
+ .comment       0x00000000       0x71 ./src/Appl.o
  .comment       0x00000000       0x71 ./Project_Settings/Startup_Code/system_S32K144.o
  .comment       0x00000000       0x71 ./Project_Settings/Startup_Code/startup.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/out/ee_applcfg.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .comment       0x00000000       0x71 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
  .comment       0x00000000       0x71 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
  .comment       0x00000000       0x71 ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
  .comment       0x00000000       0x71 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
@@ -12162,20 +13709,31 @@ OUTPUT(S32K144.elf elf32-littlearm)
  .comment       0x00000000       0x71 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Port_PBcfg.o
  .comment       0x00000000       0x71 ./EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/Mcu_PBcfg.o
 
-.debug_frame    0x00000000      0xabc
- .debug_frame   0x00000000       0x50 ./src/Appl.o
- .debug_frame   0x00000050       0x80 ./Project_Settings/Startup_Code/system_S32K144.o
- .debug_frame   0x000000d0       0x38 ./Project_Settings/Startup_Code/startup.o
- .debug_frame   0x00000108       0xf0 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
- .debug_frame   0x000001f8       0xbc ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
- .debug_frame   0x000002b4       0x60 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
- .debug_frame   0x00000314       0x60 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
- .debug_frame   0x00000374      0x168 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
- .debug_frame   0x000004dc       0x88 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
- .debug_frame   0x00000564       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
- .debug_frame   0x0000059c       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
- .debug_frame   0x000005d4      0x104 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
- .debug_frame   0x000006d8      0x134 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
- .debug_frame   0x0000080c      0x100 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
- .debug_frame   0x0000090c       0xe8 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
- .debug_frame   0x000009f4       0xc8 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o
+.debug_frame    0x00000000     0x1900
+ .debug_frame   0x00000000       0x48 ./src/TaskEntity.o
+ .debug_frame   0x00000048       0x50 ./src/InterruptServices.o
+ .debug_frame   0x00000098       0x78 ./src/Appl.o
+ .debug_frame   0x00000110       0x80 ./Project_Settings/Startup_Code/system_S32K144.o
+ .debug_frame   0x00000190       0x38 ./Project_Settings/Startup_Code/startup.o
+ .debug_frame   0x000001c8       0x7c ./Os/S32K144EVB/erika/src/ee_std_change_context.o
+ .debug_frame   0x00000244       0x68 ./Os/S32K144EVB/erika/src/ee_s32k1xx_intvect.o
+ .debug_frame   0x000002ac       0xf4 ./Os/S32K144EVB/erika/src/ee_oo_scheduler.o
+ .debug_frame   0x000003a0      0x240 ./Os/S32K144EVB/erika/src/ee_oo_sched_partitioned.o
+ .debug_frame   0x000005e0      0x1f0 ./Os/S32K144EVB/erika/src/ee_oo_sched_entry_points.o
+ .debug_frame   0x000007d0       0xa4 ./Os/S32K144EVB/erika/src/ee_oo_kernel.o
+ .debug_frame   0x00000874      0x5c8 ./Os/S32K144EVB/erika/src/ee_oo_api_osek.o
+ .debug_frame   0x00000e3c       0x9c ./Os/S32K144EVB/erika/src/ee_cortex_m_irqstub.o
+ .debug_frame   0x00000ed8       0x74 ./Os/S32K144EVB/erika/src/ee_cortex_m_change_context.o
+ .debug_frame   0x00000f4c       0xf0 ./Mcal/Port_TS_T40D2M10I1R0/src/Port_Port_Ci.o
+ .debug_frame   0x0000103c       0xbc ./Mcal/Port_TS_T40D2M10I1R0/src/Port.o
+ .debug_frame   0x000010f8       0x60 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SMC.o
+ .debug_frame   0x00001158       0x60 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SIM.o
+ .debug_frame   0x000011b8      0x168 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_SCG.o
+ .debug_frame   0x00001320       0x88 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_RCM.o
+ .debug_frame   0x000013a8       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PMC.o
+ .debug_frame   0x000013e0       0x38 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_PCC.o
+ .debug_frame   0x00001418      0x104 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu_IPW.o
+ .debug_frame   0x0000151c      0x134 ./Mcal/Mcu_TS_T40D2M10I1R0/src/Mcu.o
+ .debug_frame   0x00001650      0x100 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio_Gpio.o
+ .debug_frame   0x00001750       0xe8 ./Mcal/Dio_TS_T40D2M10I1R0/src/Dio.o
+ .debug_frame   0x00001838       0xc8 ./Mcal/Det_TS_T40D2M10I1R0/src/Det.o

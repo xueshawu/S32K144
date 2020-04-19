@@ -1,4 +1,6 @@
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/S32K144EVB/out"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/S32K144EVB/erika/inc"
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include/arm"
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include"
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include/arm"

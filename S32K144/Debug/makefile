@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 75
+#Progress monitor hint: 94
 first : all
 -include ../makefile.init
 
@@ -23,6 +23,10 @@ RM := rm -rf
 -include Mcal/Port_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Pwm_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Rte_TS_T40D2M10I1R0/src/subdir.mk
+-include Os/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
+-include Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/subdir.mk
+-include Os/S32K144EVB/erika/src/subdir.mk
+-include Os/S32K144EVB/out/subdir.mk
 -include Project_Settings/Linker_Files/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
 -include src/subdir.mk
@@ -62,14 +66,14 @@ all: warning-messages explicit-dependencies S32K144.elf secondary-outputs
 # Tool invocations
 S32K144.elf: $(OBJS) E:/mywork/myproject/My_Github/S32K144/S32K144/Project_Settings/Linker_Files/S32K1xx_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #76 $@'
+	@echo 'Executing target #95 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "S32K144.elf" "@S32K144.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 S32K144.siz: $(EXECUTABLES)
-	@echo 'Executing target #77 $@'
+	@echo 'Executing target #96 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'
@@ -77,7 +81,7 @@ S32K144.siz: $(EXECUTABLES)
 
 # Other Targets
 clean:
-	-$(RM) ./*/*.d ./*/*/*.d ./*/*/*/*.d ./*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*.o ./*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
+	-$(RM) ./*/*.d ./*/*/*.d ./*/*/*/*.d ./*/*/*/*/*.d ./*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*.o ./*/*/*/*/*.o ./*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_SIZE)

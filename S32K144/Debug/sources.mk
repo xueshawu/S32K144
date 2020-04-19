@@ -59,6 +59,10 @@ Mcal/Mcu_TS_T40D2M10I1R0/src \
 Mcal/Port_TS_T40D2M10I1R0/src \
 Mcal/Pwm_TS_T40D2M10I1R0/src \
 Mcal/Rte_TS_T40D2M10I1R0/src \
+Os/.metadata/.plugins/org.eclipse.cdt.make.core \
+Os/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core \
+Os/S32K144EVB/erika/src \
+Os/S32K144EVB/out \
 Project_Settings/Linker_Files \
 Project_Settings/Startup_Code \
 src \

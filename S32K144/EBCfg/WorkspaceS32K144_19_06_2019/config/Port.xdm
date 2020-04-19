@@ -2747,7 +2747,7 @@
                         </d:var>
                         <d:var name="PortPinPcr" type="INTEGER" value="96"/>
                         <d:var name="PortPinMode" type="ENUMERATION" 
-                               value="FTM0_CH2"/>
+                               value="GPIO"/>
                         <d:var name="PortPinDSE" type="ENUMERATION" 
                                value="Low_drive_strength">
                           <a:a name="IMPORTER_INFO" value="@DEF"/>
@@ -2761,9 +2761,7 @@
                           <a:a name="IMPORTER_INFO" value="@DEF"/>
                         </d:var>
                         <d:var name="PortPinDirection" type="ENUMERATION" 
-                               value="PORT_PIN_IN">
-                          <a:a name="IMPORTER_INFO" value="@DEF"/>
-                        </d:var>
+                               value="PORT_PIN_OUT"/>
                         <d:var name="PortPinInitialMode" type="ENUMERATION" 
                                value="PORT_GPIO_MODE">
                           <a:a name="IMPORTER_INFO" value="@DEF"/>

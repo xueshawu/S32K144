@@ -266,13 +266,13 @@ extern "C" {
 
 /* ========== DioConfig ========== */
 
-/* ---------- DioPort_0 ---------- */
+/* ---------- DioPORTC ---------- */
 
 /**
-* @brief          Symbolic name for the port DioPort_0.
+* @brief          Symbolic name for the port DioPORTC.
 *
 */
-#define DioConf_DioPort_DioPort_0  ((uint8)0x02U)
+#define DioConf_DioPort_DioPORTC  ((uint8)0x02U)
 
 /**
 * @brief          Symbolic name for the channel Dio_Key1.
@@ -292,13 +292,13 @@ extern "C" {
 /** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
 #define  DioConf_DioChannel_Dio_Key2 ((uint16)0x004cU)
 
-/* ---------- DioPort_2 ---------- */
+/* ---------- DioPORTD ---------- */
 
 /**
-* @brief          Symbolic name for the port DioPort_2.
+* @brief          Symbolic name for the port DioPORTD.
 *
 */
-#define DioConf_DioPort_DioPort_2  ((uint8)0x03U)
+#define DioConf_DioPort_DioPORTD  ((uint8)0x03U)
 
 /**
 * @brief          Symbolic name for the channel Dio_Rgb_Green.
@@ -307,7 +307,7 @@ extern "C" {
 
 
 /** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define  DioConf_DioChannel_Dio_Rgb_Green ((uint16)0x0070U)
+#define  DioConf_DioChannel_Dio_Rgb_Green ((uint16)0x0060U)
 
 
 /*=================================================================================================
