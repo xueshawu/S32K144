@@ -4,7 +4,7 @@
  * @Autor: Archie
  * @Date: 2020-04-11 15:43:56
  * @LastEditors: Archie
- * @LastEditTime: 2020-04-19 14:01:02
+ * @LastEditTime: 2020-04-22 22:10:09
  */
 /*
  * hello.c              Copyright NXP 2016
@@ -17,8 +17,7 @@
 #include "Mcu.h"
 #include "Port.h"
 #include "Dio.h"
-//#include "ee_cortex_m_irq.h" /*因为MCAL的compiler.h头文件的问题，因此如果要包含os相关的，必须放在MCAL的头文件之后 */
-
+#include "Os.h"
 void ErrorHook(StatusType Error)
 {
   return;
@@ -30,17 +29,17 @@ void idle_hook (void)
 
 }
 
+void StartupHook(void)
+{
+  
+}
 
 
 int main(void) 
 {
-  Dio_LevelType led_blue = STD_LOW;
   Mcu_Init(&McuModuleConfiguration);
   Mcu_InitClock(0);
   Port_Init(&PortConfigSet);
-  
-  Dio_WriteChannel(DioConf_DioChannel_Dio_Rgb_Green,led_blue);
-  for(;;) 
-  {
-  }
+  StartOS(OSDEFAULTAPPMODE);
+  return 0;
 }

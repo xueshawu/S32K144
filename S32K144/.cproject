@@ -55,6 +55,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcl_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcu_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcu_TS_T40D2M10I1R0/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Os_TS_T40D2M10I1R0/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Os_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Port_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Port_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Pwm_TS_T40D2M10I1R0/include}&quot;"/>
@@ -70,7 +72,6 @@
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2045690219" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CPU_S32K144HFT0VLLT"/>
 									<listOptionValue builtIn="false" value="DISABLE_WDOG"/>
-									<listOptionValue builtIn="false" value="AUTOSAR_OS_NOT_USED"/>
 								</option>
 								<option id="gnu.c.compiler.option.include.files.1202038750" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1684190170" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
