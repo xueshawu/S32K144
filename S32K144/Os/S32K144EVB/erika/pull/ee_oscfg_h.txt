@@ -55,10 +55,12 @@
  **************************************************************************/
 #define OSEE_EXTENDED_STATUS
 #define OSEE_HAS_AUTOSTART_TASK
+#define OSEE_HAS_COUNTERS
 #define OSEE_HAS_IDLEHOOK
 #define OSEE_HAS_ORTI
 #define OSEE_HAS_RESOURCES
 #define OSEE_HAS_STARTUPHOOK
+#define OSEE_HAS_SYSTEM_TIMER
 #define OSEE_MULTI_STACK
 #define OSEE_OC_BCC1
 #define OSEE_SINGLE_ACTIVATION
@@ -80,8 +82,16 @@
  * Automatic OS options
  *
  **************************************************************************/
+#define OS_EE_LIB_S32K144EVB_Q100
+#define OS_EE_LIB_S32_SDK
+#define OS_EE_LIB_S32_SDK_0_8_6_EAR
+#define OS_EE_LIB_S32_SDK_SA
 
 
+#define OSMAXALLOWEDVALUE (65535U)
+#define OSTICKSPERBASE    (1U)
+#define OSMINCYCLE        (1U)
+#define OSTICKDURATION    (1000000U)
 
 
 /***************************************************************************
@@ -98,12 +108,12 @@
 #define OSEE_CORTEX_M_FTM0_OVF_RELOAD_ISR     TimerISR
 #define OSEE_CORTEX_M_FTM0_OVF_RELOAD_ISR_CAT (2U)
 #define OSEE_CORTEX_M_FTM0_OVF_RELOAD_ISR_PRI OSEE_ISR_PRI_1
-#define OSEE_CORTEX_M_FTM0_OVF_RELOAD_ISR_TID (0U)
+#define OSEE_CORTEX_M_FTM0_OVF_RELOAD_ISR_TID (1U)
 
 #define OSEE_CORTEX_M_PORTC_ISR     ButtonsISR
 #define OSEE_CORTEX_M_PORTC_ISR_CAT (2U)
 #define OSEE_CORTEX_M_PORTC_ISR_PRI OSEE_ISR_PRI_2
-#define OSEE_CORTEX_M_PORTC_ISR_TID (1U)
+#define OSEE_CORTEX_M_PORTC_ISR_TID (2U)
 
 
 /***************************************************************************
@@ -111,6 +121,12 @@
  * System Timer
  *
  **************************************************************************/
+#define OSEE_SYSTEM_TIMER          (0U)
+#define OSEE_SYSTEM_TIMER_DEVICE   OSEE_CORTEX_M_SYSTICK
+
+#define OSEE_CORTEX_M_SYSTICK_ISR_CAT (2U)
+#define OSEE_CORTEX_M_SYSTICK_ISR_PRI OSEE_ISR_PRI_1
+#define OSEE_CORTEX_M_SYSTICK_ISR_TID (0U)
 
 /***************************************************************************
  *

@@ -206,8 +206,8 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Pwm_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/src"/>
-						<entry excluding="S32K144EVB/code.c|S32K144EVB/conf.oil|conf.oil|S32K144EVB/variables.cmm|S32K144EVB/out/t32.cmm|S32K144EVB/out/system.orti|S32K144EVB/out/makefile|S32K144EVB/out/applSignature.oil|S32K144EVB/hal.h|S32K144EVB/hal.c|S32K144EVB/erika/dbg|S32K144EVB/erika/doc|S32K144EVB/erika/makefile|S32K144EVB/erika/mk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os"/>
-						<entry excluding="Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Release.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry excluding="S32K144EVB/out/obj|S32K144EVB/out/erika3app.eep|S32K144EVB/out/erika3app.elf|S32K144EVB/out/erika3app.hex|S32K144EVB/out/erika3app.lss|S32K144EVB/out/erika3app.map|S32K144EVB/out/erika3app.srec|S32K144EVB/erika/src/ee3_s32sdk_osif.c|src|S32K144EVB/erika/pull|S32K144EVB/erika/obj|S32K144EVB/erika/lib|S32K144EVB/erika/lib/libs32sdk.a|S32K144EVB/erika/lib/libee.a|S32K144EVB/code.c|S32K144EVB/conf.oil|conf.oil|S32K144EVB/variables.cmm|S32K144EVB/out/t32.cmm|S32K144EVB/out/system.orti|S32K144EVB/out/makefile|S32K144EVB/out/applSignature.oil|S32K144EVB/hal.h|S32K144EVB/hal.c|S32K144EVB/erika/dbg|S32K144EVB/erika/doc|S32K144EVB/erika/makefile|S32K144EVB/erika/mk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os"/>
+						<entry excluding="Debugger|Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Release.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
@@ -356,9 +356,9 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/erika/inc"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/erika/src"/>
-						<entry excluding="t32.cmm|system.orti|makefile|applSignature.oil" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/out"/>
-						<entry excluding="Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry excluding="ee3_s32sdk_osif.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/erika/src"/>
+						<entry excluding="t32.cmm|system.orti|applSignature.oil|erika3app.eep|erika3app.elf|erika3app.hex|erika3app.lss|erika3app.map|erika3app.srec|makefile|obj" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/out"/>
+						<entry excluding="Debugger|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
@@ -507,9 +507,9 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/erika/inc"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/erika/src"/>
-						<entry excluding="applSignature.oil|system.orti|makefile|t32.cmm" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/out"/>
-						<entry excluding="Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Debugger/S32K144_Release.launch|Linker_Files/S32K1xx_flash.ld|Debugger/hello_Release.launch|Debugger/hello_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
+						<entry excluding="ee3_s32sdk_osif.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/erika/src"/>
+						<entry excluding="system.orti|t32.cmm|erika3app.eep|erika3app.elf|erika3app.hex|erika3app.lss|erika3app.map|erika3app.srec|makefile|applSignature.oil|obj" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/out"/>
+						<entry excluding="Debugger|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Debugger/S32K144_Release.launch|Linker_Files/S32K1xx_flash.ld|Debugger/hello_Release.launch|Debugger/hello_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>

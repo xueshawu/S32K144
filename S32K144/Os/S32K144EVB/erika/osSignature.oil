@@ -35,6 +35,9 @@ CPU mySystem {
 			};
 		};
 		BOARD_DATA = S32K144EVB_Q100;
+		LIB = S32_SDK {
+			VERSION = "0.8.6 EAR";
+		};
 		MCU_DATA = S32K1XX {
 			MODEL = S32K144;
 		};

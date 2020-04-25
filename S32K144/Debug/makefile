@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 94
+#Progress monitor hint: 96
 first : all
 -include ../makefile.init
 
@@ -66,14 +66,14 @@ all: warning-messages explicit-dependencies S32K144.elf secondary-outputs
 # Tool invocations
 S32K144.elf: $(OBJS) E:/mywork/myproject/My_Github/S32K144/S32K144/Project_Settings/Linker_Files/S32K1xx_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #95 $@'
+	@echo 'Executing target #97 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "S32K144.elf" "@S32K144.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 S32K144.siz: $(EXECUTABLES)
-	@echo 'Executing target #96 $@'
+	@echo 'Executing target #98 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'

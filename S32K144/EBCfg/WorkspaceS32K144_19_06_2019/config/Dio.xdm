@@ -79,8 +79,7 @@
                     </d:var>
                     <d:lst name="DioChannel" type="MAP">
                       <a:a name="IMPORTER_INFO" value="Dio"/>
-                      <d:ctr name="Dio_Rgb_Green" type="IDENTIFIABLE">
-                        <a:a name="IMPORTER_INFO" value="Dio"/>
+                      <d:ctr name="Dio_Rgb_Blue" type="IDENTIFIABLE">
                         <d:var name="DioChannelId" type="INTEGER" value="0"/>
                       </d:ctr>
                     </d:lst>

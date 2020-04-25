@@ -12,11 +12,12 @@ IMPLEMENTATION ERIKA3 {
   OS {
     /* Here for each task a small description and its pointer */
     TOTRACE ENUM "void *" [
-      "TimerISR" = "&osEE_tdb_array[0U]",
-      "ButtonsISR" = "&osEE_tdb_array[1U]",
-      "Task1" = "&osEE_tdb_array[2U]",
-      "Task2" = "&osEE_tdb_array[3U]",
-      "Idle" = "&osEE_tdb_array[4U]"
+      "SystemTimer" = "&osEE_tdb_array[0U]",
+      "TimerISR" = "&osEE_tdb_array[1U]",
+      "ButtonsISR" = "&osEE_tdb_array[2U]",
+      "Task1" = "&osEE_tdb_array[3U]",
+      "Task2" = "&osEE_tdb_array[4U]",
+      "Idle" = "&osEE_tdb_array[5U]"
     ] RUNNINGTASK, "Running Task or ISR2 Identification";
 
     ENUM  [ 
@@ -49,6 +50,9 @@ IMPLEMENTATION ERIKA3 {
       "ResumeOSInterrupts" = 22,
       "GetResource" = 24,
       "ReleaseResource" = 26,
+      "IncrementCounter" = 46,
+      "GetCounterValue" = 48,
+      "GetElapsedValue" = 50,
       "GetActiveApplicationMode" = 70,
       "ShutdownOS" = 72,
       "StartOS" = 74,
@@ -150,11 +154,12 @@ IMPLEMENTATION ERIKA3 {
 
   RESOURCE {
     ENUM "void *" [
-      "TimerISR" = "&osEE_tdb_array[0U]",
-      "ButtonsISR" = "&osEE_tdb_array[1U]",
-      "Task1" = "&osEE_tdb_array[2U]",
-      "Task2" = "&osEE_tdb_array[3U]",
-      "Idle" = "&osEE_tdb_array[4U]"
+      "invalid" = "&osEE_tdb_array[0U]",
+      "TimerISR" = "&osEE_tdb_array[1U]",
+      "ButtonsISR" = "&osEE_tdb_array[2U]",
+      "Task1" = "&osEE_tdb_array[3U]",
+      "Task2" = "&osEE_tdb_array[4U]",
+      "Idle" = "&osEE_tdb_array[5U]"
     ] LOCKER, "Resource Locker";
     STRING PRIORITY, "Ceiling priority";
   }, "Resources";
@@ -176,28 +181,34 @@ OS ERIKA3 {
 
 /* TASKs & ISR2 */
 TASK Task1 {
-  PRIORITY = "osEE_tcb_array[2].current_prio";
-  STATE = "osEE_tcb_array[2].status";
-  CURRENTACTIVATIONS = "osEE_tcb_array[2].current_num_of_act";  /* 1 = max activations */
-  STACK = "(1)";
-};
-
-TASK Task2 {
   PRIORITY = "osEE_tcb_array[3].current_prio";
   STATE = "osEE_tcb_array[3].status";
   CURRENTACTIVATIONS = "osEE_tcb_array[3].current_num_of_act";  /* 1 = max activations */
   STACK = "(1)";
 };
 
-ISR2 TimerISR {
+TASK Task2 {
+  PRIORITY = "osEE_tcb_array[4].current_prio";
+  STATE = "osEE_tcb_array[4].status";
+  CURRENTACTIVATIONS = "osEE_tcb_array[4].current_num_of_act";  /* 1 = max activations */
+  STACK = "(1)";
+};
+
+ISR2 SystemTimer {
   PRIORITY = "osEE_tcb_array[0].current_prio";
   STATE = "osEE_tcb_array[0].status";
   STACK = "(1)";
 };
 
-ISR2 ButtonsISR {
+ISR2 TimerISR {
   PRIORITY = "osEE_tcb_array[1].current_prio";
   STATE = "osEE_tcb_array[1].status";
+  STACK = "(1)";
+};
+
+ISR2 ButtonsISR {
+  PRIORITY = "osEE_tcb_array[2].current_prio";
+  STATE = "osEE_tcb_array[2].status";
   STACK = "(1)";
 };
 

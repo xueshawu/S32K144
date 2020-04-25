@@ -301,13 +301,13 @@ extern "C" {
 #define DioConf_DioPort_DioPORTD  ((uint8)0x03U)
 
 /**
-* @brief          Symbolic name for the channel Dio_Rgb_Green.
+* @brief          Symbolic name for the channel Dio_Rgb_Blue.
 *
 */
 
 
 /** @violates @ref Dio_Cfg_H_REF_1 The used compilers use more than 31 chars for identifiers. */
-#define  DioConf_DioChannel_Dio_Rgb_Green ((uint16)0x0060U)
+#define  DioConf_DioChannel_Dio_Rgb_Blue ((uint16)0x0060U)
 
 
 /*=================================================================================================

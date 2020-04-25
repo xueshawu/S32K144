@@ -388,7 +388,7 @@ FUNC(void, APPL_CODE) DemoHAL_Delay(
 	VAR(MemSize, AUTOMATIC)	interval
 )
 {
-	HAL_Delay(interval*1024*10);
+	//HAL_Delay(interval*1024*10);
 }
 
 FUNC(void, APPL_CODE) DemoHAL_MainFunction( void ) {}

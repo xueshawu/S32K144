@@ -6,6 +6,17 @@ CPU mySystem {
 		APP_SRC = "code.c";
 		APP_SRC = "hal.c";
 	};
+	COUNTER SystemTimer {
+		MINCYCLE = 1;
+		MAXALLOWEDVALUE = 65535;
+		TICKSPERBASE = 1;
+		SECONDSPERTICK = 0.001;
+		TYPE = HARDWARE {
+			PRIORITY = 1;
+			DEVICE = "SYSTICK";
+			SYSTEM_TIMER = TRUE;
+		};
+	};
 	ISR TimerISR {
 		CATEGORY = 2;
 		SOURCE = "FTM0_OVF_RELOAD";
@@ -39,6 +50,9 @@ CPU mySystem {
 			};
 		};
 		BOARD_DATA = S32K144EVB_Q100;
+		LIB = S32_SDK {
+			VERSION = "0.8.6 EAR";
+		};
 		MCU_DATA = S32K1XX {
 			MODEL = S32K144;
 		};

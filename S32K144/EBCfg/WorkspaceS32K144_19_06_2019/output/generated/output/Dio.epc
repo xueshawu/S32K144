@@ -96,7 +96,7 @@
                   </PARAMETER-VALUES>
                   <SUB-CONTAINERS>
                     <ECUC-CONTAINER-VALUE>
-                      <SHORT-NAME>Dio_Rgb_Green</SHORT-NAME>
+                      <SHORT-NAME>Dio_Rgb_Blue</SHORT-NAME>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T40D2M10I1R0/Dio/DioConfig/DioPort/DioChannel</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
