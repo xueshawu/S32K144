@@ -1,0 +1,6 @@
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc.c
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2_Irq.c
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Ipw.c
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb_Irq.c

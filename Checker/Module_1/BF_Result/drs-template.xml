@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--EDRS Version 2.0-->
+<global>
+   <file name="E:\\mywork\\myproject\\My_Github\\S32K144\\S32K144\\Mcal\\Adc_TS_T40D2M10I1R0\\src\\Adc.c" comment="">
+      <function name="Adc_DeInit" comment="" line="3664" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Adc_DisableGroupNotification" comment="" line="4161" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="4161" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_EnableGroupNotification" comment="" line="4113" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="4113" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_EndValidateGloballCall" comment="" line="1430" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1430" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1430" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_GetGroupStatus" comment="" line="4210" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="4210" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="4210" base_type="uint16" complete_type="enum 72" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_GetStreamLastPointer" comment="" line="4259" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="4259" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="4259" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_GetVersionInfo" comment="" line="4352" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Adc_Init" comment="" line="3512" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Adc_InitGroupsStatus" comment="" line="2298" main_generator_called="MAIN_GENERATOR" attributes="static"/>
+      <function name="Adc_InitUnitStatus" comment="" line="2359" main_generator_called="MAIN_GENERATOR" attributes="static"/>
+      <function name="Adc_NotifyCapablity" comment="" line="2256" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="2256" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2256" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="2256" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ReadGroup" comment="" line="3892" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="3892" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="3892" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_RemoveFromQueue" comment="" line="2534" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="2534" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2534" base_type="uint16" attributes="const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ReportDetError" comment="" line="731" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="731" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="731" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ReportDetRuntimeError" comment="" line="751" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="751" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="751" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ReportValidationError" comment="" line="778" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg2" comment="" line="778" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="778" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_SetupResultBuffer" comment="" line="3591" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="3591" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="3591" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_StartGroupConversion" comment="" line="3745" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="3745" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_StopGroupConversion" comment="" line="3814" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="3814" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_UpdateStatusAfterGetStream" comment="" line="3197" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="3197" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_UpdateStatusReadGroupInt" comment="" line="3035" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="3035" base_type="uint16" attributes="static const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_UpdateStatusReadGroupNoInt" comment="" line="2929" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="2929" base_type="uint16" attributes="static const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2929" base_type="uint8" attributes="static const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_UpdateStatusStartConversion" comment="" line="2644" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="2644" base_type="uint16" attributes="static const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2644" base_type="uint8" attributes="static const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_UpdateStatusStopConversion" comment="" line="2785" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="2785" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2785" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateBufferUninit" comment="" line="921" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg2" comment="" line="921" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="921" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateCallAndGroup" comment="" line="2154" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="2154" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2154" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="2154" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateCheckGroupNotConversion" comment="" line="1816" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1816" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1816" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateDeInitNotBusy" comment="" line="1856" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="return" comment="" line="1856" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateExtraParams" comment="" line="1199" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1199" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1199" base_type="uint32" attributes="static" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="1199" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1199" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateGloballCall" comment="" line="810" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="810" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="810" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateNotBusyNoPrio" comment="" line="1732" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1732" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1732" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1732" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateNotBusyNoQueue" comment="" line="1530" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1530" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1530" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1530" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidatePtr" comment="" line="902" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="902" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="902" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidatePtrInit" comment="" line="865" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="return" comment="" line="865" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateQueueNotFull" comment="" line="1006" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg2" comment="" line="1006" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="1006" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateSetupBufferNotBusy" comment="" line="1894" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1894" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1894" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateStateNotIdle" comment="" line="2051" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="2051" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="2051" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="2051" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateStateStartGroupConvNotBusy" comment="" line="1924" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1924" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1924" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_ValidateTriggerSrc" comment="" line="956" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg2" comment="" line="956" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="956" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <array name="Adc_aGroupStatus" comment="" line="273" complete_type="struct  [3]">
+         <struct comment="" line="273">
+            <scalar name="CurrentChannel" comment="" line="273" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <scalar name="ResultIndex" comment="" line="273" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <scalar name="eAlreadyConverted" comment="" line="273" base_type="uint16" complete_type="enum 96" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <scalar name="eConversion" comment="" line="273" base_type="uint16" complete_type="enum 72" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <scalar name="eNotification" comment="" line="273" base_type="uint16" complete_type="enum 107" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </struct>
+      </array>
+      <array name="Adc_aUnitStatus" comment="" line="281" complete_type="struct  [2]">
+         <struct comment="" line="281">
+            <array name="SwInjectedQueue" comment="" line="281" complete_type="volatile uint16 [1]">
+               <scalar comment="" line="281" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            </array>
+            <scalar name="SwInjectedQueueIndex" comment="" line="281" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <array name="SwNormalQueue" comment="" line="281" complete_type="volatile uint16 [1]">
+               <scalar comment="" line="281" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            </array>
+            <scalar name="SwNormalQueueIndex" comment="" line="281" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+            <scalar name="u8Sc1Used" comment="" line="281" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+         </struct>
+      </array>
+      <scalar name="Adc_eGlobalState" comment="" line="245" base_type="uint16" attributes="static" complete_type="enum 84" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      <pointer name="Adc_pCfgPtr" comment="" line="236" complete_type="const struct  *" init_mode="MAIN_GENERATOR" init_modes_allowed="11" initialize_pointer="Not NULL" number_allocated="max" init_pointed="MAIN_GENERATOR">
+         <struct comment="" line="236" attributes="const">
+            <scalar name="GroupCount" comment="" line="236" base_type="uint16" attributes="const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+            <struct name="Misc" comment="" line="236" attributes="const">
+               <scalar name="Adc_MaxHwCfg" comment="" line="236" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               <array name="aHwLogicalId" comment="" line="236" complete_type="const uint8 [2]" attributes="const">
+                  <scalar comment="" line="236" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               </array>
+               <array name="au8Adc_HwUnit" comment="" line="236" complete_type="const uint8 [2]" attributes="const">
+                  <scalar comment="" line="236" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+               </array>
+            </struct>
+         </struct>
+      </pointer>
+   </file>
+   <file name="E:\\mywork\\myproject\\My_Github\\S32K144\\S32K144\\Mcal\\Adc_TS_T40D2M10I1R0\\src\\Adc_Adc12bsarv2.c" comment="">
+      <array name="ADC12BSARV2_BASE_ADDR32" comment="" line="326" complete_type="const uint32 [2]">
+         <scalar comment="" line="326" base_type="uint32" attributes="const" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      </array>
+      <function name="Adc_Adc12bsarv2_ConfigurePartialConversion" comment="" line="1779" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="1779" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="1779" base_type="uint16" attributes="const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="1779" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg5" comment="" line="1779" base_type="uint8" attributes="const" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_DeInit" comment="" line="926" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Adc_Adc12bsarv2_DeInitHardware" comment="" line="552" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="552" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_Init" comment="" line="894" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Adc_Adc12bsarv2_InitUnitHardware" comment="" line="463" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="463" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_ReadGroup" comment="" line="1115" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="1115" base_type="uint16" attributes="const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1115" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_StartNormalConversion" comment="" line="1410" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="1410" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_StopConversionCheckTimeout" comment="" line="622" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="622" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="622" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="622" base_type="uint32" attributes="static" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="622" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_StopCurrentConversion" comment="" line="970" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="970" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="970" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="970" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\mywork\\myproject\\My_Github\\S32K144\\S32K144\\Mcal\\Adc_TS_T40D2M10I1R0\\src\\Adc_Adc12bsarv2_Irq.c" comment="">
+      <function name="Adc_Adc12bsarv2_CheckNotification" comment="" line="1674" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1674" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1674" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_CheckPartialConversion" comment="" line="638" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="638" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="638" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="638" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="638" base_type="uint8" attributes="static" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_EndGroupConversion" comment="" line="419" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="419" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_EndPartialConversion" comment="" line="515" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="515" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="515" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="515" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_HwSwCheckNotification" comment="" line="737" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="737" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_RestartContinuousConversion" comment="" line="828" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="828" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="828" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_UpdateQueue" comment="" line="1705" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="1705" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Adc12bsarv2_UpdateSoftwareGroupState" comment="" line="902" main_generator_called="MAIN_GENERATOR" attributes="static">
+         <scalar name="arg1" comment="" line="902" base_type="uint8" attributes="static" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="902" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="902" base_type="uint16" attributes="static" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="ISR" comment="" line="1743" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="1743" base_type="int16" complete_type="int16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="1743" base_type="int16" complete_type="int16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+   <file name="E:\\mywork\\myproject\\My_Github\\S32K144\\S32K144\\Mcal\\Adc_TS_T40D2M10I1R0\\src\\Adc_Pdb.c" comment="">
+      <function name="Adc_Pdb_ConfigurePartialConversion" comment="" line="377" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="377" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="377" base_type="uint16" attributes="const" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="377" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg5" comment="" line="377" base_type="uint16" complete_type="uint16" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg6" comment="" line="377" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Pdb_DeInit" comment="" line="309" main_generator_called="MAIN_GENERATOR"/>
+      <function name="Adc_Pdb_Init" comment="" line="290" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="290" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="290" base_type="uint32" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Pdb_StartSoftwareConversion" comment="" line="612" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="612" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Adc_Pdb_StopConversion" comment="" line="670" main_generator_called="MAIN_GENERATOR">
+         <scalar name="arg1" comment="" line="670" base_type="uint8" complete_type="uint8" init_mode="MAIN_GENERATOR" init_modes_allowed="10" init_range="" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <array name="PDB_BASE_ADDR32" comment="" line="246" complete_type="const uint32 [2]">
+         <scalar comment="" line="246" base_type="uint32" attributes="const" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      </array>
+      <array name="PDB_CHNC1_MASK" comment="" line="213" complete_type="const uint32 [9]" attributes="static">
+         <scalar comment="" line="213" base_type="uint32" attributes="static const" complete_type="uint32" init_mode="MAIN_GENERATOR" init_modes_allowed="15" init_range="" global_assert="NO" assert_range=""/>
+      </array>
+   </file>
+   <file name="E:\\mywork\\myproject\\My_Github\\S32K144\\S32K144\\Mcal\\Det_TS_T40D2M10I1R0\\include\\Det.h" comment="">
+      <function name="Det_ReportError" comment="" line="106" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="106" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="106" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="106" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="106" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="106" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+      <function name="Det_ReportRuntimeError" comment="" line="109" main_generator_called="disabled" attributes="extern">
+         <scalar name="arg1" comment="" line="109" base_type="uint16" complete_type="uint16" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg2" comment="" line="109" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg3" comment="" line="109" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="arg4" comment="" line="109" base_type="uint8" complete_type="uint8" init_mode="disabled" init_range="disabled" global_assert="unsupported" assert_range="unsupported"/>
+         <scalar name="return" comment="" line="109" base_type="uint8" complete_type="uint8" init_mode="PERMANENT" init_modes_allowed="4" init_range="min..max" global_assert="unsupported" assert_range="unsupported"/>
+      </function>
+   </file>
+</global>

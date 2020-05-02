@@ -1,0 +1,527 @@
+<polyspace-bug-finder-nodesktop R2018a PID8480 PGID8480>
+
+Polyspace verification of S32K144Check project.
+Starting at 05/01/2020, 19h33.
+
+Option -main-generator-writes-variables has no effect in Polyspace Bug Finder.
+Option -main-generator-calls has no effect in Polyspace Bug Finder.
+Option -float-rounding-mode has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-checks has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-behavior has no effect in Polyspace Bug Finder.
+Option -uncalled-function-checks has no effect in Polyspace Bug Finder.
+Option -check-subnormal has no effect in Polyspace Bug Finder.
+Option -O2 has no effect in Polyspace Bug Finder.
+
+Activated checkers: 
+       INT_ZERO_DIV, FLOAT_ZERO_DIV, INT_CONV_OVFL, UINT_CONV_OVFL, SIGN_CHANGE, FLOAT_CONV_OVFL, 
+  INT_STD_LIB, FLOAT_STD_LIB, OUT_BOUND_ARRAY, NULL_PTR, OUT_BOUND_PTR, FUNC_CAST, PTR_CAST, 
+  MEM_STD_LIB, STR_STD_LIB, FREED_PTR, DOUBLE_DEALLOCATION, BAD_FREE, BAD_EQUAL_USE, 
+  BAD_EQUAL_EQUAL_USE, DECL_MISMATCH, MISSING_NULL_CHAR, PTR_SIZEOF_MISMATCH, TYPEDEF_MISMATCH, 
+  USELESS_WRITE, NON_INIT_VAR, NON_INIT_PTR, VAR_SHADOWING, MISSING_RETURN, RESOURCE_LEAK, 
+  UNREACHABLE, DEAD_CODE, PARTIALLY_ACCESSED_ARRAY, USELESS_IF, DEADLOCK, BAD_LOCK, DOUBLE_LOCK, 
+  DATA_RACE, DOUBLE_UNLOCK, BAD_UNLOCK, OTHER_STD_LIB, ASSERT, STRING_FORMAT, IMPROPER_ARRAY_INIT, 
+  BAD_PTR_SCALING, SIZEOF_MISUSE, FLOAT_ABSORPTION, LOCAL_ADDR_ESCAPE, STR_FORMAT_BUFFER_OVERFLOW, 
+  STRLIB_BUFFER_OVERFLOW, STRLIB_BUFFER_UNDERFLOW, PUTENV_AUTO_VAR, PTR_TO_DIFF_ARRAY, 
+  ALIGNMENT_CHANGE, READ_ONLY_RESOURCE_WRITE, CLOSED_RESOURCE_USE, DOUBLE_RESOURCE_CLOSE, 
+  DOUBLE_RESOURCE_OPEN, OPERATOR_PRECEDENCE, STD_FUNC_ARG_MISMATCH, INVALID_MEMORY_ASSUMPTION, 
+  CONSTANT_OBJECT_WRITE, INVALID_VA_LIST_ARG, NON_POSITIVE_VLA_SIZE, MEMCMP_STRINGS, 
+  MEMCMP_PADDING_DATA, INVALID_ENV_POINTER, ERRNO_MISUSE, MISSING_ERRNO_RESET, CHARACTER_MISUSE, 
+  CHAR_EOF_CONFUSED, IO_INTERLEAVING, SIG_HANDLER_COMP_EXCP_RETURN, SIG_HANDLER_CALLING_SIGNAL, 
+  UNPROTOTYPED_FUNC_CALL, FILE_OBJECT_MISUSE, FLEXIBLE_ARRAY_MEMBER_STRUCT_MISUSE, 
+  SIG_HANDLER_SHARED_OBJECT, MACRO_USED_AS_OBJECT, SIDE_EFFECT_IGNORED, PRE_UCNAME_JOIN_TOKENS, 
+  PRE_DIRECTIVE_MACRO_ARG, INLINE_CONSTRAINT_NOT_RESPECTED, VA_ARG_INCORRECT_TYPE, 
+  TOO_MANY_VA_ARG_CALLS, STREAM_WITH_SIDE_EFFECT, TEMP_OBJECT_ACCESS, SIG_HANDLER_ERRNO_MISUSE, 
+  DATA_RACE_STD_LIB
+
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+Warning: MISRA C:2012 checker: the rule 17.3 has been disabled because it applies to the C90 standard and the selected standard is C99.
+Warning: MISRA C:2012 checker: the rule 8.1 has been disabled because it applies to the C90 standard and the selected standard is C99.
+
+Options used with Verifier:
+-lang=C
+-bug-finder=true
+-polyspace-version=2.5 (R2018a)
+-date=01/05/2020
+
+User:
+-compiler=gnu5.x
+-little-endian=true
+-author=xueshawu
+-results-dir=E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result
+-target=mcpu
+-misra3=mandatory-required
+-verif-version=1.0
+-prog=S32K144Check
+-D1=_LINARO_C_S32K14x_
+-to=Software Safety Analysis level 2
+-I1=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include
+-I2=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Base_TS_T40D2M10I1R0\include
+-I3=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Can_TS_T40D2M10I1R0\include
+-I4=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\CanIf_TS_T40D2M10I1R0\include
+-I5=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Det_TS_T40D2M10I1R0\include
+-I6=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Dio_TS_T40D2M10I1R0\include
+-I7=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Gpt_TS_T40D2M10I1R0\include
+-I8=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Icu_TS_T40D2M10I1R0\include
+-I9=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Mcl_TS_T40D2M10I1R0\include
+-I10=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Mcu_TS_T40D2M10I1R0\include
+-I11=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Port_TS_T40D2M10I1R0\include
+-I12=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Pwm_TS_T40D2M10I1R0\include
+-I13=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Rte_TS_T40D2M10I1R0\include
+-I14=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Spi_TS_T40D2M10I1R0\include
+-I15=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Wdg_TS_T40D2M10I1R0\include
+-I16=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\WdgIf_TS_T40D2M10I1R0\include
+-I17=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include
+-I18=E:\mywork\myproject\My_Github\S32K144\S32K144\EBCfg\WorkspaceS32K144_19_06_2019\output\generated\include
+-import-comments=E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\comments_bak
+-dos=true
+-pointer-is-32bits=true
+
+
+Verifying host configuration:
+Number of cores:                4
+Processor type:                 amd64
+Processor model:                Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+Processor frequency:            2.592 GHz
+Memory > 4 GB:                                                  7.91 GB
+Tmp space available in C:\Users\xueshawu\AppData\Local\Temp:    26.70 GB
+
+Remark: 4 core(s) detected. The verification uses 4 core(s).
+*** Configuration of the host :	OK
+
+
+Type E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\kill-rte-kernel.bat on host DESKTOP-ALGKP8O to halt Verifier process
+
+
+Polyspace C analysis
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri May 01 19:33:17 2020
+Host: MINGW64_NTx_64-6.2 DESKTOP-ALGKP8O 0 amd64
+User: xueshawu
+**********************************************************
+***
+*** Verifying GNU C 5.x sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying Adc_Adc12bsarv2_Irq.c (1/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+Verifying Adc.c (2/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+Verifying Adc_Adc12bsarv2.c (3/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+Verifying Adc_Ipw.c (4/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+Verifying Adc_Pdb.c (5/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+Verifying Adc_Pdb_Irq.c (6/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+Global compilation phase...
+
+Number of files                  : 6
+Number of lines                  : 10986
+Number of lines without comments : 6406
+
+Verifying cross-files ANSI C compliance
+
+Stubbing standard library functions ...
+Remark: The generated default DRS XML file "drs-template.xml" can be found in <result_dir> folder.
+Doing code transformations ...
+
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+Coding rules checking might not be complete. Some rule violations
+ are detected after the source compliance checking phase.
+**********************************************************
+Summary per file:
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc.c: 
+    15 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c: 
+    1 rule violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2_Irq.c: 
+    7 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb_Irq.c: 
+    1 rule violated
+**********************************************************
+Summary per rule:
+  rule 10.3 violated 17 times
+  rule 8.2 violated 2 times
+  rule 17.4 violated 1 time
+  rule 17.7 violated 1 time
+  rule 20.7 violated 1 time
+  rule 8.3 violated 1 time
+  rule 8.5 violated 1 time
+
+
+
+
+Packing compilation data
+
+Defects statistics:
+  - Total number of defects: 0
+done.
+
+**********************************************************
+***
+*** GNU C 5.x sources verification done
+***
+**********************************************************
+Ending at: Fri May 01 19:33:28 2020
+User time for compilation: 00:00:11.60 (11.61real, 11.61u + 0s (0.16gc))
+
+Polyspace C analysis
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri May 01 19:33:28 2020
+Host: MINGW64_NTx_64-6.2 DESKTOP-ALGKP8O 0 amd64
+User: xueshawu
+**********************************************************
+***
+*** Beginning Bug-finder - Pre-analysis
+***
+**********************************************************
+**** Bug-finder - Pre-analysis - 1 (P_AL)
+Total complexity = 20241
+**** Bug-finder - Pre-analysis - 1 (P_AL) took 0.93real, 0.93u + 0s (0.28gc)
+**** Bug-finder - Pre-analysis - 2 (P_ACP)
+* n-acp-t = 0 n-epp' = 0 n-acp-l = 0
+**** Bug-finder - Pre-analysis - 2 (P_ACP) took 0.12real, 0.12u + 0s
+**** Bug-finder - Pre-analysis - 3 (P_O)
+**** Bug-finder - Pre-analysis - 3 (P_O) took 0.07real, 0.07u + 0s
+**** Bug-finder - Pre-analysis - 4 (P_MA)
+**** Bug-finder - Pre-analysis - 4 (P_MA) took 0.05real, 0.05u + 0s (0.02gc)
+**** Bug-finder - Pre-analysis - 5 (P_G)
+**** Bug-finder - Pre-analysis - 5 (P_G) took 0.08real, 0.08u + 0s
+**** Bug-finder - Pre-analysis - 6 (P_DRC)
+**** Bug-finder - Pre-analysis - 6 (P_DRC) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 7 (P_TT)
+**** Bug-finder - Pre-analysis - 7 (P_TT) took 0real, 0u + 0s
+**** Bug-finder - Pre-analysis - 8 (P_FI)
+**** Bug-finder - Pre-analysis - 8 (P_FI) took 0.36real, 0.36u + 0s
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 0
+
+GUI files generation completed in 0.5real
+
+**********************************************************
+***
+*** Bug-finder - Pre-analysis done
+***
+**********************************************************
+Ending at: Fri May 01 19:33:33 2020
+User time for pre-analysis: 00:00:04.43 (4.44real, 4.44u + 0s (0.16gc))
+
+Polyspace C analysis
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri May 01 19:33:33 2020
+Host: MINGW64_NTx_64-6.2 DESKTOP-ALGKP8O 0 amd64
+User: xueshawu
+**********************************************************
+***
+*** Beginning Bug-finder - Function Analysis
+***
+**********************************************************
+**** Bug-finder - Function Analysis - (Verifying function #1 / 62: Adc_GetStreamLastPointer)
+**** Bug-finder - Function Analysis - (Verifying function #2 / 62: Adc_UpdateStatusStopConversion)
+**** Bug-finder - Function Analysis - (Verifying function #3 / 62: Adc_Adc12bsarv2_StopConversionCheckTimeout)
+**** Bug-finder - Function Analysis - (Verifying function #4 / 62: Adc_StartGroupConversion)
+**** Bug-finder - Function Analysis - (Verifying function #5 / 62: Adc_ValidateCheckGroupNotConversion)
+**** Bug-finder - Function Analysis - (Verifying function #6 / 62: Adc_EndValidateGloballCall)
+**** Bug-finder - Function Analysis - (Verifying function #7 / 62: Adc_ReportDetError)
+**** Bug-finder - Function Analysis - (Verifying function #8 / 62: Adc_ValidateBufferUninit)
+**** Bug-finder - Function Analysis - (Verifying function #9 / 62: Adc_Adc12bsarv2_RestartContinuousConversion)
+**** Bug-finder - Function Analysis - (Verifying function #10 / 62: Adc_ValidatePtr)
+**** Bug-finder - Function Analysis - (Verifying function #11 / 62: Adc_Init)
+**** Bug-finder - Function Analysis - (Verifying function #12 / 62: Adc_Pdb_Init)
+**** Bug-finder - Function Analysis - (Verifying function #13 / 62: Adc_ValidateGloballCall)
+**** Bug-finder - Function Analysis - (Verifying function #14 / 62: Adc_Adc12bsarv2_ReadGroup)
+**** Bug-finder - Function Analysis - (Verifying function #15 / 62: Adc_Pdb_StartSoftwareConversion)
+**** Bug-finder - Function Analysis - (Verifying function #16 / 62: Adc_Adc12bsarv2_EndPartialConversion)
+**** Bug-finder - Function Analysis - (Verifying function #17 / 62: Adc_InitGroupsStatus)
+**** Bug-finder - Function Analysis - (Verifying function #18 / 62: Adc_Pdb_ConfigurePartialConversion)
+**** Bug-finder - Function Analysis - (Verifying function #19 / 62: Adc_ValidateCallAndGroup)
+**** Bug-finder - Function Analysis - (Verifying function #20 / 62: Adc_Adc12bsarv2_InitUnitHardware)
+**** Bug-finder - Function Analysis - (Verifying function #21 / 62: Adc_EnableGroupNotification)
+**** Bug-finder - Function Analysis - (Verifying function #22 / 62: Adc_RemoveFromQueue)
+**** Bug-finder - Function Analysis - (Verifying function #23 / 62: Adc_ValidateTriggerSrc)
+**** Bug-finder - Function Analysis - (Verifying function #24 / 62: Adc_GetGroupStatus)
+**** Bug-finder - Function Analysis - (Verifying function #25 / 62: Adc_ReadGroup)
+**** Bug-finder - Function Analysis - (Verifying function #26 / 62: Adc_Adc12bsarv2_StopCurrentConversion)
+**** Bug-finder - Function Analysis - (Verifying function #27 / 62: Adc_ValidateSetupBufferNotBusy)
+**** Bug-finder - Function Analysis - (Verifying function #28 / 62: Adc_Adc12bsarv2_DeInit)
+**** Bug-finder - Function Analysis - (Verifying function #29 / 62: Adc_Adc12bsarv2_StartNormalConversion)
+**** Bug-finder - Function Analysis - (Verifying function #30 / 62: Adc_InitUnitStatus)
+**** Bug-finder - Function Analysis - (Verifying function #31 / 62: Adc_DeInit)
+**** Bug-finder - Function Analysis - (Verifying function #32 / 62: Adc_ValidateDeInitNotBusy)
+**** Bug-finder - Function Analysis - (Verifying function #33 / 62: Adc_ReportDetRuntimeError)
+**** Bug-finder - Function Analysis - (Verifying function #34 / 62: Adc_UpdateStatusReadGroupInt)
+**** Bug-finder - Function Analysis - (Verifying function #35 / 62: Adc_GetVersionInfo)
+**** Bug-finder - Function Analysis - (Verifying function #36 / 62: Adc_DisableGroupNotification)
+**** Bug-finder - Function Analysis - (Verifying function #37 / 62: Adc_UpdateStatusReadGroupNoInt)
+**** Bug-finder - Function Analysis - (Verifying function #38 / 62: Adc_ValidateNotBusyNoQueue)
+**** Bug-finder - Function Analysis - (Verifying function #39 / 62: Adc_ValidateNotBusyNoPrio)
+**** Bug-finder - Function Analysis - (Verifying function #40 / 62: Adc_Adc12bsarv2_ConfigurePartialConversion)
+**** Bug-finder - Function Analysis - (Verifying function #41 / 62: Adc_Adc12bsarv2_EndGroupConversion)
+**** Bug-finder - Function Analysis - (Verifying function #42 / 62: Adc_UpdateStatusStartConversion)
+**** Bug-finder - Function Analysis - (Verifying function #43 / 62: Adc_Adc12bsarv2_UpdateSoftwareGroupState)
+**** Bug-finder - Function Analysis - (Verifying function #44 / 62: Adc_ValidateStateStartGroupConvNotBusy)
+**** Bug-finder - Function Analysis - (Verifying function #45 / 62: Adc_ValidateQueueNotFull)
+**** Bug-finder - Function Analysis - (Verifying function #46 / 62: Adc_Adc12bsarv2_CheckNotification)
+**** Bug-finder - Function Analysis - (Verifying function #47 / 62: Adc_StopGroupConversion)
+**** Bug-finder - Function Analysis - (Verifying function #48 / 62: Adc_Adc12bsarv2_DeInitHardware)
+**** Bug-finder - Function Analysis - (Verifying function #49 / 62: Adc_NotifyCapablity)
+**** Bug-finder - Function Analysis - (Verifying function #50 / 62: ISR)
+**** Bug-finder - Function Analysis - (Verifying function #51 / 62: Adc_Pdb_StopConversion)
+**** Bug-finder - Function Analysis - (Verifying function #52 / 62: Adc_Adc12bsarv2_CheckPartialConversion)
+**** Bug-finder - Function Analysis - (Verifying function #53 / 62: Adc_UpdateStatusAfterGetStream)
+**** Bug-finder - Function Analysis - (Verifying function #54 / 62: Adc_Pdb_DeInit)
+**** Bug-finder - Function Analysis - (Verifying function #55 / 62: Adc_Adc12bsarv2_Init)
+**** Bug-finder - Function Analysis - (Verifying function #56 / 62: Adc_Adc12bsarv2_HwSwCheckNotification)
+**** Bug-finder - Function Analysis - (Verifying function #57 / 62: Adc_Adc12bsarv2_UpdateQueue)
+**** Bug-finder - Function Analysis - (Verifying function #58 / 62: Adc_ValidateExtraParams)
+**** Bug-finder - Function Analysis - (Verifying function #59 / 62: Adc_SetupResultBuffer)
+**** Bug-finder - Function Analysis - (Verifying function #60 / 62: Adc_ValidateStateNotIdle)
+**** Bug-finder - Function Analysis - (Verifying function #61 / 62: Adc_ValidatePtrInit)
+**** Bug-finder - Function Analysis - (Verifying function #62 / 62: Adc_ReportValidationError)
+**** Bug-finder - Function Analysis - (Verifying function #5 / 62: Adc_ValidateCheckGroupNotConversion) took 1.63real
+**** Bug-finder - Function Analysis - (Verifying function #1 / 62: Adc_GetStreamLastPointer) took 2.2real
+**** Bug-finder - Function Analysis - (Verifying function #2 / 62: Adc_UpdateStatusStopConversion) took 2.19real
+**** Bug-finder - Function Analysis - (Verifying function #6 / 62: Adc_EndValidateGloballCall) took 0.31real
+**** Bug-finder - Function Analysis - (Verifying function #7 / 62: Adc_ReportDetError) took 0.31real
+**** Bug-finder - Function Analysis - (Verifying function #4 / 62: Adc_StartGroupConversion) took 0.81real
+**** Bug-finder - Function Analysis - (Verifying function #8 / 62: Adc_ValidateBufferUninit) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #3 / 62: Adc_Adc12bsarv2_StopConversionCheckTimeout) took 2.63real
+**** Bug-finder - Function Analysis - (Verifying function #9 / 62: Adc_Adc12bsarv2_RestartContinuousConversion) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #10 / 62: Adc_ValidatePtr) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #11 / 62: Adc_Init) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #12 / 62: Adc_Pdb_Init) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #13 / 62: Adc_ValidateGloballCall) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #15 / 62: Adc_Pdb_StartSoftwareConversion) took 0.37real
+**** Bug-finder - Function Analysis - (Verifying function #17 / 62: Adc_InitGroupsStatus) took 0.54real
+**** Bug-finder - Function Analysis - (Verifying function #16 / 62: Adc_Adc12bsarv2_EndPartialConversion) took 0.57real
+**** Bug-finder - Function Analysis - (Verifying function #19 / 62: Adc_ValidateCallAndGroup) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #21 / 62: Adc_EnableGroupNotification) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #20 / 62: Adc_Adc12bsarv2_InitUnitHardware) took 0.66real
+**** Bug-finder - Function Analysis - (Verifying function #14 / 62: Adc_Adc12bsarv2_ReadGroup) took 1.4real
+**** Bug-finder - Function Analysis - (Verifying function #23 / 62: Adc_ValidateTriggerSrc) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #24 / 62: Adc_GetGroupStatus) took 0.31real
+**** Bug-finder - Function Analysis - (Verifying function #22 / 62: Adc_RemoveFromQueue) took 0.73real
+**** Bug-finder - Function Analysis - (Verifying function #25 / 62: Adc_ReadGroup) took 0.51real
+**** Bug-finder - Function Analysis - (Verifying function #27 / 62: Adc_ValidateSetupBufferNotBusy) took 0.31real
+**** Bug-finder - Function Analysis - (Verifying function #26 / 62: Adc_Adc12bsarv2_StopCurrentConversion) took 0.72real
+**** Bug-finder - Function Analysis - (Verifying function #28 / 62: Adc_Adc12bsarv2_DeInit) took 0.44real
+**** Bug-finder - Function Analysis - (Verifying function #30 / 62: Adc_InitUnitStatus) took 0.43real
+**** Bug-finder - Function Analysis - (Verifying function #32 / 62: Adc_ValidateDeInitNotBusy) took 0.66real
+**** Bug-finder - Function Analysis - (Verifying function #29 / 62: Adc_Adc12bsarv2_StartNormalConversion) took 0.91real
+**** Bug-finder - Function Analysis - (Verifying function #31 / 62: Adc_DeInit) took 0.77real
+**** Bug-finder - Function Analysis - (Verifying function #33 / 62: Adc_ReportDetRuntimeError) took 0.32real
+**** Bug-finder - Function Analysis - (Verifying function #18 / 62: Adc_Pdb_ConfigurePartialConversion) took 2.94real
+**** Bug-finder - Function Analysis - (Verifying function #35 / 62: Adc_GetVersionInfo) took 0.39real
+**** Bug-finder - Function Analysis - (Verifying function #36 / 62: Adc_DisableGroupNotification) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #34 / 62: Adc_UpdateStatusReadGroupInt) took 0.65real
+**** Bug-finder - Function Analysis - (Verifying function #38 / 62: Adc_ValidateNotBusyNoQueue) took 0.36real
+**** Bug-finder - Function Analysis - (Verifying function #39 / 62: Adc_ValidateNotBusyNoPrio) took 0.38real
+**** Bug-finder - Function Analysis - (Verifying function #42 / 62: Adc_UpdateStatusStartConversion) took 0.47real
+**** Bug-finder - Function Analysis - (Verifying function #37 / 62: Adc_UpdateStatusReadGroupNoInt) took 1.06real
+**** Bug-finder - Function Analysis - (Verifying function #41 / 62: Adc_Adc12bsarv2_EndGroupConversion) took 0.93real
+**** Bug-finder - Function Analysis - (Verifying function #43 / 62: Adc_Adc12bsarv2_UpdateSoftwareGroupState) took 0.65real
+**** Bug-finder - Function Analysis - (Verifying function #46 / 62: Adc_Adc12bsarv2_CheckNotification) took 0.74real
+**** Bug-finder - Function Analysis - (Verifying function #45 / 62: Adc_ValidateQueueNotFull) took 0.81real
+**** Bug-finder - Function Analysis - (Verifying function #44 / 62: Adc_ValidateStateStartGroupConvNotBusy) took 0.92real
+**** Bug-finder - Function Analysis - (Verifying function #47 / 62: Adc_StopGroupConversion) took 0.65real
+**** Bug-finder - Function Analysis - (Verifying function #49 / 62: Adc_NotifyCapablity) took 0.54real
+**** Bug-finder - Function Analysis - (Verifying function #40 / 62: Adc_Adc12bsarv2_ConfigurePartialConversion) took 1.88real
+**** Bug-finder - Function Analysis - (Verifying function #50 / 62: ISR) took 0.48real
+**** Bug-finder - Function Analysis - (Verifying function #51 / 62: Adc_Pdb_StopConversion) took 0.52real
+**** Bug-finder - Function Analysis - (Verifying function #48 / 62: Adc_Adc12bsarv2_DeInitHardware) took 1.23real
+**** Bug-finder - Function Analysis - (Verifying function #53 / 62: Adc_UpdateStatusAfterGetStream) took 0.68real
+**** Bug-finder - Function Analysis - (Verifying function #55 / 62: Adc_Adc12bsarv2_Init) took 0.44real
+**** Bug-finder - Function Analysis - (Verifying function #56 / 62: Adc_Adc12bsarv2_HwSwCheckNotification) took 0.35real
+**** Bug-finder - Function Analysis - (Verifying function #57 / 62: Adc_Adc12bsarv2_UpdateQueue) took 0.33real
+**** Bug-finder - Function Analysis - (Verifying function #58 / 62: Adc_ValidateExtraParams) took 0.42real
+**** Bug-finder - Function Analysis - (Verifying function #52 / 62: Adc_Adc12bsarv2_CheckPartialConversion) took 1.41real
+**** Bug-finder - Function Analysis - (Verifying function #59 / 62: Adc_SetupResultBuffer) took 0.41real
+**** Bug-finder - Function Analysis - (Verifying function #54 / 62: Adc_Pdb_DeInit) took 1.27real
+**** Bug-finder - Function Analysis - (Verifying function #61 / 62: Adc_ValidatePtrInit) took 0.3real
+**** Bug-finder - Function Analysis - (Verifying function #62 / 62: Adc_ReportValidationError) took 0.28real
+**** Bug-finder - Function Analysis - (Verifying function #60 / 62: Adc_ValidateStateNotIdle) took 0.34real
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 1
+  - USELESS_WRITE: 1
+
+GUI files generation completed in 0.59real
+
+* Total IL complexity: 32200
+
+**********************************************************
+***
+*** Bug-finder - Function Analysis done
+***
+**********************************************************
+Ending at: Fri May 01 19:33:49 2020
+User time for function: 00:00:16.54 (16.55real, 16.55u + 0s (0.08gc))
+
+Polyspace C analysis
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri May 01 19:33:49 2020
+Host: MINGW64_NTx_64-6.2 DESKTOP-ALGKP8O 0 amd64
+User: xueshawu
+**********************************************************
+***
+*** Beginning Bug-finder - Module Analysis
+***
+**********************************************************
+**** Bug-finder - Module Analysis - 1 (Computing modules)
+* Created 1 module
+**** Bug-finder - Module Analysis - 1 (Computing modules) took 0.1real, 0.1u + 0s
+**** Bug-finder - Module Analysis - (Verifying module #1 / 1: 62 functions)
+**** Bug-finder - Module Analysis - (Verifying module #1 / 1: 62 functions) took 13.44real
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 3
+  - USELESS_WRITE: 1
+  - USELESS_IF: 1
+  - OUT_BOUND_ARRAY: 1
+
+GUI files generation completed in 0.47real
+
+**********************************************************
+***
+*** Bug-finder - Module Analysis done
+***
+**********************************************************
+Ending at: Fri May 01 19:34:04 2020
+User time for module: 00:00:14.70 (14.7real, 14.7u + 0s (0.08gc))
+
+Polyspace C analysis
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri May 01 19:34:05 2020
+Host: MINGW64_NTx_64-6.2 DESKTOP-ALGKP8O 0 amd64
+User: xueshawu
+**********************************************************
+***
+*** Beginning Bug-finder - Global analysis
+***
+**********************************************************
+**** Bug-finder - Global analysis - 1 (P_CCG)
+**** Bug-finder - Global analysis - 1 (P_CCG) took 0real, 0u + 0s
+
+Generating GUI files
+
+Defects statistics:
+  - Total number of defects: 3
+  - USELESS_WRITE: 1
+  - USELESS_IF: 1
+  - OUT_BOUND_ARRAY: 1
+
+GUI files generation completed in 0.48real
+
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+**********************************************************
+Summary per file:
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc.c: 
+    28 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c: 
+    3 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2_Irq.c: 
+    8 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb_Irq.c: 
+    1 rule violated
+**********************************************************
+Summary per rule:
+  rule 10.3 violated 17 times
+  rule D4.14 violated 12 times
+  rule 8.2 violated 2 times
+  rule 14.3 violated 1 time
+  rule 17.4 violated 1 time
+  rule 17.7 violated 1 time
+  rule 18.1 violated 1 time
+  rule 2.2 violated 1 time
+  rule 20.7 violated 1 time
+  rule 8.3 violated 1 time
+  rule 8.5 violated 1 time
+  rule D4.1 violated 1 time
+
+Importing comments from E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+Diff statistics for Defect results:
+-----------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 0
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 0
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 0
+
+Diff statistics for MISRA C:2012 results:
+-----------------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 172
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 0
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 172
+
+
+**********************************************************
+***
+*** Bug-finder - Global analysis done
+***
+**********************************************************
+Ending at: Fri May 01 19:34:07 2020
+User time for global: 00:00:01.78 (1.79real, 1.79u + 0s (0.05gc))
+User time for polyspace-bug-finder-nodesktop: 00:00:50.65 (50.65real, 50.65u + 0s (0.53gc))
+
+***
+*** End of Polyspace analysis
+***

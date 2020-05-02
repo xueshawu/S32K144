@@ -1,0 +1,42 @@
+# Options file
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Base_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Can_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\CanIf_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Det_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Dio_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Gpt_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Icu_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Mcl_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Mcu_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Port_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Pwm_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Rte_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Spi_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Wdg_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\WdgIf_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include
+-I E:\mywork\myproject\My_Github\S32K144\S32K144\EBCfg\WorkspaceS32K144_19_06_2019\output\generated\include
+-prog S32K144Check
+-verif-version 1.0
+-author xueshawu
+-sources-list-file E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\.settings\source_command.txt
+-lang C
+-target mcpu
+-little-endian
+-pointer-is-32bits
+-compiler gnu5.x
+-D _LINARO_C_S32K14x_
+-dos
+-misra3 mandatory-required
+-main-generator-writes-variables public
+-main-generator-calls unused
+-float-rounding-mode to-nearest
+-scalar-overflows-checks signed
+-scalar-overflows-behavior truncate-on-error
+-uncalled-function-checks none
+-check-subnormal allow
+-O2
+-to Software Safety Analysis level 2
+-import-comments E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result
+

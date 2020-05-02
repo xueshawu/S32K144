@@ -1,0 +1,606 @@
+<polyspace-bug-finder-nodesktop R2018a PID13500 PGID13500>
+
+Polyspace verification of S32K144Check project.
+Starting at 05/01/2020, 19h31.
+
+Option -main-generator-writes-variables has no effect in Polyspace Bug Finder.
+Option -main-generator-calls has no effect in Polyspace Bug Finder.
+Option -float-rounding-mode has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-checks has no effect in Polyspace Bug Finder.
+Option -scalar-overflows-behavior has no effect in Polyspace Bug Finder.
+Option -uncalled-function-checks has no effect in Polyspace Bug Finder.
+Option -check-subnormal has no effect in Polyspace Bug Finder.
+Option -O2 has no effect in Polyspace Bug Finder.
+
+Activated checkers: 
+       INT_ZERO_DIV, FLOAT_ZERO_DIV, INT_CONV_OVFL, UINT_CONV_OVFL, SIGN_CHANGE, FLOAT_CONV_OVFL, 
+  INT_STD_LIB, FLOAT_STD_LIB, OUT_BOUND_ARRAY, NULL_PTR, OUT_BOUND_PTR, FUNC_CAST, PTR_CAST, 
+  MEM_STD_LIB, STR_STD_LIB, FREED_PTR, DOUBLE_DEALLOCATION, BAD_FREE, BAD_EQUAL_USE, 
+  BAD_EQUAL_EQUAL_USE, DECL_MISMATCH, MISSING_NULL_CHAR, PTR_SIZEOF_MISMATCH, TYPEDEF_MISMATCH, 
+  USELESS_WRITE, NON_INIT_VAR, NON_INIT_PTR, VAR_SHADOWING, MISSING_RETURN, RESOURCE_LEAK, 
+  UNREACHABLE, DEAD_CODE, PARTIALLY_ACCESSED_ARRAY, USELESS_IF, DEADLOCK, BAD_LOCK, DOUBLE_LOCK, 
+  DATA_RACE, DOUBLE_UNLOCK, BAD_UNLOCK, OTHER_STD_LIB, ASSERT, STRING_FORMAT, IMPROPER_ARRAY_INIT, 
+  BAD_PTR_SCALING, SIZEOF_MISUSE, FLOAT_ABSORPTION, LOCAL_ADDR_ESCAPE, STR_FORMAT_BUFFER_OVERFLOW, 
+  STRLIB_BUFFER_OVERFLOW, STRLIB_BUFFER_UNDERFLOW, PUTENV_AUTO_VAR, PTR_TO_DIFF_ARRAY, 
+  ALIGNMENT_CHANGE, READ_ONLY_RESOURCE_WRITE, CLOSED_RESOURCE_USE, DOUBLE_RESOURCE_CLOSE, 
+  DOUBLE_RESOURCE_OPEN, OPERATOR_PRECEDENCE, STD_FUNC_ARG_MISMATCH, INVALID_MEMORY_ASSUMPTION, 
+  CONSTANT_OBJECT_WRITE, INVALID_VA_LIST_ARG, NON_POSITIVE_VLA_SIZE, MEMCMP_STRINGS, 
+  MEMCMP_PADDING_DATA, INVALID_ENV_POINTER, ERRNO_MISUSE, MISSING_ERRNO_RESET, CHARACTER_MISUSE, 
+  CHAR_EOF_CONFUSED, IO_INTERLEAVING, SIG_HANDLER_COMP_EXCP_RETURN, SIG_HANDLER_CALLING_SIGNAL, 
+  UNPROTOTYPED_FUNC_CALL, FILE_OBJECT_MISUSE, FLEXIBLE_ARRAY_MEMBER_STRUCT_MISUSE, 
+  SIG_HANDLER_SHARED_OBJECT, MACRO_USED_AS_OBJECT, SIDE_EFFECT_IGNORED, PRE_UCNAME_JOIN_TOKENS, 
+  PRE_DIRECTIVE_MACRO_ARG, INLINE_CONSTRAINT_NOT_RESPECTED, VA_ARG_INCORRECT_TYPE, 
+  TOO_MANY_VA_ARG_CALLS, STREAM_WITH_SIDE_EFFECT, TEMP_OBJECT_ACCESS, SIG_HANDLER_ERRNO_MISUSE, 
+  DATA_RACE_STD_LIB
+
+Remark: By default, some results are not generated for headers.
+|       Search for '-generate-results-for' in user documentation to generate results for these headers.
+
+Verifying sources compliance ...
+Warning: MISRA C:2012 checker: the rule 17.3 has been disabled because it applies to the C90 standard and the selected standard is C99.
+Warning: MISRA C:2012 checker: the rule 8.1 has been disabled because it applies to the C90 standard and the selected standard is C99.
+
+Options used with Verifier:
+-lang=C
+-bug-finder=true
+-polyspace-version=2.5 (R2018a)
+-date=01/05/2020
+
+User:
+-compiler=gnu5.x
+-little-endian=true
+-author=xueshawu
+-results-dir=E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result
+-target=mcpu
+-misra3=mandatory-required
+-verif-version=1.0
+-prog=S32K144Check
+-D1=_LINARO_C_S32K14x_
+-to=Software Safety Analysis level 2
+-I1=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include
+-I2=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Base_TS_T40D2M10I1R0\include
+-I3=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Can_TS_T40D2M10I1R0\include
+-I4=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\CanIf_TS_T40D2M10I1R0\include
+-I5=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Det_TS_T40D2M10I1R0\include
+-I6=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Dio_TS_T40D2M10I1R0\include
+-I7=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Gpt_TS_T40D2M10I1R0\include
+-I8=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Icu_TS_T40D2M10I1R0\include
+-I9=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Mcl_TS_T40D2M10I1R0\include
+-I10=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Mcu_TS_T40D2M10I1R0\include
+-I11=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Port_TS_T40D2M10I1R0\include
+-I12=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Pwm_TS_T40D2M10I1R0\include
+-I13=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Rte_TS_T40D2M10I1R0\include
+-I14=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Spi_TS_T40D2M10I1R0\include
+-I15=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Wdg_TS_T40D2M10I1R0\include
+-I16=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\WdgIf_TS_T40D2M10I1R0\include
+-I17=E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include
+-import-comments=E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\comments_bak
+-dos=true
+-pointer-is-32bits=true
+
+
+Verifying host configuration:
+Number of cores:                4
+Processor type:                 amd64
+Processor model:                Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+Processor frequency:            2.592 GHz
+Memory > 4 GB:                                                  7.91 GB
+Tmp space available in C:\Users\xueshawu\AppData\Local\Temp:    26.70 GB
+
+Remark: 4 core(s) detected. The verification uses 4 core(s).
+*** Configuration of the host :	OK
+
+
+Type E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\kill-rte-kernel.bat on host DESKTOP-ALGKP8O to halt Verifier process
+
+
+Polyspace C analysis
+Copyright 1999-2018 The MathWorks, Inc.
+All rights reserved.
+
+Starting at: Fri May 01 19:31:29 2020
+Host: MINGW64_NTx_64-6.2 DESKTOP-ALGKP8O 0 amd64
+User: xueshawu
+**********************************************************
+***
+*** Verifying GNU C 5.x sources
+***
+**********************************************************
+
+Verifying sources ...
+Verifying Adc_Ipw.c (1/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 78: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 63: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 95: error: #error directive: "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|  #error "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 103: error: #error directive: "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 111: error: #error directive: "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 122: error: #error directive: "Adc.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 130: error: #error directive: "AutoSar Version Numbers of Adc.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 138: error: #error directive: "Software Version Numbers of Adc.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 68: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 69: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 92: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 99: error: #error directive: "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 107: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 115: error: #error directive: "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+10 errors detected in the compilation of "stdarg.h".
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Ipw.c: warning: Failed compilation.
+Verifying Adc_Adc12bsarv2_Irq.c (2/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 63: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 95: error: #error directive: "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|  #error "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 103: error: #error directive: "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 111: error: #error directive: "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 68: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 69: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 92: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 99: error: #error directive: "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 107: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 115: error: #error directive: "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 67: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 68: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 90: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 96: error: #error directive: "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 76: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 149: error: #error directive: "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 157: error: #error directive: "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 165: error: #error directive: "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+12 errors detected in the compilation of "stdarg.h".
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2_Irq.c: warning: Failed compilation.
+Verifying Adc.c (3/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 78: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 63: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 95: error: #error directive: "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|  #error "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 103: error: #error directive: "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 111: error: #error directive: "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 122: error: #error directive: "Adc.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 130: error: #error directive: "AutoSar Version Numbers of Adc.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc.h, line 138: error: #error directive: "Software Version Numbers of Adc.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 68: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 69: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 92: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 99: error: #error directive: "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 107: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 115: error: #error directive: "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+10 errors detected in the compilation of "stdarg.h".
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc.c: warning: Failed compilation.
+Verifying Adc_Adc12bsarv2.c (4/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 63: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 95: error: #error directive: "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|  #error "Adc_Types.h and Adc_CfgDefines.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 103: error: #error directive: "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "AutoSar Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Types.h, line 111: error: #error directive: "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|  #error "Software Version Numbers of Adc_Types.h and Adc_CfgDefines.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 68: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 69: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 92: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 99: error: #error directive: "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 107: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 115: error: #error directive: "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 67: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 68: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 90: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 96: error: #error directive: "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 76: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 149: error: #error directive: "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 157: error: #error directive: "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 165: error: #error directive: "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c, line 129: warning: could not find include file "Dem.h"
+|  #include "Dem.h"
+|                  ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c, line 264: error: #error directive: "AutoSar Version Numbers of Adc_Adc12bsarv2.c and Dem.h are different"
+|      #error "AutoSar Version Numbers of Adc_Adc12bsarv2.c and Dem.h are different"
+|       ^
+
+13 errors detected in the compilation of "stdarg.h".
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c: warning: Failed compilation.
+Verifying Adc_Pdb.c (5/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 67: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 68: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 90: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 96: error: #error directive: "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 68: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 69: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 92: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 99: error: #error directive: "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 107: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 115: error: #error directive: "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 76: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 149: error: #error directive: "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 157: error: #error directive: "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 165: error: #error directive: "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c, line 89: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c, line 163: error: #error directive: "Adc_Pdb.c and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Pdb.c and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c, line 171: error: #error directive: "AutoSar Version Numbers of Adc_Pdb.c and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Pdb.c and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c, line 179: error: #error directive: "Software Version Numbers of Adc_Pdb.c and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Pdb.c and Adc_Cfg.h are different"
+|   ^
+
+12 errors detected in the compilation of "stdarg.h".
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c: warning: Failed compilation.
+Verifying Adc_Pdb_Irq.c (6/6)
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Os_TS_T40D2M10I1R0\include\Os.h, line 40: warning: could not find include file "ee.h"
+|  #include    "ee.h"    /* Modify by nieqi to include Erika Os */
+|                                                                 ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 67: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 68: warning: could not find include file "Adc_CfgDefines.h"
+|  #include "Adc_CfgDefines.h"
+|                             ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 90: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Pdb.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Pdb.h, line 96: error: #error directive: "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_CfgDefines.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 68: warning: could not find include file "Reg_eSys.h"
+|  #include "Reg_eSys.h"
+|                       ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 69: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 92: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Reg_eSys.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 99: error: #error directive: "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 107: error: #error directive: "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Reg_eSys_Adc12bsarv2.h, line 115: error: #error directive: "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Reg_eSys_Adc12bsarv2.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 76: warning: could not find include file "Adc_Cfg.h"
+|  #include "Adc_Cfg.h"
+|                      ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 149: error: #error directive: "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|  #error "Adc_Pdb.h and Adc_Cfg.h have different vendor ids"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 157: error: #error directive: "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "AutoSar Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\include\Adc_Pdb.h, line 165: error: #error directive: "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|  #error "Software Version Numbers of Adc_Pdb.h and Adc_Cfg.h are different"
+|   ^
+
+9 errors detected in the compilation of "stdarg.h".
+E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb_Irq.c: warning: Failed compilation.
+Global compilation phase...
+
+**********************************************************
+MISRA C:2012 Rule checker results
+ Use the Report Generator in order to get the complete report.
+Coding rules checking might not be complete. Some rule violations
+ are detected after the source compliance checking phase.
+**********************************************************
+Summary per file:
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc.c: 
+    125 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Adc12bsarv2.c: 
+    29 rules violated
+  File E:\mywork\myproject\My_Github\S32K144\S32K144\Mcal\Adc_TS_T40D2M10I1R0\src\Adc_Pdb.c: 
+    18 rules violated
+**********************************************************
+Summary per rule:
+  rule 20.9 violated 168 times
+  rule D2.1 violated 4 times
+
+Warning: MISRA C:2012 rules checking might be incomplete because of preprocessing or compilation errors.
+
+Packing compilation data
+done.
+
+Importing comments from E:\mywork\myproject\My_Github\S32K144\Checker\Module_1\BF_Result\comments_bak folder
+
+Operation completed:
+--------------------
+
+Diff statistics for MISRA C:2012 results:
+-----------------------------------------
+| Number of backuped comments attached to disappeared results                : 0
+| Number of unmatched uncommented results                                    : 0
+| Number of results comments not imported because a more recent one was found: 0
+| Number of partially imported results comments (due to a result change)     : 0
+| Number of fully imported results comments                                  : 0
+| Number of matched results without comment                                  : 172
+| Number of matched results with a comment coming from source code annotation: 0
+| Total number of results                                                    : 172
+
+
+**********************************************************
+***
+*** GNU C 5.x sources verification done
+***
+**********************************************************
+Ending at: Fri May 01 19:31:37 2020
+User time for compilation: 00:00:07.50 (7.5real, 7.5u + 0s (0.02gc))
+
+
+-------------------------------------------------------------------
+---                                                             ---
+---  Verifier has detected preprocessing error(s) in the code.  ---
+---  Please correct them and launch the analysis again.         ---
+---                                                             ---
+-------------------------------------------------------------------
+
+
+Failure at: Fri May 01 19:31:37 2020
+Error: Exiting because of previous error
+User time for polyspace-bug-finder-nodesktop: 00:00:08.4 (8.04real, 8.04u + 0s (0.02gc))
