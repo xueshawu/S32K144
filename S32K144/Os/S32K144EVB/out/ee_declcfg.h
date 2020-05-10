@@ -36,8 +36,6 @@ DeclareTask(Task1);
 DeclareTask(Task2);
 
 
-ISR2(TimerISR);
-ISR2(ButtonsISR);
 
 
 /***************************************************************************

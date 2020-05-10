@@ -43,10 +43,9 @@ extern "C" {
  * Arrays size
  *
  **************************************************************************/
-#define OSEE_TASK_ARRAY_SIZE      (5U)
-#define OSEE_SN_ARRAY_SIZE        (5U)
-#define OSEE_STACK_ARRAY_SIZE     (1U)
-#define OSEE_RESOURCE_ARRAY_SIZE  (1U)
+#define OSEE_TASK_ARRAY_SIZE      (3U)
+#define OSEE_SN_ARRAY_SIZE        (3U)
+#define OSEE_STACK_ARRAY_SIZE     (3U)
 #define OSEE_COUNTERS_ARRAY_SIZE  (1U)
 
 /***************************************************************************
@@ -54,21 +53,22 @@ extern "C" {
  * TASKs declaration
  *
  **************************************************************************/
-#define Task1 (3U)
-#define Task2 (4U)
+#define Task1 (1U)
+#define Task2 (2U)
 
 /***************************************************************************
  *
  * Stack Size declaration
  *
  **************************************************************************/
+#define osEE_task_stack_1_StackSize (512U)
+#define osEE_task_stack_2_StackSize (512U)
 
 /***************************************************************************
  *
  * RESOURCEs Macro Declaration
  *
  **************************************************************************/
-#define RES_SCHEDULER (0U)
 
 /***************************************************************************
  *

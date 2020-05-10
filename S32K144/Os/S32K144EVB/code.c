@@ -44,7 +44,6 @@
  *
  *  This file contains the code of main application for Erika Enterprise.
  *
- *  \author	Paolo Gai
  *  \author	Giuseppe Serano
  *  \date	2018
  */
@@ -55,148 +54,70 @@
 /* HAL */
 #include "hal.h"
 
-#define	HAL_TIMER_MS	     1U
+OsEE_bool volatile stk_wrong = OSEE_FALSE;
+OsEE_addr volatile old_sp;
+uint32_t volatile idle_cnt;
 
-#define	HAL_DELAY_MS	   200U
-#define	HAL_SMALLDELAY_MS	25U
+DeclareTask(Task1);
+extern void idle_hook(void);
 
-/* A few counters incremented at each event
- * (alarm, button press or task activation...)
- */
-volatile uint16_t timer_fired;
-volatile uint16_t button_fired;
-volatile uint16_t task1_fired;
-volatile uint16_t task2_fired;
+#define	IDLE_CNT_MAX	100000U
+
+#define	IDLE_STR	(P2CONST(uint8_t, AUTOMATIC, OS_APPL_DATA))"Idle\r\n"
+#define	IDLE_STR_LEN	6U
 
 #if (defined(OSEE_API_DYNAMIC))
 TaskType Task1;
-TaskType Task2;
-TaskType IsrTimerId;
-TaskType IsrButtonsId;
 #endif /* OSEE_API_DYNAMIC */
 
-/* Let's declare the tasks identifiers */
-DeclareTask(Task1);
-DeclareTask(Task2);
-
-void led_blink(uint8_t theled)
+void idle_hook(void)
 {
-  DisableAllInterrupts();
-  DemoHAL_LedOn(theled);
-  EnableAllInterrupts();
+	if ( !stk_wrong ) {
+		if (!old_sp) {
+			old_sp = osEE_get_SP();
+		}
+		else if (old_sp != osEE_get_SP()) {
+			stk_wrong = OSEE_TRUE;
+			DemoHAL_LedOn(DEMO_HAL_LED_1);
+			for(;;);
+		}
+	}
 
-  DemoHAL_Delay(HAL_DELAY_MS);
+	++idle_cnt;
+	if (idle_cnt >= IDLE_CNT_MAX) {
+		idle_cnt = 0;
+		ActivateTask(Task1);
+		DemoHAL_LedToggle(DEMO_HAL_LED_0);
+		DemoHAL_SerialWrite(IDLE_STR, IDLE_STR_LEN);
+	}
 
-  DisableAllInterrupts();
-  DemoHAL_LedOff(theled);
-  EnableAllInterrupts();
-
-  DemoHAL_Delay(HAL_SMALLDELAY_MS);
+	DemoHAL_MainFunction();
 }
 
-/* Task1: just call the ChristmasTree */
-TASK(Task1)
+int main(void)
 {
-  task1_fired++;
-  
-  /* First half of the christmas tree */
-  led_blink(DEMO_HAL_LED_0);
-  led_blink(DEMO_HAL_LED_0);
-  led_blink(DEMO_HAL_LED_0);
-  
-  /* CONFIGURATION 3 and 4: we put an additional Schedule() here! */
-#ifdef MYSCHEDULE
-  Schedule();
-#endif
 
-  /* Second half of the christmas tree */
-  led_blink(DEMO_HAL_LED_1);
-  led_blink(DEMO_HAL_LED_1);
-  led_blink(DEMO_HAL_LED_1);
-  
-  TerminateTask();
-}
-
-
-/* Task2: Print the counters on the UART */
-TASK(Task2)
-{
-  /* count the number of Task2 activations */
-  task2_fired++;
-
-  led_blink(DEMO_HAL_LED_2);
-  
-  TerminateTask();
-}
-
-/* 
- * This is an ISR Type 2 which is attached to the Timer peripheral IRQ pin
- * The ISR simply calls CounterTick to implement the timing reference
- */
-
-volatile int timer_divisor = 0;
-ISR2(TimerISR)
-{
-  timer_divisor++;
-  if (timer_divisor==4000) {
-    timer_divisor = 0;
-    timer_fired++;
-    ActivateTask(Task1);
-  }
-  DemoHAL_TimerAck();
-}
-
-/*
- * Handle button interrupts activates Task2.
- */
-ISR2(ButtonsISR)
-{
-  /* count the number of button presses */
-  button_fired++;
-  DemoHAL_ButtonInterruptAck(DEMO_HAL_BUTTON_0);
-  ActivateTask(Task2);  
-}
-
-/* 
- * The StartupHook in this case is used to initialize the Button and timer
- * interrupts
- */
-void StartupHook(void)
-{
-  DemoHAL_ButtonInit();
-  DemoHAL_ButtonInterruptEnable(DEMO_HAL_BUTTON_0);
-  DemoHAL_TimerInit(HAL_TIMER_MS);
-}
-
-void idle_hook ( void ) {
-  DemoHAL_MainFunction();
-}
-
-int main()
-{ 
-  DemoHAL_Init();
+	DemoHAL_Init();
 
 #if (defined(OSEE_API_DYNAMIC))
-  InitOS();
-  
-  CreateTask( &Task1, OSEE_TASK_TYPE_EXTENDED, TASK_FUNC(Task1),
-      1U, 1U, 1U, 512U );
-  CreateTask( &Task2, OSEE_TASK_TYPE_BASIC, TASK_FUNC(Task2),
-      2U, 2U, 1U, 512U );
-  CreateTask( &IsrTimerId, OSEE_TASK_TYPE_ISR2, TimerISR,
-      1U, 1U, 1U, OSEE_SYSTEM_STACK );
-  CreateTask( &IsrButtonsId, OSEE_TASK_TYPE_ISR2, ButtonsISR,
-      1U, 1U, 1U, OSEE_SYSTEM_STACK );
+	InitOS();
 
-  /* Prio settate a 1 dalla BSP all'avvio */
-  SetISR2Source(IsrTimerId, TIMER_ISR_ID);
-  SetISR2Source(IsrButtonsId, BUTTONS_ISR_ID);
+	CreateTask(
+		&Task1,			/* taskIdRef */
+		OSEE_TASK_TYPE_BASIC,	/* taskType */
+		TASK_FUNC(Task1),	/* taskFunc */
+		1U,			/* readyPrio */
+		1U,			/* dispatchPrio */
+		1U,			/* maxNumOfAct */
+		512			/* stackSize */
+	);
 
-  SetIdleHook(idle_hook);
+	SetIdleHook(idle_hook);
 #endif /* OSEE_API_DYNAMIC */
 
-  /* let's start the multiprogramming environment...*/
-  StartOS(OSDEFAULTAPPMODE);
-  
-  return 0;
+	StartOS(OSDEFAULTAPPMODE);
+
+	return 0;
+
 }
+

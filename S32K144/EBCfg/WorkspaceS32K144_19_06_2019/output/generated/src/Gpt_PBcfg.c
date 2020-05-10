@@ -139,7 +139,7 @@ extern "C"{
 * @brief The callback functions defined by the user to be called as channel notifications
 */
 /** @violates @ref GPT_PBCFG_C_REF_5 External variables and functions should only appear in one file*/
-extern void SysDal_IntSch_TaskActivationIsr(void);
+extern void FTM0_OverFlowNotifiation(void);
 /** @} */
 #define GPT_STOP_SEC_CODE
 /** @violates @ref GPT_PBCFG_C_REF_1 Only preprocessor statements and comments before '#include' */
@@ -189,30 +189,30 @@ static CONSTP2CONST(Gpt_HwPredefChannelConfigType, GPT_CONST, GPT_APPL_CONST) Gp
 
 static CONST(Gpt_ChannelConfigType, GPT_CONST) Gpt_InitChannelPB[1] =
 {
-    {   /*GptChannelConfiguration_INTOS configuration data*/
+    {   /*GptChannelConfiguration_FTM0_CH0 configuration data*/
         (boolean)FALSE, /* Wakeup capability */
-        &SysDal_IntSch_TaskActivationIsr, /* Channel notification */
+        &FTM0_OverFlowNotifiation, /* Channel notification */
 #if ((GPT_WAKEUP_FUNCTIONALITY_API == STD_ON) && (GPT_REPORT_WAKEUP_SOURCE == STD_ON))
         (EcuM_WakeupSourceType)0U, /* Wakeup information */
 #endif
-        (Gpt_ValueType)(4294967295U), /* Maximum ticks value*/
+        (Gpt_ValueType)(65535U), /* Maximum ticks value*/
         (Gpt_ChannelModeType)(GPT_CH_MODE_CONTINUOUS), /* Timer mode:continous/one-shot */
         {
-            (uint8)(LPIT_0_CH_0), /* GPT physical channel no. */
-            (uint8)(GPT_LPIT_MODULE), /* hardware module ID */
-            (boolean)(FALSE), /* Freeze Enable */
-            (uint8)(0U), /* FTM Clock source, FTM is not used */
-            (Gpt_PrescalerType)(0U), /* FTM Clock divider, FTM is not used */ 
+            (uint8)(FTM_0_CH_0), /* GPT physical channel no. */
+            (uint8)(GPT_FTM_MODULE), /* hardware module ID */
+            (boolean)TRUE, /* Freeze Enable */
+            (uint8)(1U), /* FTM clock source */
+            (Gpt_PrescalerType)(3U), /* FTM Clock divider */ 
             (uint8)(0U), /* LPTMR Clock divider, LPTMR is not USED */
             (Gpt_PrescalerType)(0U),  /* LPTMR Clock Select, LPTMR is not USED */ 
 #if (GPT_SET_CLOCK_MODE == STD_ON)
-            (Gpt_PrescalerType)(0U), /* FTM alternate Clock divider, FTM is not USED */ 
+            (Gpt_PrescalerType)(3U), /* FTM alternate Clock divider */ 
             (Gpt_PrescalerType)(0U), /* LPTMR alternate Clock divider, LPTMR is not USED */ 
 #endif /*GPT_SET_CLOCK_MODE == STD_ON*/
             (uint8)0             /* SRTC Clock Select, SRTC is not USED */ 
 #if (GPT_LPIT_ENABLE_EXT_TRIGGERS==STD_ON)
             /* LPIT External/Internal Trigger Configuration */
-            ,(uint32)((uint32)1U << 23U)  /* LPIT Trigger Disabled */
+            ,(uint32)0U              /* Not used for FTM_0_CH_0 */
 #endif
         }
     }
@@ -232,7 +232,7 @@ CONST(Gpt_ConfigType, GPT_CONST)  GptChannelConfigSet =
 #endif
     /*Hardware to logic channel mapping.*/
     {
-        GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_0*/
+        GptChannelConfiguration_FTM0_CH0, /*mapping of FTM_0_CH_0*/
         GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_1*/
         GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_2*/
         GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_3*/
@@ -264,7 +264,7 @@ CONST(Gpt_ConfigType, GPT_CONST)  GptChannelConfigSet =
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_5*/
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_6*/
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_7*/
-        GptChannelConfiguration_INTOS, /*mapping of LPIT_0_CH_0*/
+        GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_0*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_1*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_2*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_3*/

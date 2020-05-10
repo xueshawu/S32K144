@@ -31,13 +31,9 @@ OS_EE_OPT += OS_EE_BUILD_DEBUG
 # Automatic options
 #
 ############################################################################
-OS_EE_OPT += OSEE_EXTENDED_STATUS
-OS_EE_OPT += OSEE_HAS_AUTOSTART_TASK
+OS_EE_OPT += OSEE_CPU_CLOCK (112000000U)
 OS_EE_OPT += OSEE_HAS_COUNTERS
 OS_EE_OPT += OSEE_HAS_IDLEHOOK
-OS_EE_OPT += OSEE_HAS_ORTI
-OS_EE_OPT += OSEE_HAS_RESOURCES
-OS_EE_OPT += OSEE_HAS_STARTUPHOOK
 OS_EE_OPT += OSEE_HAS_SYSTEM_TIMER
 OS_EE_OPT += OSEE_MULTI_STACK
 OS_EE_OPT += OSEE_OC_BCC1
@@ -55,13 +51,6 @@ OS_EE_OPT += OS_EE_KERNEL_OSEK
 OS_EE_OPT += OS_EE_RTD_BUILD_ENV_CYGWIN
 OS_EE_OPT += OS_EE_RTD_DISABLE_OS_EE_OPT_DEFINES
 
-OS_EE_LIB_OPT += OS_EE_LIB_S32K144EVB_Q100
-OS_EE_LIB_OPT += OS_EE_LIB_S32_SDK
-OS_EE_LIB_OPT += OS_EE_LIB_S32_SDK_0_8_6_EAR
-OS_EE_LIB_OPT += OS_EE_LIB_S32_SDK_SA
-
-export OS_EE_LIB_OPT
-
 
 
 
@@ -74,12 +63,6 @@ export OS_EE_LIB_OPT
 -include $(ERIKA_FILES)/mk/ee_path_helper.mk
 
 
-############################################################################
-#
-# S32 SDK Library path
-#
-############################################################################
-$(eval $(call check_and_set_cygwin_compiler_path,S32_SDK_FILES,D:\NXP\S32DS_ARM_v2.0\S32DS\S32SDK_S32K14x_EAR_0.8.6))
 
 ############################################################################
 #

@@ -369,6 +369,8 @@ FUNC(void, APPL_CODE) DemoHAL_Init( void )
 }
 
 #ifdef	OS_EE_LIB_S32_SDK
+static volatile VAR(MemSize, AUTOMATIC) TimingDelay;
+
 /**
   * @brief  Inserts a delay time.
   * @param  interval: specifies the delay time length, in milliseconds.
@@ -378,7 +380,7 @@ static FUNC(void, APPL_CODE) HAL_Delay(
 	VAR(MemSize, AUTOMATIC)	interval
 )
 {
-	volatile VAR(MemSize, AUTOMATIC) TimingDelay = interval;
+	TimingDelay = interval;
 
 	while(--TimingDelay != 0U);
 }
@@ -388,7 +390,7 @@ FUNC(void, APPL_CODE) DemoHAL_Delay(
 	VAR(MemSize, AUTOMATIC)	interval
 )
 {
-	//HAL_Delay(interval*1024*10);
+	HAL_Delay(interval*1024);
 }
 
 FUNC(void, APPL_CODE) DemoHAL_MainFunction( void ) {}
@@ -398,9 +400,9 @@ FUNC(void, APPL_CODE) DemoHAL_MainFunction( void ) {}
 #define	LED_PORT	PORTD
 #define	LED_GPIO_PORT	PTD
 #define	PCC_CLOCK	PCC_PORTD_CLOCK
-#define	LED0		15U
-#define	LED1		16U
-#define	LED2		0U
+#define	LED0		0U
+#define	LED1		15U
+#define	LED2		16U
 #endif	/* OS_EE_LIB_S32_SDK */
 
 FUNC(void, APPL_CODE) DemoHAL_LedInit( void )
@@ -410,12 +412,10 @@ FUNC(void, APPL_CODE) DemoHAL_LedInit( void )
 		LED_GPIO_PORT,
 		((1 << LED0) | (1 << LED1) | (1 << LED2))
 	);
-	
 	PINS_DRV_SetPins(
 		LED_GPIO_PORT,
 		((1 << LED0) | (1 << LED1) | (1 << LED2))
 	);
-	
 #endif	/* OS_EE_LIB_S32_SDK */
 }
 
@@ -435,11 +435,12 @@ FUNC(void, APPL_CODE) DemoHAL_LedOn(
 #endif	/* OS_EE_LIB_S32_SDK */
 		break;
 	case DEMO_HAL_LED_2:
+		break;
+	case DEMO_HAL_LED_3:
 #ifdef	OS_EE_LIB_S32_SDK
 		PINS_DRV_WritePin(LED_GPIO_PORT, LED2, 0U);
 #endif	/* OS_EE_LIB_S32_SDK */
 		break;
-	case DEMO_HAL_LED_3:
 	case DEMO_HAL_LED_4:
 	case DEMO_HAL_LED_5:
 	case DEMO_HAL_LED_6:
@@ -465,11 +466,12 @@ FUNC(void, APPL_CODE) DemoHAL_LedOff(
 #endif	/* OS_EE_LIB_S32_SDK */
 		break;
 	case DEMO_HAL_LED_2:
+		break;
+	case DEMO_HAL_LED_3:
 #ifdef	OS_EE_LIB_S32_SDK
 		PINS_DRV_WritePin(LED_GPIO_PORT, LED2, 1U);
 #endif	/* OS_EE_LIB_S32_SDK */
 		break;
-	case DEMO_HAL_LED_3:
 	case DEMO_HAL_LED_4:
 	case DEMO_HAL_LED_5:
 	case DEMO_HAL_LED_6:
@@ -495,11 +497,12 @@ FUNC(void, APPL_CODE) DemoHAL_LedToggle(
 #endif	/* OS_EE_LIB_S32_SDK */
 		break;
 	case DEMO_HAL_LED_2:
+		break;
+	case DEMO_HAL_LED_3:
 #ifdef	OS_EE_LIB_S32_SDK
 		PINS_DRV_TogglePins(LED_GPIO_PORT, (1 << LED2));
 #endif	/* OS_EE_LIB_S32_SDK */
 		break;
-	case DEMO_HAL_LED_3:
 	case DEMO_HAL_LED_4:
 	case DEMO_HAL_LED_5:
 	case DEMO_HAL_LED_6:
@@ -515,18 +518,9 @@ FUNC(void, APPL_CODE) DemoHAL_LedToggle(
 #define	BUTTON_GPIO_PORT	PTC
 #define	BUTTON0			12U
 #define	BUTTON1			13U
-
-extern FUNC(void, OS_CODE) OSEE_NAKED (PORTC_IRQHandler)( void );
 #endif	/* OS_EE_LIB_S32_SDK */
 
-FUNC(void, APPL_CODE) DemoHAL_ButtonInit( void )
-{
-#ifdef	OS_EE_LIB_S32_SDK
-	PINS_DRV_SetPinsDirection(
-		BUTTON_GPIO_PORT, (~(1U << BUTTON0) & ~(1U << BUTTON1))
-	);
-#endif	/* OS_EE_LIB_S32_SDK */
-}
+FUNC(void, APPL_CODE) DemoHAL_ButtonInit( void ) {}
 
 FUNC(OsEE_bool, APPL_CODE) DemoHAL_ButtonRead(
 	VAR(DemoHAL_Button, AUTOMATIC)	button
@@ -556,7 +550,7 @@ FUNC(OsEE_bool, APPL_CODE) DemoHAL_ButtonRead(
 	default:
 		break;
 	}
-	return !value;
+	return value;
 }
 
 FUNC(void, APPL_CODE) DemoHAL_ButtonInterruptEnable(

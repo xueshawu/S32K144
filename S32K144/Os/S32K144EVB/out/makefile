@@ -70,8 +70,9 @@ export OS_EE_BASE_DIR
 #
 ############################################################################
 OS_EE_APP_CFG_SRCS += ee_applcfg.c
-OS_EE_APP_CFG_SRCS += code.c
 OS_EE_APP_CFG_SRCS += hal.c
+OS_EE_APP_CFG_SRCS += code.c
+OS_EE_APP_CFG_SRCS += task.c
 
 
 export OS_EE_APP_CFG_SRCS

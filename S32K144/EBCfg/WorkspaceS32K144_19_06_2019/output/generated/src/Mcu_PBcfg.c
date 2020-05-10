@@ -433,8 +433,8 @@ static CONST( Mcu_SCG_RegisterConfigType, MCU_CONST) SOSC_ClockConfigPB0_0[MCU_N
         SCG_SOSCCSR_ADDR32,
         (
              SCG_SOSCCSR_SOSC_ENABLE_U32 |
-             SCG_SOSCCSR_SOSCCMRE_ISR_U32 |
-             SCG_SOSCCSR_SOSCCM_DIS_U32
+             SCG_SOSCCSR_SOSCCMRE_RESET_U32 |
+             SCG_SOSCCSR_SOSCCM_ENA_U32
          )
     }
 };
@@ -539,8 +539,8 @@ static CONST( Mcu_SCG_RegisterConfigType, MCU_CONST) SPLL_ClockConfigPB0_0[MCU_N
         SCG_SPLLCSR_ADDR32,
         (
              SCG_SPLLCSR_SPLL_ENABLE_U32 |
-             SCG_SPLLCSR_SPLLCMRE_ISR_U32 |
-             SCG_SPLLCSR_SPLLCM_DIS_U32
+             SCG_SPLLCSR_SPLLCMRE_RESET_U32 |
+             SCG_SPLLCSR_SPLLCM_ENA_U32
         )
     }
 };
@@ -706,7 +706,7 @@ static CONST( Mcu_PCC_RegisterConfigType, MCU_CONST) PCC_aRegistersConfigPB0_0[M
         PCC_FTM0_ADDR32,
         (
             PCC_CLOCK_ENABLED_U32
-             | PCC_PCS_SOSC_U32
+             | PCC_PCS_SPLL_U32
             
         )
     }

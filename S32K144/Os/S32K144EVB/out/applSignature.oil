@@ -3,41 +3,31 @@
 
 CPU mySystem {
 	APPDATA myApp {
-		APP_SRC = "code.c";
 		APP_SRC = "hal.c";
+		APP_SRC = "code.c";
+		APP_SRC = "task.c";
 	};
 	COUNTER SystemTimer {
 		MINCYCLE = 1;
 		MAXALLOWEDVALUE = 65535;
 		TICKSPERBASE = 1;
-		SECONDSPERTICK = 0.001;
+		SECONDSPERTICK = 0.01;
 		TYPE = HARDWARE {
 			PRIORITY = 1;
 			DEVICE = "SYSTICK";
 			SYSTEM_TIMER = TRUE;
 		};
 	};
-	ISR TimerISR {
-		CATEGORY = 2;
-		SOURCE = "FTM0_OVF_RELOAD";
-		PRIORITY = 1;
-	};
-	ISR ButtonsISR {
-		CATEGORY = 2;
-		SOURCE = "PORTC";
-		PRIORITY = 2;
-	};
 	OS myOs {
 		EE_OPT = "OS_EE_APPL_BUILD_DEBUG";
 		EE_OPT = "OS_EE_BUILD_DEBUG";
-		STATUS = EXTENDED;
-		STARTUPHOOK = TRUE;
-		USEORTI = TRUE;
+		USERESSCHEDULER = FALSE;
 		KERNEL_TYPE = OSEK {
 			CLASS = BCC1;
 			RQ = LL;
 		};
 		CPU_DATA = CORTEX_M {
+			CPU_CLOCK = 112;
 			MODEL = M4;
 			COMPILER = GCC;
 			EXECUTE_FROM_RAM = TRUE;
@@ -50,9 +40,6 @@ CPU mySystem {
 			};
 		};
 		BOARD_DATA = S32K144EVB_Q100;
-		LIB = S32_SDK {
-			VERSION = "0.8.6 EAR";
-		};
 		MCU_DATA = S32K1XX {
 			MODEL = S32K144;
 		};
@@ -62,16 +49,17 @@ CPU mySystem {
 	};
 	TASK Task1 {
 		PRIORITY = 1;
-		ACTIVATION = 1;
-		SCHEDULE = FULL;
 		AUTOSTART = FALSE;
-		STACK = SHARED;
+		STACK = PRIVATE {
+			SIZE = 512;
+		};
 	};
 	TASK Task2 {
 		PRIORITY = 2;
-		ACTIVATION = 1;
 		SCHEDULE = FULL;
-		AUTOSTART = TRUE;
-		STACK = SHARED;
+		AUTOSTART = FALSE;
+		STACK = PRIVATE {
+			SIZE = 512;
+		};
 	};
 };

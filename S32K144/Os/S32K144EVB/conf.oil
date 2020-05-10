@@ -56,122 +56,32 @@ CPU mySystem {
 
   
 
-  
-
-  
-
-  
-
-  /*
-   * Please uncomment ONLY one of the following configurations at a time!
-   */
-
-   
-  
-  
-
-  /* ----------------------------------------------------------- */
-
-  /* CONFIGURATION 2:
-   * Same as Configuration 1, BUT Task 1 is NON preemptive
-   */
-
-//  OS myOs { KERNEL_TYPE = OSEK { CLASS = BCC1; }; }; 
-//  TASK Task1 { SCHEDULE = NON; };
-//  TASK Task2 { ACTIVATION = 1; };
-
-  /* ----------------------------------------------------------- */
-
-  /* CONFIGURATION 3:
-   * Same as Configuration 2, BUT the code is compiled with an additional #define
-   * that controls the presence of the Schedule() function inside Task1
-   *
-   * The additional define is added with the EEOPT = "..."; statement inside 
-   * the OS object.
-   */
-
-//  OS myOs { CFLAGS = "-DMYSCHEDULE"; KERNEL_TYPE = OSEK { CLASS =  BCC1; }; };
-//  TASK Task1 { SCHEDULE = NON; };
-//  TASK Task2 { ACTIVATION = 1; };
-
-  /* ----------------------------------------------------------- */
-
-  /* CONFIGURATION 4:
-   * Same as Configuration 3, BUT Task2 supports three pending activations.
-   * The kernel type has to be BCC2 to support more than one pending activation!
-   *
-   * Note: This configuration does not work with the Demo version 
-   * (which includes only a BCC1 kernel)
-   */
-
-//  OS myOs { CFLAGS = "-DMYSCHEDULE"; KERNEL_TYPE = OSEK { CLASS = BCC2; RQ = MQ; }; };
-//  TASK Task1 { SCHEDULE = NON; };
-//  TASK Task2 { ACTIVATION = 6; };
-
-
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
 APPDATA myApp {
-		APP_SRC = "code.c";
 		APP_SRC = "hal.c";
+		APP_SRC = "code.c";
+		APP_SRC = "task.c";
 	};
 	COUNTER SystemTimer {
 		MINCYCLE = 1;
 		MAXALLOWEDVALUE = 65535;
 		TICKSPERBASE = 1;
-		SECONDSPERTICK = 0.001;
+		SECONDSPERTICK = 0.01;
 		TYPE = HARDWARE {
 			PRIORITY = 1;
 			DEVICE = "SYSTICK";
 			SYSTEM_TIMER = TRUE;
 		};
 	};
-	ISR TimerISR {
-		CATEGORY = 2;
-		SOURCE = "FTM0_OVF_RELOAD";
-		PRIORITY = 1;
-	};
-	ISR ButtonsISR {
-		CATEGORY = 2;
-		SOURCE = "PORTC";
-		PRIORITY = 2;
-	};
 	OS myOs {
 		EE_OPT = "OS_EE_APPL_BUILD_DEBUG";
 		EE_OPT = "OS_EE_BUILD_DEBUG";
-		STATUS = EXTENDED;
-		STARTUPHOOK = TRUE;
-		USEORTI = TRUE;
+		USERESSCHEDULER = FALSE;
 		KERNEL_TYPE = OSEK {
 			CLASS = BCC1;
 			RQ = LL;
 		};
 		CPU_DATA = CORTEX_M {
+			CPU_CLOCK = 112;
 			MODEL = M4;
 			COMPILER = GCC;
 			EXECUTE_FROM_RAM = TRUE;
@@ -184,9 +94,6 @@ APPDATA myApp {
 			};
 		};
 		BOARD_DATA = S32K144EVB_Q100;
-		LIB = S32_SDK {
-			VERSION = "0.8.6 EAR";
-		};
 		MCU_DATA = S32K1XX {
 			MODEL = S32K144;
 		};
@@ -196,16 +103,17 @@ APPDATA myApp {
 	};
 	TASK Task1 {
 		PRIORITY = 1;
-		ACTIVATION = 1;
-		SCHEDULE = FULL;
 		AUTOSTART = FALSE;
-		STACK = SHARED;
+		STACK = PRIVATE {
+			SIZE = 512;
+		};
 	};
 	TASK Task2 {
 		PRIORITY = 2;
-		ACTIVATION = 1;
 		SCHEDULE = FULL;
-		AUTOSTART = TRUE;
-		STACK = SHARED;
+		AUTOSTART = FALSE;
+		STACK = PRIVATE {
+			SIZE = 512;
+		};
 	};
 };

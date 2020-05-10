@@ -308,7 +308,7 @@ extern "C"{
 /**
 * @brief            ISR Mcu_PllDigPll0_LossOfLock_ISR is/isn't available (STD_ON/STD_OFF)
 */
-#define MCU_SPLL_ISR_USED (STD_ON)
+#define MCU_SPLL_ISR_USED (STD_OFF)
 
 /**
 * @brief            Enable the usage of Non-Autosar API Mcu_SscmGetMemConfig(). Get SSCM_MEMCONFIG.
