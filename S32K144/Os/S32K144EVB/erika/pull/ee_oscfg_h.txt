@@ -54,11 +54,18 @@
  *
  **************************************************************************/
 #define OSEE_CPU_CLOCK (112000000U)
+#define OSEE_EXTENDED_STATUS
+#define OSEE_HAS_ALARMS
+#define OSEE_HAS_AUTOSTART_TASK
+#define OSEE_HAS_AUTOSTART_TRIGGER
 #define OSEE_HAS_COUNTERS
+#define OSEE_HAS_EVENTS
 #define OSEE_HAS_IDLEHOOK
+#define OSEE_HAS_ORTI
 #define OSEE_HAS_SYSTEM_TIMER
 #define OSEE_MULTI_STACK
-#define OSEE_OC_BCC1
+#define OSEE_OC_ECC1
+#define OSEE_RQ_MULTIQUEUE
 #define OSEE_SINGLE_ACTIVATION
 #define OSEE_SYS_STACK_SIZE (0x400U)
 #define OSEE_SYS_STACK_SIZE_ASM 0x400
@@ -79,6 +86,7 @@
  *
  **************************************************************************/
 
+#define OSEE_RQ_PRIO_NUM (2U)
 
 #define OSMAXALLOWEDVALUE (65535U)
 #define OSTICKSPERBASE    (1U)

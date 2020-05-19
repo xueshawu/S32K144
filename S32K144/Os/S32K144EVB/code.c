@@ -86,7 +86,7 @@ void idle_hook(void)
 	++idle_cnt;
 	if (idle_cnt >= IDLE_CNT_MAX) {
 		idle_cnt = 0;
-		ActivateTask(Task1);
+		ActivateTask(SystemInitTask1);
 		DemoHAL_LedToggle(DEMO_HAL_LED_0);
 		DemoHAL_SerialWrite(IDLE_STR, IDLE_STR_LEN);
 	}

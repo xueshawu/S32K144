@@ -32,7 +32,7 @@ extern "C" {
  * Declare tasks
  *
  **************************************************************************/
-DeclareTask(Task1);
+DeclareTask(SystemInitTask);
 DeclareTask(Task2);
 
 

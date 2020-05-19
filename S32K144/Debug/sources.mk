@@ -55,6 +55,7 @@ Mcal/Adc_TS_T40D2M10I1R0/src \
 Mcal/Det_TS_T40D2M10I1R0/src \
 Mcal/Dio_TS_T40D2M10I1R0/src \
 Mcal/Gpt_TS_T40D2M10I1R0/src \
+Mcal/Mcl_TS_T40D2M10I1R0/src \
 Mcal/Mcu_TS_T40D2M10I1R0/src \
 Mcal/Port_TS_T40D2M10I1R0/src \
 Mcal/Pwm_TS_T40D2M10I1R0/src \

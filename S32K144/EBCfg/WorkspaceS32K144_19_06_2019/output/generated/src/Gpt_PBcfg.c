@@ -189,7 +189,7 @@ static CONSTP2CONST(Gpt_HwPredefChannelConfigType, GPT_CONST, GPT_APPL_CONST) Gp
 
 static CONST(Gpt_ChannelConfigType, GPT_CONST) Gpt_InitChannelPB[1] =
 {
-    {   /*GptChannelConfiguration_FTM0_CH0 configuration data*/
+    {   /*GptChannelConfiguration_FTM3_CH7 configuration data*/
         (boolean)FALSE, /* Wakeup capability */
         &FTM0_OverFlowNotifiation, /* Channel notification */
 #if ((GPT_WAKEUP_FUNCTIONALITY_API == STD_ON) && (GPT_REPORT_WAKEUP_SOURCE == STD_ON))
@@ -198,7 +198,7 @@ static CONST(Gpt_ChannelConfigType, GPT_CONST) Gpt_InitChannelPB[1] =
         (Gpt_ValueType)(65535U), /* Maximum ticks value*/
         (Gpt_ChannelModeType)(GPT_CH_MODE_CONTINUOUS), /* Timer mode:continous/one-shot */
         {
-            (uint8)(FTM_0_CH_0), /* GPT physical channel no. */
+            (uint8)(FTM_3_CH_7), /* GPT physical channel no. */
             (uint8)(GPT_FTM_MODULE), /* hardware module ID */
             (boolean)TRUE, /* Freeze Enable */
             (uint8)(1U), /* FTM clock source */
@@ -212,7 +212,7 @@ static CONST(Gpt_ChannelConfigType, GPT_CONST) Gpt_InitChannelPB[1] =
             (uint8)0             /* SRTC Clock Select, SRTC is not USED */ 
 #if (GPT_LPIT_ENABLE_EXT_TRIGGERS==STD_ON)
             /* LPIT External/Internal Trigger Configuration */
-            ,(uint32)0U              /* Not used for FTM_0_CH_0 */
+            ,(uint32)0U              /* Not used for FTM_3_CH_7 */
 #endif
         }
     }
@@ -232,7 +232,7 @@ CONST(Gpt_ConfigType, GPT_CONST)  GptChannelConfigSet =
 #endif
     /*Hardware to logic channel mapping.*/
     {
-        GptChannelConfiguration_FTM0_CH0, /*mapping of FTM_0_CH_0*/
+        GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_0*/
         GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_1*/
         GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_2*/
         GPT_CHN_NOT_USED, /*mapping of FTM_0_CH_3*/
@@ -263,7 +263,7 @@ CONST(Gpt_ConfigType, GPT_CONST)  GptChannelConfigSet =
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_4*/
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_5*/
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_6*/
-        GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_7*/
+        GptChannelConfiguration_FTM3_CH7, /*mapping of FTM_3_CH_7*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_0*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_1*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_2*/

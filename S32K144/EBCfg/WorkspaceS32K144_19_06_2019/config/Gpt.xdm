@@ -60,7 +60,7 @@
                       </a:a>
                     </d:var>
                     <d:var name="GptHwChannel" type="ENUMERATION" 
-                           value="FTM_0_CH_0"/>
+                           value="FTM_3_CH_7"/>
                     <d:var name="GptChannelMode" type="ENUMERATION" 
                            value="GPT_CH_MODE_CONTINUOUS"/>
                     <d:var name="GptChannelTickFrequency" type="FLOAT" 
@@ -343,16 +343,12 @@
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_19" type="IDENTIFIABLE">
                   <a:a name="IMPORTER_INFO" value="Gpt"/>
-                  <d:var name="GptIsrEnable" type="BOOLEAN" value="false">
-                    <a:a name="IMPORTER_INFO" value="Gpt"/>
-                  </d:var>
+                  <d:var name="GptIsrEnable" type="BOOLEAN" value="true"/>
                   <d:var name="GptIsrHwId" type="ENUMERATION" 
                          value="FTM_3_CH_6_CH_7">
                     <a:a name="IMPORTER_INFO" value="Gpt"/>
                   </d:var>
-                  <d:var name="GptModuleIsUsed" type="BOOLEAN" value="false">
-                    <a:a name="IMPORTER_INFO" value="Gpt"/>
-                  </d:var>
+                  <d:var name="GptModuleIsUsed" type="BOOLEAN" value="true"/>
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_2" type="IDENTIFIABLE">
                   <a:a name="IMPORTER_INFO" value="Gpt"/>
@@ -408,12 +404,12 @@
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_4" type="IDENTIFIABLE">
                   <a:a name="IMPORTER_INFO" value="Gpt"/>
-                  <d:var name="GptIsrEnable" type="BOOLEAN" value="true"/>
+                  <d:var name="GptIsrEnable" type="BOOLEAN" value="false"/>
                   <d:var name="GptIsrHwId" type="ENUMERATION" 
                          value="FTM_0_CH_0_CH_1">
                     <a:a name="IMPORTER_INFO" value="Gpt"/>
                   </d:var>
-                  <d:var name="GptModuleIsUsed" type="BOOLEAN" value="true"/>
+                  <d:var name="GptModuleIsUsed" type="BOOLEAN" value="false"/>
                 </d:ctr>
                 <d:ctr name="GptHwConfiguration_5" type="IDENTIFIABLE">
                   <a:a name="IMPORTER_INFO" value="Gpt"/>

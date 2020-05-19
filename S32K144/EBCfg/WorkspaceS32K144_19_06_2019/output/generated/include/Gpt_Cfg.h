@@ -229,7 +229,7 @@ extern "C"{
 */
 
             /** @violates @ref GPT_CFG_H_REF_2 Identifier clash */
-        #define GptChannelConfiguration_FTM0_CH0 (0U)
+        #define GptChannelConfiguration_FTM3_CH7 (0U)
             
 
 /*@}*/
@@ -256,7 +256,7 @@ extern "C"{
 
 
 
-#define GPT_FTM_0_CH_0_CH_1_ISR_USED
+#define GPT_FTM_3_CH_6_CH_7_ISR_USED
         
 
 
@@ -268,7 +268,7 @@ extern "C"{
 * @{
 * @brief Defines for HW IPs will be used by GPT driver
 */
-#define GPT_FTM_0_USED
+#define GPT_FTM_3_USED
 
 #define GPT_PRECOMPILE_SUPPORT  (STD_OFF)
 

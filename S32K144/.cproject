@@ -198,6 +198,8 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/include"/>
@@ -347,6 +349,8 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/include"/>
@@ -498,6 +502,8 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/include"/>
