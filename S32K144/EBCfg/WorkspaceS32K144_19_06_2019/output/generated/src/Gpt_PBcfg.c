@@ -189,7 +189,7 @@ static CONSTP2CONST(Gpt_HwPredefChannelConfigType, GPT_CONST, GPT_APPL_CONST) Gp
 
 static CONST(Gpt_ChannelConfigType, GPT_CONST) Gpt_InitChannelPB[1] =
 {
-    {   /*GptChannelConfiguration_FTM3_CH7 configuration data*/
+    {   /*GptChannelConfiguration_FTM0_CH0 configuration data*/
         (boolean)FALSE, /* Wakeup capability */
         &FTM0_OverFlowNotifiation, /* Channel notification */
 #if ((GPT_WAKEUP_FUNCTIONALITY_API == STD_ON) && (GPT_REPORT_WAKEUP_SOURCE == STD_ON))
@@ -263,7 +263,7 @@ CONST(Gpt_ConfigType, GPT_CONST)  GptChannelConfigSet =
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_4*/
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_5*/
         GPT_CHN_NOT_USED, /*mapping of FTM_3_CH_6*/
-        GptChannelConfiguration_FTM3_CH7, /*mapping of FTM_3_CH_7*/
+        GptChannelConfiguration_FTM0_CH0, /*mapping of FTM_3_CH_7*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_0*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_1*/
         GPT_CHN_NOT_USED, /*mapping of LPIT_0_CH_2*/

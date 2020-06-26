@@ -36,6 +36,8 @@
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot.1702173788" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.822787824" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB/erika/inc}&quot;"/>
@@ -45,6 +47,8 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Adc_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Adc_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Base_TS_T40D2M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Can_TS_T40D2M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Can_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Det_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Det_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Dio_TS_T40D2M10I1R0/include}&quot;"/>
@@ -187,6 +191,7 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.Project_Settings/Debugger/hello_Debug_RAM.launch" name="hello_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug_RAM.launch" toolsToInvoke=""/>
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.Project_Settings/Debugger/hello_Release.launch" name="hello_Release.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Release.launch" toolsToInvoke=""/>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanIf"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
@@ -338,6 +343,7 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.Project_Settings/Debugger/hello_Debug_RAM.launch" name="hello_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug_RAM.launch" toolsToInvoke=""/>
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.Project_Settings/Debugger/hello_Debug.launch" name="hello_Debug.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug.launch" toolsToInvoke=""/>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
@@ -491,6 +497,7 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM.Project_Settings/Debugger/hello_Debug.launch" name="hello_Debug.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug.launch" toolsToInvoke=""/>
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM.Project_Settings/Debugger/hello_Release.launch" name="hello_Release.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Release.launch" toolsToInvoke=""/>
 					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>

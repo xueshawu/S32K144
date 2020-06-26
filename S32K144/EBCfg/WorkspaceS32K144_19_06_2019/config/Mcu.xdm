@@ -466,6 +466,18 @@
                         <d:var name="McuClockFrequencySelect" 
                                type="ENUMERATION" value="FTM0_CLK"/>
                       </d:ctr>
+                      <d:ctr name="McuClockReferencePoint_CAN" 
+                             type="IDENTIFIABLE">
+                        <d:var name="McuClockReferencePointFrequency" 
+                               type="FLOAT" value="1.12E8">
+                          <a:a name="IMPORTER_INFO">
+                            <a:v>@CALC</a:v>
+                            <a:v>@DEF</a:v>
+                          </a:a>
+                        </d:var>
+                        <d:var name="McuClockFrequencySelect" 
+                               type="ENUMERATION" value="SPLL_CLK"/>
+                      </d:ctr>
                     </d:lst>
                     <d:ctr name="McuFIRCClockConfig" type="IDENTIFIABLE">
                       <a:a name="IMPORTER_INFO" value="Mcu"/>
@@ -1739,9 +1751,7 @@
                     <d:var name="McuMode" type="INTEGER" value="0">
                       <a:a name="IMPORTER_INFO" value="Mcu"/>
                     </d:var>
-                    <d:var name="McuPowerMode" type="ENUMERATION" value="RUN">
-                      <a:a name="IMPORTER_INFO" value="Mcu"/>
-                    </d:var>
+                    <d:var name="McuPowerMode" type="ENUMERATION" value="HSRUN"/>
                   </d:ctr>
                 </d:lst>
                 <d:ctr name="McuPowerControl" type="IDENTIFIABLE">

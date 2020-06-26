@@ -229,7 +229,7 @@ extern "C"{
 */
 
             /** @violates @ref GPT_CFG_H_REF_2 Identifier clash */
-        #define GptChannelConfiguration_FTM3_CH7 (0U)
+        #define GptChannelConfiguration_FTM0_CH0 (0U)
             
 
 /*@}*/

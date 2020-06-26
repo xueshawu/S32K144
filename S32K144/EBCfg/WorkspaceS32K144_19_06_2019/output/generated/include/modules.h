@@ -107,7 +107,7 @@ extern "C" {
 /** 
 * @brief This constant used for other modules to check if CAN is present in the project.  
 */
-#define USE_CAN_MODULE              (STD_OFF)
+#define USE_CAN_MODULE              (STD_ON)
 
 /** 
 * @brief This constant used for other modules to check if CRCU is present in the project.  

@@ -362,7 +362,7 @@ static CONST( Mcu_ModeConfigType, MCU_CONST) Mcu_Mode_ConfigPB0[1] =
         (uint8)0U,
         
         /* Power Mode */
-        (Mcu_PowerModeType)MCU_RUN_MODE
+        (Mcu_PowerModeType)MCU_HSRUN_MODE
     }
     /* end of Mcu_Mode_ConfigPB0[0]. */
 

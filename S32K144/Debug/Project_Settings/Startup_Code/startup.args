@@ -1,6 +1,8 @@
 -DCPU_S32K144HFT0VLLT
 -DDISABLE_WDOG
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/CanIf/include"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/CanIf/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/S32K144EVB/erika/inc"
@@ -10,6 +12,8 @@
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Adc_TS_T40D2M10I1R0/include"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Adc_TS_T40D2M10I1R0/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Base_TS_T40D2M10I1R0/include"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Can_TS_T40D2M10I1R0/include"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Can_TS_T40D2M10I1R0/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Det_TS_T40D2M10I1R0/include"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Det_TS_T40D2M10I1R0/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Dio_TS_T40D2M10I1R0/include"

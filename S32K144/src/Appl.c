@@ -39,7 +39,7 @@ int main(void)
   Mcu_Init(&McuModuleConfiguration);
   Mcu_InitClock(0);
   Port_Init(&PortConfigSet);
-  //Gpt_Init(&GptChannelConfigSet);
+  //Gpt_Init(&GptChannelConfigSet);ni ni
   //Gpt_StartTimer(GptChannelConfiguration_FTM0_CH0, 500);
   StartOS(OSDEFAULTAPPMODE);
   return 0;
