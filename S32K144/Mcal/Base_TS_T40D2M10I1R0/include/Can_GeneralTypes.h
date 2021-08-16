@@ -179,15 +179,15 @@ typedef struct
 */
 
 typedef struct
-    {
-        VAR(Can_IdType, CAN_VAR) CanId ; /**< @brief Standard/Extended CAN ID of CAN L-PDU. */
+{
+    VAR(Can_IdType, CAN_VAR) CanId ; /**< @brief Standard/Extended CAN ID of CAN L-PDU. */
                                                  
-        VAR(Can_HwHandleType, CAN_VAR)  Hoh; /**< @brief ID of the corresponding Hardware Object Range */
+    VAR(Can_HwHandleType, CAN_VAR)  Hoh; /**< @brief ID of the corresponding Hardware Object Range */
         
-        VAR(uint8, CAN_VAR) ControllerId  ; /**< @brief ControllerId provided by CanIf clearly 
+    VAR(uint8, CAN_VAR) ControllerId  ; /**< @brief ControllerId provided by CanIf clearly 
                                                 identify the corresponding controller */
                                                 
-    } Can_HwType;
+} Can_HwType;
 
 
 /*==================================================================================================

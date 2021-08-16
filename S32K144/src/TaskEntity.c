@@ -27,7 +27,7 @@ TASK(Task2)
     {
         (void)WaitEvent(TASK2_ScheduledEvent_10Ms);
         (void)GetEvent(Task2, &eventMask);
-        (void)ClearEvent(eventMask&(TASK2_ScheduledEvent_10Ms)); 
+        (void)ClearEvent(eventMask&(TASK2_ScheduledEvent_10Ms));
         g_taks2RunnnigCnt++;
     }
     TerminateTask();
