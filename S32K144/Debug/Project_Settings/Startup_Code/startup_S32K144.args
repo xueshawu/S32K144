@@ -1,10 +1,12 @@
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include"
--I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/S32K144EVB/out"
--I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/S32K144EVB/erika/inc"
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_C/include/arm"
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include"
 -I"D:/NXP/S32DS_ARM_v2.0/S32DS/arm_ewl2/EWL_Runtime/include/arm"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/include"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/cfg"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/inc"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/src"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/CanTp"
 -x assembler-with-cpp
 -O0
 -g3

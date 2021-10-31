@@ -177,7 +177,7 @@ extern "C"{
     /* Check if current file and CANIF_CBK header file are of the same version */
     #if ((CAN_AR_RELEASE_MAJOR_VERSION_IRQ_C != CANIF_CBK_AR_RELEASE_MAJOR_VERSION) || \
          (CAN_AR_RELEASE_MINOR_VERSION_IRQ_C != CANIF_CBK_AR_RELEASE_MINOR_VERSION))
-        #error "AutoSar Version Numbers of Can_Irq.c and CanIf_Cbk.h are different"
+        //#error "AutoSar Version Numbers of Can_Irq.c and CanIf_Cbk.h are different"
     #endif
     /* Check if current file and Mcal.h header file are of the same version */
     #if ((CAN_AR_RELEASE_MAJOR_VERSION_IRQ_C != MCAL_AR_RELEASE_MAJOR_VERSION) || \

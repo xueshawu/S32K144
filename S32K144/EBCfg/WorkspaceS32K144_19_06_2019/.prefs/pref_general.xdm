@@ -246,6 +246,60 @@
         <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
         <d:var name="SoftwareVersion" value="1.0.1 RTM"/>
       </d:ctr>
+      <d:ctr name="EcuM">
+        <d:var name="ModuleId" value="EcuM_TS_T40D2M10I1R0"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="1.0.1 RTM"/>
+        <d:var name="ConfigurationFileURL" value="config\EcuM.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+      </d:ctr>
+      <d:ctr name="Fls">
+        <d:var name="ConfigurationFileURL" value="config\Fls.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Fls_TS_T40D2M10I1R0"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="1.0.1 RTM"/>
+      </d:ctr>
+      <d:ctr name="Fee">
+        <d:var name="ConfigurationFileURL" value="config\Fee.xdm"/>
+        <d:var name="ConfigurationFormat" value="xdm"/>
+        <d:var name="GenerationPath" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="PreConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="RecConfig" >
+          <a:a name="IMPORTER_INFO" value="@DEF"/>
+        </d:var>
+        <d:var name="ModuleId" value="Fee_TS_T40D2M10I1R0"/>
+        <d:var name="Enabled" value="TRUE"/>
+        <d:var name="Generate" value="TRUE"/>
+        <d:var name="LoadExistingConfigurationFile" value="FALSE"/>
+        <d:var name="SoftwareVersion" value="1.0.1 RTM"/>
+      </d:ctr>
     </d:lst>
     <d:lst name="AutoconfigureTriggers" type="MAP"/>
     <d:lst name="WizardConfigurations" type="MAP"/>

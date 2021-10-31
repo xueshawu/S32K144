@@ -200,7 +200,7 @@ Driver Limitations:
     /* Check if current file and CANIF_CBK header file are of the same version */
     #if ((CAN_AR_RELEASE_MAJOR_VERSION_C != CANIF_CBK_AR_RELEASE_MAJOR_VERSION) || \
          (CAN_AR_RELEASE_MINOR_VERSION_C != CANIF_CBK_AR_RELEASE_MINOR_VERSION))
-        #error "AutoSar Version Numbers of Can.c and CanIf_Cbk.h are different"
+        //#error "AutoSar Version Numbers of Can.c and CanIf_Cbk.h are different"
     #endif
     /* Check if current file and Std_Types.h header file are of the same version */
     #if ((CAN_AR_RELEASE_MAJOR_VERSION_C != STD_AR_RELEASE_MAJOR_VERSION) || \

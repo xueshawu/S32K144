@@ -59,7 +59,7 @@
                   <PARAMETER-VALUES>
                     <ECUC-NUMERICAL-PARAM-VALUE>
                       <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/TS_T40D2M10I1R0/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMConfigConsistencyHash</DEFINITION-REF>
-                      <VALUE>0</VALUE>
+                      <VALUE>254</VALUE>
                     </ECUC-NUMERICAL-PARAM-VALUE>
                   </PARAMETER-VALUES>
                   <REFERENCE-VALUES>
@@ -91,7 +91,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I1R0/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMSleepMode/EcuMSleepModeSuspend</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                       <REFERENCE-VALUES>
@@ -114,7 +114,7 @@
                         </ECUC-NUMERICAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I1R0/EcuM/EcuMConfiguration/EcuMCommonConfiguration/EcuMWakeupSource/EcuMWakeupSourcePolling</DEFINITION-REF>
-                          <VALUE>0</VALUE>
+                          <VALUE>1</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
@@ -136,7 +136,7 @@
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-FLOAT-PARAM-DEF">/TS_T40D2M10I1R0/EcuM/EcuMGeneral/EcuMMainFunctionPeriod</DEFINITION-REF>
-                  <VALUE>0.0</VALUE>
+                  <VALUE>1.0</VALUE>
                 </ECUC-NUMERICAL-PARAM-VALUE>
                 <ECUC-NUMERICAL-PARAM-VALUE>
                   <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T40D2M10I1R0/EcuM/EcuMGeneral/EcuMVersionInfoApi</DEFINITION-REF>

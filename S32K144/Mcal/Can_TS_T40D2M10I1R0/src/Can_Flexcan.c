@@ -226,7 +226,7 @@ extern "C"{
   #ifndef DISABLE_MCAL_INTERMODULE_ASR_CHECK
     #if ((CAN_FLEXCAN_AR_RELEASE_MAJOR_VERSION_C != CANIF_CBK_AR_RELEASE_MAJOR_VERSION) || \
          (CAN_FLEXCAN_AR_RELEASE_MINOR_VERSION_C != CANIF_CBK_AR_RELEASE_MINOR_VERSION))
-        #error "AutoSar Version Numbers of Can_FlexCan.cand CanIf_Cbk.h are different"
+        //#error "AutoSar Version Numbers of Can_FlexCan.cand CanIf_Cbk.h are different"
     #endif
   #endif
 
@@ -253,7 +253,7 @@ extern "C"{
   #ifndef CAN_TIMEOUT_AS_LOOP
     #if ((CAN_FLEXCAN_AR_RELEASE_MAJOR_VERSION_C != OS_AR_RELEASE_MAJOR_VERSION) || \
         (CAN_FLEXCAN_AR_RELEASE_MINOR_VERSION_C != OS_AR_RELEASE_MINOR_VERSION))
-        #error "AutoSar Version Numbers of FlexCan.c and Os.h are different"
+       // #error "AutoSar Version Numbers of FlexCan.c and Os.h are different"
     #endif
   #endif
    /* Check if current file and Mcal.h file are of the same Software version */
@@ -2149,7 +2149,7 @@ static FUNC (Std_ReturnType, CAN_CODE) Can_FlexCan_UpdateMB( VAR(uint8, AUTOMATI
                             for this hardware object (CanTriggerTransmitEnable = TRUE). */
                     /* [SWS_CAN_00504] If the trigger transmit API is enabled for the hardware object, Can_Write() shall interpret a null pointer as SDU 
                                 (Can_PduType.Can_SduPtrType = NULL) as request for using the trigger transmit interface. 
-                                   If so and the hardware object is free, Can_Write() shall call CanIf_TriggerTransmit() to acquire the PDU’s data. */
+                                   If so and the hardware object is free, Can_Write() shall call CanIf_TriggerTransmit() to acquire the PDU鈥檚 data. */
                     TxPduId = PduInfo->swPduHandle;
                     /* @violates @ref Can_Flexcan_c_REF_6 Violates MISRA 2004 Required Rule 17.4,pointer arithmetic other than array indexing used */
                     PduInfoPtr.SduLength = ((Can_pCurrentConfig->MBConfigContainer.pMessageBufferConfigsPtr) + u16MBGlobalIndex)->u8MBPayloadLength;
@@ -4572,10 +4572,10 @@ FUNC (void, CAN_CODE) Can_FlexCan_ProcessTx( CONST(uint8, AUTOMATIC) controller,
     {
         /* Calculate Boundary mask for a MBs range in this ISR */
         /* example: mbindex_start = 3, mbindex_end = 12 (just in IFLAG1)
-        *       u32BoundaryMask  = 0x‭FFFF FFF8‬
-        *       u32BoundaryMask  = 0x‭FFFF FFF8‬ & ‭‭‭0x0000 1FFF
+        *       u32BoundaryMask  = 0x鈥璅FFF FFF8鈥�
+        *       u32BoundaryMask  = 0x鈥璅FFF FFF8鈥� & 鈥���0x0000 1FFF
         *       u32BoundaryMask  = 0x0000 1FF8
-        *       u32BoundaryMask  = ‭0b0000 0000 0000 ‭0001 1111 1111 1000‬
+        *       u32BoundaryMask  = 鈥�0b0000 0000 0000 鈥�0001 1111 1111 1000鈥�
         *       => masked for indexes from 3 to 12
         *       in this ISR, driver just process MBs that have index from 3 to 12, other cases: (u32IflagReg & u32TempFlag) = 0.
         */
@@ -4808,10 +4808,10 @@ FUNC (void, CAN_CODE) Can_FlexCan_ProcessRx( CONST(uint8, AUTOMATIC) controller,
     {
         /* Calculate Boundary mask for a MBs range in this ISR */
         /* example: mbindex_start = 3, mbindex_end = 12 (just in IFLAG1)
-        *       u32BoundaryMask  = 0x‭FFFF FFF8‬
-        *       u32BoundaryMask  = 0x‭FFFF FFF8‬ & ‭‭‭0x0000 1FFF
+        *       u32BoundaryMask  = 0x鈥璅FFF FFF8鈥�
+        *       u32BoundaryMask  = 0x鈥璅FFF FFF8鈥� & 鈥���0x0000 1FFF
         *       u32BoundaryMask  = 0x0007 FFF8
-        *       u32BoundaryMask  = ‭0b0000 0000 0000 ‭0001 1111 1111 1000‬
+        *       u32BoundaryMask  = 鈥�0b0000 0000 0000 鈥�0001 1111 1111 1000鈥�
         *       => masked for indexes from 3 to 12
         *       in this ISR, driver just process MBs that have index from 3 to 12.
         */

@@ -190,6 +190,35 @@ typedef struct
 } Can_HwType;
 
 
+/* Operating modes of the CAN Transceiver Driver. */
+typedef enum
+{
+  CANTRCV_TRCVMODE_NORMAL,        /* Transceiver mode NORMAL */
+  CANTRCV_TRCVMODE_SLEEP,    /* Transceiver mode SLEEP */
+  CANTRCV_TRCVMODE_STANDBY       /*Transceiver mode STANDBY */
+} CanTrcv_TrcvModeType;
+
+
+/* CAN state transition type */
+typedef enum
+{
+  CAN_T_START,    /* CAN controller transition value to request state STARTED */
+  CAN_T_STOP,     /* CAN controller transition value to request state STOPPED */
+  CAN_T_SLEEP,    /* CAN controller transition value to request state SLEEP */
+  CAN_T_WAKEUP    /* CAN controller transition value to request state STOPPED
+                     from state SLEEP  */
+} Can_StateTransitionType;
+
+
+/* Type for return values of few of the CAN Driver APIs */
+typedef enum
+{
+  CAN_OK,        /* success */
+  CAN_NOT_OK,    /* error occurred or wakeup occurred during sleep transition */
+  CAN_BUSY       /* transmit request could not be processed because no transmit 
+                    object was available */
+} Can_ReturnType;
+
 /*==================================================================================================
 *                                GLOBAL VARIABLE DECLARATIONS
 ==================================================================================================*/

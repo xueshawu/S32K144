@@ -187,7 +187,7 @@ extern "C"{
     /* Check if current file and CanIf_Cbk.h file are of the same Software version */
     #if ((CAN_FLEXCAN_AR_RELEASE_MAJOR_VERSION_H != CANIF_CBK_AR_RELEASE_MAJOR_VERSION) || \
         (CAN_FLEXCAN_AR_RELEASE_MINOR_VERSION_H != CANIF_CBK_AR_RELEASE_MINOR_VERSION))
-        #error "AutoSar Version Numbers of FlexCan.h and CanIf_Cbk.h are different"
+        //#error "AutoSar Version Numbers of FlexCan.h and CanIf_Cbk.h are different"
     #endif
 #endif
 /*==================================================================================================

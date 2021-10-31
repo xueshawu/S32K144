@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 110
+#Progress monitor hint: 163
 first : all
 -include ../makefile.init
 
@@ -14,18 +14,27 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir.mk
+-include Bsw/CanIf/subdir.mk
+-include Bsw/CanIf/Integration/subdir.mk
+-include Bsw/CanIf/src/subdir.mk
+-include Bsw/CanTp/src/subdir.mk
+-include Bsw/PduR/src/subdir.mk
 -include EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src/subdir.mk
 -include Mcal/Adc_TS_T40D2M10I1R0/src/subdir.mk
+-include Mcal/Can_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Det_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Dio_TS_T40D2M10I1R0/src/subdir.mk
+-include Mcal/EcuM_TS_T40D2M10I1R0/src/subdir.mk
+-include Mcal/Fee_TS_T40D2M10I1R0/src/subdir.mk
+-include Mcal/Fls_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Gpt_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Mcl_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Mcu_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Port_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Pwm_TS_T40D2M10I1R0/src/subdir.mk
 -include Mcal/Rte_TS_T40D2M10I1R0/src/subdir.mk
--include Os/S32K144EVB/erika/src/subdir.mk
--include Os/S32K144EVB/out/subdir.mk
+-include Os/cfg/subdir.mk
+-include Os/src/subdir.mk
 -include Project_Settings/Linker_Files/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
 -include src/subdir.mk
@@ -65,14 +74,14 @@ all: warning-messages explicit-dependencies S32K144.elf secondary-outputs
 # Tool invocations
 S32K144.elf: $(OBJS) E:/mywork/myproject/My_Github/S32K144/S32K144/Project_Settings/Linker_Files/S32K1xx_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
-	@echo 'Executing target #111 $@'
+	@echo 'Executing target #164 $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "S32K144.elf" "@S32K144.args"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 S32K144.siz: $(EXECUTABLES)
-	@echo 'Executing target #112 $@'
+	@echo 'Executing target #165 $@'
 	@echo 'Invoking: Standard S32DS Print Size'
 	arm-none-eabi-size --format=berkeley $(EXECUTABLES)
 	@echo 'Finished building: $@'
@@ -80,7 +89,7 @@ S32K144.siz: $(EXECUTABLES)
 
 # Other Targets
 clean:
-	-$(RM) ./*/*.d ./*/*/*.d ./*/*/*/*.d ./*/*/*/*/*.d ./*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*.o ./*/*/*/*/*.o ./*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
+	-$(RM) ./*/*.d ./*/*/*.d ./*/*/*/*.d ./*/*/*/*/*/*.d  ./*/*.o ./*/*/*.o ./*/*/*/*.o ./*/*/*/*/*/*.o  $(SECONDARY_SIZE_QUOTED) $(EXECUTABLES_QUOTED)
 	-@echo ' '
 
 secondary-outputs: $(SECONDARY_SIZE)

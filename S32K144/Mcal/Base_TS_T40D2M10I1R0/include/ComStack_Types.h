@@ -316,6 +316,9 @@ typedef struct
 * @implements IcomConfigIdType_type
 */
 typedef uint8        IcomConfigIdType;
+
+
+typedef uint8 CanIf_ControllerModeType;
  
 /*==================================================================================================
 *                                 GLOBAL VARIABLE DECLARATIONS

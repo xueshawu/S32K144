@@ -176,7 +176,7 @@ extern "C"{
 
 
 /* This macro defines the total of HOH configured */
-#define CAN_MAXMBCOUNT_PB   2U
+#define CAN_MAXMBCOUNT_PB   3U
 
 /*==================================================================================================
 *                                      LOCAL CONSTANTS
@@ -244,7 +244,8 @@ static CONST(Can_RxFiFoTableIdConfigType, CAN_CONST) RxFifoTableID_PBConfig0[CAN
 /*==================================================================================================*/
 static CONST(Can_IdType, CAN_CONST) Can_FilterMasks0_PB[CAN_MAXFILTERCOUNT_0] =
 {
-    (Can_IdType)0x0U  /* FilterMasks0[0], "CanHwFilter" */
+    (Can_IdType)0x7ffU, /* FilterMasks0[0], "CanHwFilter" */
+    (Can_IdType)0x7ffU  /* FilterMasks0[1], "CanHwFilter" */
 };
 
 /*==================================================================================================*/
@@ -256,13 +257,13 @@ static CONST(Can_IdType, CAN_CONST) Can_FilterMasks0_PB[CAN_MAXFILTERCOUNT_0] =
 /*==================================================================================================*/
 static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT_PB] =
 {
-    /* CanHardwareObject_0 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Rx_Std_MailBox_0 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
         CAN_RECEIVE, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x0U, /* MessageId */
+        (Can_IdType)0x7c0U, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x0U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
@@ -279,23 +280,23 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_0 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_0 uses Interrupt */
     },
 
-    /* CanHardwareObject_1 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Rx_Std_MailBox_1 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
-        CAN_TRANSMIT, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x0U, /* MessageId */
+        CAN_RECEIVE, /* Receive/Transmit MB configuration */
+        (Can_IdType)0x7dfU, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x1U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
         (uint8)0U,
         #endif
         /* Read/Write period reference used when POLLING mode is selected for the controller */
-        (uint8)0U,   /* HOH configured for INTERRUPT mode, reference not used */
+        (uint8)0U, /* HOH configured for INTERRUPT mode, reference not used */
         
         (uint16)0x0100U,       /* Address of Message Buffer  */
         (uint8)8U,    /* Payload lenth of Message Buffer */
@@ -305,7 +306,33 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_1 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_1 uses Interrupt */
+    },
+
+    /* CanHardwareObject_NODE0_Rx_Std_MailBox_2 Message Buffer of Can Controller ID = 0U*/
+    {
+        (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
+        (uint8)0U, /* ControllerId  - based on the order from CanController list */
+        CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
+        CAN_TRANSMIT, /* Receive/Transmit MB configuration */
+        (Can_IdType)0x0U, /* MessageId */
+        (uint8)0x0U, /* Local priority bits used for arbitration */
+        (Can_HwHandleType)0x2U, /* Hardware Object ID */
+        #if (CAN_FD_MODE_ENABLE == STD_ON)
+        (uint8)0U,
+        #endif
+        /* Read/Write period reference used when POLLING mode is selected for the controller */
+        (uint8)0U,   /* HOH configured for INTERRUPT mode, reference not used */
+        
+        (uint16)0x0110U,       /* Address of Message Buffer  */
+        (uint8)8U,    /* Payload lenth of Message Buffer */
+        (uint8)9U    /* The index of MB in message buffer memory */
+        #if (CAN_TRIGGER_TRANSMIT_EN == STD_ON)
+        /* The parameter is used to detect the MB which run with trigger transmit feature */
+        ,(boolean)FALSE
+        #endif
+        /* The parameter is used to detect the MB which is use Polling or Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_2 uses Interrupt */
     }
 };
 /*==================================================================================================*/
@@ -403,7 +430,7 @@ static CONST(Can_ControlerDescriptorType, CAN_CONST) ControlerDescriptors0_PB[CA
     /* ControlerDescriptor of CanController_0*/
     {
         /* No. of Message Buffers for current controller - u8MaxMBCount */
-        (uint8)9U, /* No. of Message Buffers for current controller - u8MaxMBCount */
+        (uint8)10U, /* No. of Message Buffers for current controller - u8MaxMBCount */
         
         /* No. of BaudRate configured for current controller - u8MaxBaudRateCount */
         (uint8)1U,
@@ -472,7 +499,7 @@ CONST(Can_ConfigType, CAN_CONST) CanConfigSet=
     #endif  /* (CAN_RXFIFO_ENABLE == STD_ON) */
     
     /* The index of the first HTH configured */
-    (Can_HwHandleType)1U
+    (Can_HwHandleType)2U
 };
  
 /*==================================================================================================

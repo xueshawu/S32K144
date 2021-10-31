@@ -128,7 +128,6 @@ extern "C"{
 * @brief          Support for User Mode feature.
 * @details        This parameter is enabled only in order to support the write access to some registers are protected in user mode.
 */
-
 #define CAN_ENABLE_USER_MODE_SUPPORT (STD_OFF)
 /**
 * @brief          Support Interrupt for UNIFIED_INTERRUPTS.
@@ -180,8 +179,9 @@ extern "C"{
 * @details        Symbolic names for CanObjectId maintained for compatibility with old testcases/applications 
 *
 */
-#define CanHardwareObject_0  0U 
-#define CanHardwareObject_1  1U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_0  0U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_1  1U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_2  2U 
 /*
 * @brief          Lpdu callout name
 * @details        (CAN357_Conf) CanLPduReceiveCalloutFunction - This parameter sets the name of the LPDU callout.
@@ -263,13 +263,13 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Enable an additional API, to write an ABORT code (b1001) to the MBCB filed of the MB to abort a message transmission.
 *
 */
-#define CAN_API_ENABLE_ABORT_MB (STD_OFF)
+#define CAN_API_ENABLE_ABORT_MB (STD_ON)
 
 /*
 * @brief          Support for MB Abort  API
 * @details         This parameter is enabled only if CanMultiplexedTransmission=STD_ON and aborts only one message buffer
 */
-#define CAN_ABORT_ONLY_ONE_MB (STD_OFF)
+#define CAN_ABORT_ONLY_ONE_MB (STD_ON)
 
 /*
 * @brief          Instance # of the driver - used for Det_ReportError().
@@ -320,7 +320,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Maximum number of Message Buffers configured.
 *
 */
-#define CAN_MAXMBCOUNT_0 2U
+#define CAN_MAXMBCOUNT_0 3U
 
 
 /*
@@ -415,7 +415,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Maximum number of MB Filters configured.
 *
 */
-#define CAN_MAXFILTERCOUNT_0 1U
+#define CAN_MAXFILTERCOUNT_0 2U
 
 /**
 * @brief          Maximum number of baudrate configured.
@@ -546,7 +546,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_NAME   OsCounter_0
+    #define CAN_TIMEOUT_COUNTER_NAME   (0U)
 /*
 * @brief          Wrap macro to convert TimeOut
 * @details        Define the ns time specify by 1 tick
@@ -571,6 +571,12 @@ The specification only allows up to 256 can hardware objects. The driver support
 #define CAN_CONF_PB \
  extern CONST(Can_ConfigType, CAN_CONST) CanConfigSet;
 
+/*
+* @brief          Periods for cyclic call of Main function
+* @details        (CAN355_Conf) CanMainFunctionBusoffPeriod - This parameter describes the period for cyclic call to Can_MainFunction_Busoff. Unit is seconds.
+*
+*/
+#define CAN_MAINFUNCTION_PERIOD_BUSOFF (0U)
 
 
 #define CAN_PUBLIC_ICOM_SUPPORT  (STD_OFF)
@@ -601,7 +607,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 /*
 @brief    Macro used to define the maximum of Can object IDs configured  .
 */
-#define CAN_MAX_OBJECT_ID ((uint32)2U)
+#define CAN_MAX_OBJECT_ID ((uint32)3U)
 
 #define CAN_CONTROLLER_REFERENCE_COUNTER 3
 

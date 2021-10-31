@@ -50,18 +50,27 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Bsw/CanIf \
+Bsw/CanIf/Integration \
+Bsw/CanIf/src \
+Bsw/CanTp/src \
+Bsw/PduR/src \
 EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src \
 Mcal/Adc_TS_T40D2M10I1R0/src \
+Mcal/Can_TS_T40D2M10I1R0/src \
 Mcal/Det_TS_T40D2M10I1R0/src \
 Mcal/Dio_TS_T40D2M10I1R0/src \
+Mcal/EcuM_TS_T40D2M10I1R0/src \
+Mcal/Fee_TS_T40D2M10I1R0/src \
+Mcal/Fls_TS_T40D2M10I1R0/src \
 Mcal/Gpt_TS_T40D2M10I1R0/src \
 Mcal/Mcl_TS_T40D2M10I1R0/src \
 Mcal/Mcu_TS_T40D2M10I1R0/src \
 Mcal/Port_TS_T40D2M10I1R0/src \
 Mcal/Pwm_TS_T40D2M10I1R0/src \
 Mcal/Rte_TS_T40D2M10I1R0/src \
-Os/S32K144EVB/erika/src \
-Os/S32K144EVB/out \
+Os/cfg \
+Os/src \
 Project_Settings/Linker_Files \
 Project_Settings/Startup_Code \
 src \

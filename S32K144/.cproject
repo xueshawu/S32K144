@@ -35,15 +35,23 @@
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.519531110" name="Libraries support" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.libraries.ewl_c9x_noio" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot.1702173788" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
 								<option id="gnu.c.compiler.option.include.paths.822787824" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/Integration}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanTp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanTp/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/MemMap/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/PduR}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/PduR/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/PduR/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/SchM/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB/erika/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB/erika/src}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB/out}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Adc_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Adc_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Base_TS_T40D2M10I1R0/include}&quot;"/>
@@ -53,12 +61,19 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Det_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Dio_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Dio_TS_T40D2M10I1R0/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/EcuM_TS_T40D2M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/EcuM_TS_T40D2M10I1R0/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Fee_TS_T40D2M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Fee_TS_T40D2M10I1R0/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Fls_TS_T40D2M10I1R0/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Fls_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Gpt_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Gpt_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcl_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcl_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcu_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Mcu_TS_T40D2M10I1R0/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/MemIf_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Os_TS_T40D2M10I1R0/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Os_TS_T40D2M10I1R0/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Port_TS_T40D2M10I1R0/include}&quot;"/>
@@ -71,6 +86,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Bsw/CanTp}&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.431140484" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.2045690219" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -132,12 +148,14 @@
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot.1326202039" name="Sysroot" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.sysroot" useByScannerDiscovery="false" value="--sysroot=&quot;${ARM_EWL_DIR}&quot;" valueType="string"/>
 								<option id="gnu.both.asm.option.include.paths.1888211395" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB/out}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/S32K144EVB/erika/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Os/cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Os/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Os/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Bsw/CanTp}&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.1546221322" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.unalignedaccess.853240411" name="Unaligned access" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.unalignedaccess" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.option.target.unalignedaccess.default" valueType="enumerated"/>
@@ -192,28 +210,41 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.Project_Settings/Debugger/hello_Release.launch" name="hello_Release.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Release.launch" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanIf"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanTp/inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanTp/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/MemMap/inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/PduR"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/SchM/inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Base_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Can_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Can_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Det_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Det_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/EcuM_TS_T40D2M10I1R0"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fee_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fee_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fls_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fls_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/MemIf_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Pwm_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Pwm_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Rte_TS_T40D2M10I1R0/src"/>
-						<entry excluding="S32K144EVB/task.c|S32K144EVB/out/obj|S32K144EVB/out/erika3app.eep|S32K144EVB/out/erika3app.elf|S32K144EVB/out/erika3app.hex|S32K144EVB/out/erika3app.lss|S32K144EVB/out/erika3app.map|S32K144EVB/out/erika3app.srec|S32K144EVB/erika/src/ee3_s32sdk_osif.c|src|S32K144EVB/erika/pull|S32K144EVB/erika/obj|S32K144EVB/erika/lib|S32K144EVB/erika/lib/libs32sdk.a|S32K144EVB/erika/lib/libee.a|S32K144EVB/code.c|S32K144EVB/conf.oil|conf.oil|S32K144EVB/variables.cmm|S32K144EVB/out/t32.cmm|S32K144EVB/out/system.orti|S32K144EVB/out/makefile|S32K144EVB/out/applSignature.oil|S32K144EVB/hal.h|S32K144EVB/hal.c|S32K144EVB/erika/dbg|S32K144EVB/erika/doc|S32K144EVB/erika/makefile|S32K144EVB/erika/mk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os"/>
+						<entry excluding="S32K144EVB/task.c|S32K144EVB/out/obj|S32K144EVB/out/erika3app.eep|S32K144EVB/out/erika3app.elf|S32K144EVB/out/erika3app.hex|S32K144EVB/out/erika3app.lss|S32K144EVB/out/erika3app.map|S32K144EVB/out/erika3app.srec|S32K144EVB/erika/src/ee3_s32sdk_osif.c|S32K144EVB/erika/pull|S32K144EVB/erika/obj|S32K144EVB/erika/lib|S32K144EVB/erika/lib/libs32sdk.a|S32K144EVB/erika/lib/libee.a|S32K144EVB/code.c|S32K144EVB/conf.oil|conf.oil|S32K144EVB/variables.cmm|S32K144EVB/out/t32.cmm|S32K144EVB/out/system.orti|S32K144EVB/out/makefile|S32K144EVB/out/applSignature.oil|S32K144EVB/hal.h|S32K144EVB/hal.c|S32K144EVB/erika/dbg|S32K144EVB/erika/doc|S32K144EVB/erika/makefile|S32K144EVB/erika/mk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os"/>
 						<entry excluding="Debugger|Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Release.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
@@ -260,6 +291,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Bsw/CanTp}&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.1410326713" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.763873820" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -319,6 +351,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Bsw/CanTp}&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.112547595" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1140727190" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
@@ -343,22 +376,29 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.Project_Settings/Debugger/hello_Debug_RAM.launch" name="hello_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug_RAM.launch" toolsToInvoke=""/>
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.Project_Settings/Debugger/hello_Debug.launch" name="hello_Debug.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug.launch" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw"/>
+						<entry excluding="CanTp/src/CanTp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Base_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Can_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Can_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Det_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Det_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/EcuM_TS_T40D2M10I1R0"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fee_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fee_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fls_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/MemIf_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Pwm_TS_T40D2M10I1R0/include"/>
@@ -414,6 +454,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Bsw/CanTp}&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.2047015088" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu" useByScannerDiscovery="true" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.367039200" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -473,6 +514,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_Runtime/include/arm&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/S32K144/Bsw/CanTp}&quot;"/>
 								</option>
 								<option id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.1491020024" name="ARM family" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu" value="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.assembler.option.target.mcpu.cortex-m4" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.110838448" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
@@ -503,16 +545,24 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Base_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Can_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Can_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Det_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Det_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Dio_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/EcuM_TS_T40D2M10I1R0"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fee_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fee_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fls_TS_T40D2M10I1R0/include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Fls_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Gpt_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcl_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Mcu_TS_T40D2M10I1R0/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/MemIf_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Port_TS_T40D2M10I1R0/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Pwm_TS_T40D2M10I1R0/include"/>
@@ -534,15 +584,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="S32K144.com.freescale.s32ds.cross.gnu.arm.cortexm.exe.2069121238" name="ARM Cortex-M Executable" projectType="com.freescale.s32ds.cross.gnu.arm.cortexm.exe"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.675252706;cdt.managedbuild.tool.gnu.c.compiler.input.1526176644">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.1020322283;cdt.managedbuild.tool.gnu.c.compiler.input.1684190170">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		</scannerConfigBuildInfo>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="cortex-m4" register_board="---  none ---" register_chip="S32K144" register_core="" register_vendor="Freescale"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
@@ -557,4 +598,16 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.675252706;cdt.managedbuild.tool.gnu.c.compiler.input.1526176644">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.1020322283;cdt.managedbuild.tool.gnu.c.compiler.input.1684190170">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM;com.freescale.s32ds.cross.gnu.arm.cortexm.exe.Debug_RAM.;com.freescale.s32ds.cross.gnu.arm.cortexm.tool.c.compiler.2061845604;cdt.managedbuild.tool.gnu.c.compiler.input.720266248">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
 </cproject>
