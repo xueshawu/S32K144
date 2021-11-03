@@ -54,7 +54,15 @@ Bsw/CanIf \
 Bsw/CanIf/Integration \
 Bsw/CanIf/src \
 Bsw/CanTp/src \
+Bsw/Crc \
+Bsw/Dcm \
+Bsw/Dcm/src \
+Bsw/Dem \
+Bsw/Dem/src \
+Bsw/NVM \
+Bsw/NVM/src \
 Bsw/PduR/src \
+Bsw/SchM/src \
 EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src \
 Mcal/Adc_TS_T40D2M10I1R0/src \
 Mcal/Can_TS_T40D2M10I1R0/src \

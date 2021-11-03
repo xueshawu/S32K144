@@ -99,7 +99,7 @@ void CanTp_Shutdown(void); /** @req CANTP211 */
 
 Std_ReturnType CanTp_Transmit( PduIdType CanTpTxSduId, const PduInfoType * CanTpTxInfoPtr ); /** @req CANTP212 */
 
-Std_ReturnType FrTp_CancelTransmitRequest( PduIdType FrTpTxPduId, FrTp_CancelReasonType FrTpCancelReason ); /** @req CANTP246 */
+Std_ReturnType CanTp_CancelTransmit( PduIdType TxPduId ); /** @req CANTP246 */
 
 void CanTp_MainFunction(void); /** @req CANTP213 */
 

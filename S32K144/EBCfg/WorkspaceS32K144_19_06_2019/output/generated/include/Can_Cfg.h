@@ -128,7 +128,7 @@ extern "C"{
 * @brief          Support for User Mode feature.
 * @details        This parameter is enabled only in order to support the write access to some registers are protected in user mode.
 */
-#define CAN_ENABLE_USER_MODE_SUPPORT (STD_OFF)
+#define CAN_ENABLE_USER_MODE_SUPPORT (STD_ON)
 /**
 * @brief          Support Interrupt for UNIFIED_INTERRUPTS.
 * @details        This parameter is enabled only on UNIFIED_INTERRUPTS derivative.
@@ -143,7 +143,7 @@ extern "C"{
 
 #ifndef MCAL_ENABLE_USER_MODE_SUPPORT
     #if (STD_ON == CAN_ENABLE_USER_MODE_SUPPORT)
-        #error MCAL_ENABLE_USER_MODE_SUPPORT is not enabled. For running Can in user mode the MCAL_ENABLE_USER_MODE_SUPPORT needs to be defined
+       // #error MCAL_ENABLE_USER_MODE_SUPPORT is not enabled. For running Can in user mode the MCAL_ENABLE_USER_MODE_SUPPORT needs to be defined
     #endif /* (STD_ON == CAN_ENABLE_USER_MODE_SUPPORT) */
 #endif /* ifndef MCAL_ENABLE_USER_MODE_SUPPORT */ 
 
@@ -546,7 +546,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_NAME   (0U)
+    #define CAN_TIMEOUT_COUNTER_NAME   0
 /*
 * @brief          Wrap macro to convert TimeOut
 * @details        Define the ns time specify by 1 tick

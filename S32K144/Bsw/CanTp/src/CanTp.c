@@ -237,11 +237,9 @@ static ISO15765FrameType getFrameType(
 
 	switch (*formatType) {
 	case CANTP_STANDARD:
-		ASLOG(CANTP, ("CANTP_STANDARD\n"));
 		tpci = CanTpRxPduPtr->SduDataPtr[0];
 		break;
 	case CANTP_EXTENDED:
-		ASLOG(CANTP, ("CANTP_EXTENDED\n"));
 		tpci = CanTpRxPduPtr->SduDataPtr[1];
 		break;
 	default:
@@ -735,7 +733,6 @@ static void handleFlowControlFrame(const CanTp_TxNSduType *txConfig,
 		txRuntime->iso15765.nextFlowControlCount = txRuntime->iso15765.BS;
 		txRuntime->iso15765.STmin = txPduData->SduDataPtr[indexCount++];
 #endif
-		ASLOG(CANTP, ("txRuntime->iso15765.STmin = %d\n", txRuntime->iso15765.STmin));
 		// change state and setup timout
 		txRuntime->iso15765.stateTimeoutCount = CANTP_CONVERT_MS_TO_MAIN_CYCLES(txConfig->CanTpNcs);
 		txRuntime->iso15765.state = TX_WAIT_TRANSMIT;
@@ -751,7 +748,6 @@ static void handleFlowControlFrame(const CanTp_TxNSduType *txConfig,
 			break;
 		}
 	} else {
-		ASLOG(CANTP, ("Ignoring flow control, we do not expect it!"));
 	}
 } // 438, 550 PC-lint: extendAdress används inte. EN BUG? Behöver fixas
 
@@ -768,7 +764,6 @@ static void handleSingleFrame(const CanTp_RxNSduType *rxConfig,
 
 	if (rxRuntime->iso15765.state != IDLE) {
 		PduR_CanTpRxIndication(rxConfig->PduR_PduId, NTFRSLT_E_NOT_OK);  // Abort current reception, we need to tell the current receiver it has been aborted.
-		ASLOG(CANTP, ("Single frame received and channel not IDLE!\n"));
 	}
 	(void) initRx15765RuntimeData(rxConfig, rxRuntime); /** @req CANTP124 */
 	pduLength = getPduLength(&rxConfig->CanTpAddressingFormant, SINGLE_FRAME, rxPduData);
@@ -828,7 +823,6 @@ static void handleFirstFrame(const CanTp_RxNSduType *rxConfig,
 
 
 	if (rxRuntime->iso15765.state != IDLE) {
-		ASLOG(CANTP, ("First frame received during Rx-session!\n" ));
 		PduR_CanTpRxIndication(rxConfig->PduR_PduId, NTFRSLT_E_NOT_OK);  // Abort current reception, we need to tell the current receiver it has been aborted.
 	}
 
@@ -1041,7 +1035,6 @@ Std_ReturnType CanTp_Transmit(PduIdType CanTpTxSduId,
 				ret = E_NOT_OK;
 			}
 		} else {
-			ASLOG(CANTP, ("CanTp can't transmit,  it is already occupied!\n", CanTpTxSduId));
 			ret = E_NOT_OK;  /** @req CANTP123 *//** @req CANTP206 */
 		}
 	}
@@ -1051,13 +1044,12 @@ Std_ReturnType CanTp_Transmit(PduIdType CanTpTxSduId,
 
 // - - - - - - - - - - - - - -
 
-#if FRTP_CANCEL_TRANSMIT_REQUEST
-Std_ReturnType FrTp_CancelTransmitRequest(PduIdType FrTpTxPduId,
-		FrTp_CancelReasonType FrTpCancelReason)
+
+Std_ReturnType CanTp_CancelTransmit(PduIdType  TxPduId)
 {
-	return E_NOT_OK;
+	return E_OK;
 }
-#endif
+
 
 // - - - - - - - - - - - - - -
 
@@ -1150,43 +1142,34 @@ void CanTp_RxIndication(PduIdType CanTpRxPduId, /** @req CANTP078 */ /** @req CA
 	switch (frameType) {
 	case SINGLE_FRAME: {
 		if (rxConfigParams != NULL) {
-			ASLOG(CANTP, ("calling handleSingleFrame!\n"));
 			handleSingleFrame(rxConfigParams, runtimeParams, CanTpRxPduPtr);
 		}
 		else{
-			ASLOG(CANTP, ("Single frame received on ISO15765-Tx - is ignored!\n"));
 		}
 		break;
 	}
 	case FIRST_FRAME: {
 		if (rxConfigParams != NULL) {
-			ASLOG(CANTP, ("calling handleFirstFrame!\n"));
 			handleFirstFrame(rxConfigParams, runtimeParams, CanTpRxPduPtr);
 		}else{
-			ASLOG(CANTP, ("First frame received on ISO15765-Tx - is ignored!\n"));
 		}
 		break;
 	}
 	case CONSECUTIVE_FRAME: {
 		if (rxConfigParams != NULL) {
-			ASLOG(CANTP, ("calling handleConsecutiveFrame!\n"));
 			handleConsecutiveFrame(rxConfigParams, runtimeParams, CanTpRxPduPtr);
 		} else {
-			ASLOG(CANTP, ("Consecutive frame received on ISO15765-Tx - is ignored!\n"));
 		}
 		break;
 	}
 	case FLOW_CONTROL_CTS_FRAME: {
 		if (txConfigParams != NULL) {
-			ASLOG(CANTP, ("calling handleFlowControlFrame!\n"));
 			handleFlowControlFrame(txConfigParams, runtimeParams, CanTpRxPduPtr);
 		} else {
-			ASLOG(CANTP, ("Flow control frame received on ISO15765-Rx - is ignored!\n"));
 		}
 		break;
 	}
 	case INVALID_FRAME: {
-		ASLOG(CANTP, ("INVALID_FRAME received - is ignored!\n!\n"));
 		break;
 	}
 	default:
@@ -1299,7 +1282,6 @@ void CanTp_MainFunction(void)
 				break;
 			}
 			case TX_WAIT_FLOW_CONTROL:
-				//ASLOG(CANTP, ("Waiting for flow control!\n"));
 				TIMER_DECREMENT(txRuntimeListItem->iso15765.stateTimeoutCount);
 				if (txRuntimeListItem->iso15765.stateTimeoutCount == 0) {
 					txRuntimeListItem->iso15765.state = IDLE;

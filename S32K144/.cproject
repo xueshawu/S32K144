@@ -38,18 +38,34 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/cfg}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Os/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/integration}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ARM_EWL_DIR}/EWL_C/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Crc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Crc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Crc/Integration}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Crc/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/api}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/Integration}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanIf}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanTp/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/CanTp/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Dcm}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Dcm/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Dcm/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Dem}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Dem/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/Dem/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/NVM/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/NVM}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/NVM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/MemIf/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/MemMap/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/PduR}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/PduR/inc}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/PduR/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/SchM/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Bsw/SchM/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Mcal/Adc_TS_T40D2M10I1R0/include}&quot;"/>
@@ -94,6 +110,7 @@
 									<listOptionValue builtIn="false" value="DISABLE_WDOG"/>
 								</option>
 								<option id="gnu.c.compiler.option.include.files.1202038750" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false"/>
+								<option id="gnu.c.compiler.option.dialect.std.148793603" superClass="gnu.c.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.c.compiler.dialect.c99" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1684190170" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler.862053735" name="Standard S32DS C++ Compiler" superClass="com.freescale.s32ds.cross.gnu.arm.cortexm.tool.cpp.compiler">
@@ -209,12 +226,18 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.Project_Settings/Debugger/hello_Debug_RAM.launch" name="hello_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug_RAM.launch" toolsToInvoke=""/>
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.debug.2085482174.Project_Settings/Debugger/hello_Release.launch" name="hello_Release.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Release.launch" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanIf"/>
+						<entry excluding="api/CanIf_Cbk.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanIf"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanTp/inc"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/CanTp/src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/Crc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/Dcm"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/Dem"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/MemIf"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/MemMap/inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/NVM"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/PduR"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/SchM/inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw/SchM/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
@@ -247,6 +270,7 @@
 						<entry excluding="S32K144EVB/task.c|S32K144EVB/out/obj|S32K144EVB/out/erika3app.eep|S32K144EVB/out/erika3app.elf|S32K144EVB/out/erika3app.hex|S32K144EVB/out/erika3app.lss|S32K144EVB/out/erika3app.map|S32K144EVB/out/erika3app.srec|S32K144EVB/erika/src/ee3_s32sdk_osif.c|S32K144EVB/erika/pull|S32K144EVB/erika/obj|S32K144EVB/erika/lib|S32K144EVB/erika/lib/libs32sdk.a|S32K144EVB/erika/lib/libee.a|S32K144EVB/code.c|S32K144EVB/conf.oil|conf.oil|S32K144EVB/variables.cmm|S32K144EVB/out/t32.cmm|S32K144EVB/out/system.orti|S32K144EVB/out/makefile|S32K144EVB/out/applSignature.oil|S32K144EVB/hal.h|S32K144EVB/hal.c|S32K144EVB/erika/dbg|S32K144EVB/erika/doc|S32K144EVB/erika/makefile|S32K144EVB/erika/mk" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os"/>
 						<entry excluding="Debugger|Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Release.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="integration"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
@@ -376,7 +400,7 @@
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.Project_Settings/Debugger/hello_Debug_RAM.launch" name="hello_Debug_RAM.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug_RAM.launch" toolsToInvoke=""/>
 					<fileInfo id="com.freescale.s32ds.cross.gnu.arm.cortexm.exe.release.1732075783.Project_Settings/Debugger/hello_Debug.launch" name="hello_Debug.launch" rcbsApplicability="disable" resourcePath="Project_Settings/Debugger/hello_Debug.launch" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry excluding="CanTp/src/CanTp.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Bsw"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Mcal/Adc_TS_T40D2M10I1R0/include"/>
@@ -410,6 +434,7 @@
 						<entry excluding="t32.cmm|system.orti|applSignature.oil|erika3app.eep|erika3app.elf|erika3app.hex|erika3app.lss|erika3app.map|erika3app.srec|makefile|obj" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/out"/>
 						<entry excluding="Debugger|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Release.launch|Debugger/S32K144_Debug_FLASH.launch|Linker_Files/S32K1xx_ram.ld|Debugger/hello_Debug_RAM.launch|Debugger/hello_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="integration"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
@@ -574,6 +599,7 @@
 						<entry excluding="system.orti|t32.cmm|erika3app.eep|erika3app.elf|erika3app.hex|erika3app.lss|erika3app.map|erika3app.srec|makefile|applSignature.oil|obj" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Os/S32K144EVB/out"/>
 						<entry excluding="Debugger|Debugger/S32K144_Debug_RAM.launch|Debugger/S32K144_Debug_FLASH.launch|Debugger/S32K144_Release.launch|Linker_Files/S32K1xx_flash.ld|Debugger/hello_Release.launch|Debugger/hello_Debug.launch" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="integration"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
