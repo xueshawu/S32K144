@@ -143,7 +143,7 @@ extern "C"{
 
 #ifndef MCAL_ENABLE_USER_MODE_SUPPORT
     #if (STD_ON == CAN_ENABLE_USER_MODE_SUPPORT)
-       // #error MCAL_ENABLE_USER_MODE_SUPPORT is not enabled. For running Can in user mode the MCAL_ENABLE_USER_MODE_SUPPORT needs to be defined
+        #error MCAL_ENABLE_USER_MODE_SUPPORT is not enabled. For running Can in user mode the MCAL_ENABLE_USER_MODE_SUPPORT needs to be defined
     #endif /* (STD_ON == CAN_ENABLE_USER_MODE_SUPPORT) */
 #endif /* ifndef MCAL_ENABLE_USER_MODE_SUPPORT */ 
 
@@ -182,6 +182,11 @@ extern "C"{
 #define CanHardwareObject_NODE0_Rx_Std_MailBox_0  0U 
 #define CanHardwareObject_NODE0_Rx_Std_MailBox_1  1U 
 #define CanHardwareObject_NODE0_Rx_Std_MailBox_2  2U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_3  3U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_4  4U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_5  5U 
+#define CanHardwareObject_NODE0_Tx_Std_MailBox_0  6U 
+#define CanHardwareObject_NODE3_Tx_Std_MailBox_1  7U 
 /*
 * @brief          Lpdu callout name
 * @details        (CAN357_Conf) CanLPduReceiveCalloutFunction - This parameter sets the name of the LPDU callout.
@@ -320,7 +325,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Maximum number of Message Buffers configured.
 *
 */
-#define CAN_MAXMBCOUNT_0 3U
+#define CAN_MAXMBCOUNT_0 8U
 
 
 /*
@@ -415,7 +420,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @details        Maximum number of MB Filters configured.
 *
 */
-#define CAN_MAXFILTERCOUNT_0 2U
+#define CAN_MAXFILTERCOUNT_0 6U
 
 /**
 * @brief          Maximum number of baudrate configured.
@@ -546,7 +551,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_NAME   0
+    #define CAN_TIMEOUT_COUNTER_NAME   OsCounter_0
 /*
 * @brief          Wrap macro to convert TimeOut
 * @details        Define the ns time specify by 1 tick
@@ -607,7 +612,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 /*
 @brief    Macro used to define the maximum of Can object IDs configured  .
 */
-#define CAN_MAX_OBJECT_ID ((uint32)3U)
+#define CAN_MAX_OBJECT_ID ((uint32)8U)
 
 #define CAN_CONTROLLER_REFERENCE_COUNTER 3
 

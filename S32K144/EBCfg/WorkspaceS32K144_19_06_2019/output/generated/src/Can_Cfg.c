@@ -254,7 +254,7 @@ CONST(CanStatic_ConfigType, CAN_CONST) CanStatic_ConfigSet =
     /* FlexCAN controller description - ControlerDescriptors*/
     ControlerDescriptors0_PC,
     /*Maximum Object IDs configured - u32CanMaxObjectId*/
-    (uint32)3U
+    (uint32)8U
 };
 
 /*==================================================================================================
