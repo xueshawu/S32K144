@@ -33,9 +33,7 @@ extern "C" {
  *
  **************************************************************************/
 DeclareTask(SystemInitTask);
-DeclareTask(Task2);
-DeclareTask(Task_Bsw_5Ms);
-DeclareTask(Task_Bsw_10Ms);
+DeclareTask(Task_Bsw_100Ms);
 
 
 

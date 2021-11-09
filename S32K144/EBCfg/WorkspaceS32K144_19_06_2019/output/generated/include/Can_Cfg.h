@@ -87,6 +87,7 @@ extern "C"{
 /* @violates @ref Can_Cfg_h_REF_1 Violates MISRA 2004 Required Rule 19.15, Repeated include file MemMap.h*/
 #include "Std_Types.h"
 #include "Soc_Ips.h"
+#include "Os_cfg.h"
 
 
 /*==================================================================================================
@@ -141,11 +142,7 @@ extern "C"{
 */
 #define CAN_ENABLE_WAKEUP_SUPPORT (STD_OFF)
 
-#ifndef MCAL_ENABLE_USER_MODE_SUPPORT
-    #if (STD_ON == CAN_ENABLE_USER_MODE_SUPPORT)
-        #error MCAL_ENABLE_USER_MODE_SUPPORT is not enabled. For running Can in user mode the MCAL_ENABLE_USER_MODE_SUPPORT needs to be defined
-    #endif /* (STD_ON == CAN_ENABLE_USER_MODE_SUPPORT) */
-#endif /* ifndef MCAL_ENABLE_USER_MODE_SUPPORT */ 
+
 
 
 
@@ -179,14 +176,14 @@ extern "C"{
 * @details        Symbolic names for CanObjectId maintained for compatibility with old testcases/applications 
 *
 */
-#define CanHardwareObject_NODE0_Rx_Std_MailBox_0  0U 
-#define CanHardwareObject_NODE0_Rx_Std_MailBox_1  1U 
-#define CanHardwareObject_NODE0_Rx_Std_MailBox_2  2U 
-#define CanHardwareObject_NODE0_Rx_Std_MailBox_3  3U 
-#define CanHardwareObject_NODE0_Rx_Std_MailBox_4  4U 
-#define CanHardwareObject_NODE0_Rx_Std_MailBox_5  5U 
-#define CanHardwareObject_NODE0_Tx_Std_MailBox_0  6U 
-#define CanHardwareObject_NODE3_Tx_Std_MailBox_1  7U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_1  0U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_2  1U 
+#define CanHardwareObject_NODE0_Rx_Std_MailBox_3  2U 
+#define CanHardwareObject_NODE0_Tx_Std_MailBox_1  3U 
+#define CanHardwareObject_NODE0_Tx_Std_MailBox_2  4U 
+#define CanHardwareObject_NODE0_Tx_Std_MailBox_3  5U 
+#define CanHardwareObject_NODE0_Tx_Std_MailBox_4  6U 
+#define CanHardwareObject_NODE0_Tx_Std_MailBox_5  7U 
 /*
 * @brief          Lpdu callout name
 * @details        (CAN357_Conf) CanLPduReceiveCalloutFunction - This parameter sets the name of the LPDU callout.
@@ -551,7 +548,7 @@ The specification only allows up to 256 can hardware objects. The driver support
 * @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 19.4, source code mentenability. 
 * @violates @ref Can_Cfg_h_REF_2 Violates MISRA 2004 Advisory Rule 19.7, Function-like macro defined.
 */
-    #define CAN_TIMEOUT_COUNTER_NAME   OsCounter_0
+    #define CAN_TIMEOUT_COUNTER_NAME   0
 /*
 * @brief          Wrap macro to convert TimeOut
 * @details        Define the ns time specify by 1 tick

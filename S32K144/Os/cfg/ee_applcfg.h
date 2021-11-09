@@ -43,11 +43,11 @@ extern "C" {
  * Arrays size
  *
  **************************************************************************/
-#define OSEE_TASK_ARRAY_SIZE      (5U)
-#define OSEE_SN_ARRAY_SIZE        (5U)
-#define OSEE_STACK_ARRAY_SIZE     (5U)
+#define OSEE_TASK_ARRAY_SIZE      (3U)
+#define OSEE_SN_ARRAY_SIZE        (3U)
+#define OSEE_STACK_ARRAY_SIZE     (3U)
 #define OSEE_COUNTERS_ARRAY_SIZE  (1U)
-#define OSEE_ALARMS_ARRAY_SIZE    (3U)
+#define OSEE_ALARMS_ARRAY_SIZE    (1U)
 
 /***************************************************************************
  *
@@ -55,9 +55,7 @@ extern "C" {
  *
  **************************************************************************/
 #define SystemInitTask (1U)
-#define Task2 (2U)
-#define Task_Bsw_5Ms (3U)
-#define Task_Bsw_10Ms 4
+#define Task_Bsw_100Ms (2U)
 
 /***************************************************************************
  *
@@ -66,8 +64,6 @@ extern "C" {
  **************************************************************************/
 #define osEE_task_stack_1_StackSize (512U)
 #define osEE_task_stack_2_StackSize (512U)
-#define osEE_task_stack_3_StackSize (512U)
-#define osEE_task_stack_4_StackSize (512U)
 
 /***************************************************************************
  *
@@ -87,9 +83,7 @@ extern "C" {
  * ALARMs Declaration
  *
  **************************************************************************/
-#define Task2_10msAlarm (0U)
-#define Alarm_Bsw_5Ms (1U)
-#define Alarm_Bsw_10Ms (2U)
+#define Alarm_Bsw_100Ms (0U)
 
 /***************************************************************************
  *
@@ -102,7 +96,6 @@ extern "C" {
  * EVENTs declaration
  *
  **************************************************************************/
-#define TASK2_ScheduledEvent_10Ms (0x1U)
 
 /***************************************************************************
  *

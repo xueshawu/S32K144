@@ -51,6 +51,7 @@
  *  \date  2016
  */
 #include "ee_internal.h"
+#include "ee_kernel.h"
 
 #if (!defined(OSEE_WARN_LABEL))
 #define OSEE_WARN_LABEL(l)

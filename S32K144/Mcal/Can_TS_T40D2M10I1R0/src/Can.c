@@ -708,7 +708,7 @@ FUNC(void, CAN_CODE) Can_Init( P2CONST(Can_ConfigType, AUTOMATIC, CAN_APPL_CONST
                        (CAN053) Can module/controller initalization - registers of CAN controller hardware resources that are not used.
                     */
                     /* @violates @ref Can_c_REF_9 Violates MISRA 2004 Required Rule 10.1 , Prohibited Implicit Conversion: Non-constant argument to function, Implicit conversion of integer to smaller type */
-                    (void)Can_IPW_InitController( can_controller);
+                    //(void)Can_IPW_InitController( can_controller);
                 }
             }
             /*

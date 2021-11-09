@@ -13,13 +13,15 @@
 #include "Dem.h"
 #include "Fls.h"
 #include "NvM.h"
+#include "IoHwAb_Dio.h"
 #include "TaskEntity.h"
 
 
 static uint32 g_task1RunngingCnt = 0;
-static uint32 g_task2RunnnigCnt = 0;
+static uint32 g_task_Asw_5Ms_RunningCnt = 0;
 static uint32 g_task_Bsw_5Ms_RunningCnt = 0;
 static uint32 g_task_Bsw_10MS_RnningCnt = 0;
+static uint32 g_task_Bsw_100Ms_RunningCnt = 0;
 TASK(SystemInitTask)
 {
     g_task1RunngingCnt++;
@@ -27,21 +29,21 @@ TASK(SystemInitTask)
 }
 
 
-/* This Task run per 5ms */
-TASK(Task2)
+TASK(Task_Bsw_100Ms)
 {
-    EventMaskType eventMask;
-    (void)WaitEvent(TASK2_ScheduledEvent_10Ms);
-    (void)GetEvent(Task2, &eventMask);
-    (void)ClearEvent(eventMask&(TASK2_ScheduledEvent_10Ms));
-    for(;;)
-    {
-        g_task2RunnnigCnt++;
-        CanTp_MainFunction();
-        Dcm_MainFunction();
-        Dem_MainFunction();
-        TerminateTask();
-    }
+	g_task_Bsw_100Ms_RunningCnt++;
+    IoHwAb_Dio_MainFunction();
+    TerminateTask();
+}
+
+/* This Task run per 5ms */
+TASK(Task_Asw_5Ms)
+{
+	g_task_Asw_5Ms_RunningCnt++;
+    CanTp_MainFunction();
+    Dcm_MainFunction();
+    Dem_MainFunction();
+    TerminateTask();
 
 }
 

@@ -261,7 +261,7 @@ static CONST(Can_IdType, CAN_CONST) Can_FilterMasks0_PB[CAN_MAXFILTERCOUNT_0] =
 /*==================================================================================================*/
 static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT_PB] =
 {
-    /* CanHardwareObject_NODE0_Rx_Std_MailBox_0 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Rx_Std_MailBox_1 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
@@ -284,10 +284,10 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_0 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_1 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE0_Rx_Std_MailBox_1 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Rx_Std_MailBox_2 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
@@ -310,10 +310,10 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_1 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_2 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE0_Rx_Std_MailBox_2 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Rx_Std_MailBox_3 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
@@ -336,23 +336,23 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_2 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_3 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE0_Rx_Std_MailBox_3 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Tx_Std_MailBox_1 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
-        CAN_RECEIVE, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x301U, /* MessageId */
+        CAN_TRANSMIT, /* Receive/Transmit MB configuration */
+        (Can_IdType)0x0U, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x3U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
         (uint8)0U,
         #endif
         /* Read/Write period reference used when POLLING mode is selected for the controller */
-        (uint8)0U, /* HOH configured for INTERRUPT mode, reference not used */
+        (uint8)0U,   /* HOH configured for INTERRUPT mode, reference not used */
         
         (uint16)0x0120U,       /* Address of Message Buffer  */
         (uint8)8U,    /* Payload lenth of Message Buffer */
@@ -362,23 +362,23 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_3 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Tx_Std_MailBox_1 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE0_Rx_Std_MailBox_4 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Tx_Std_MailBox_2 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
-        CAN_RECEIVE, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x302U, /* MessageId */
+        CAN_TRANSMIT, /* Receive/Transmit MB configuration */
+        (Can_IdType)0x0U, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x4U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
         (uint8)0U,
         #endif
         /* Read/Write period reference used when POLLING mode is selected for the controller */
-        (uint8)0U, /* HOH configured for INTERRUPT mode, reference not used */
+        (uint8)0U,   /* HOH configured for INTERRUPT mode, reference not used */
         
         (uint16)0x0130U,       /* Address of Message Buffer  */
         (uint8)8U,    /* Payload lenth of Message Buffer */
@@ -388,23 +388,23 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_4 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Tx_Std_MailBox_2 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE0_Rx_Std_MailBox_5 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Tx_Std_MailBox_3 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
-        CAN_RECEIVE, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x303U, /* MessageId */
+        CAN_TRANSMIT, /* Receive/Transmit MB configuration */
+        (Can_IdType)0x301U, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x5U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
         (uint8)0U,
         #endif
         /* Read/Write period reference used when POLLING mode is selected for the controller */
-        (uint8)0U, /* HOH configured for INTERRUPT mode, reference not used */
+        (uint8)0U,   /* HOH configured for INTERRUPT mode, reference not used */
         
         (uint16)0x0140U,       /* Address of Message Buffer  */
         (uint8)8U,    /* Payload lenth of Message Buffer */
@@ -414,16 +414,16 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Rx_Std_MailBox_5 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Tx_Std_MailBox_3 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE0_Tx_Std_MailBox_0 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Tx_Std_MailBox_4 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
         CAN_TRANSMIT, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x0U, /* MessageId */
+        (Can_IdType)0x302U, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x6U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
@@ -440,16 +440,16 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE0_Tx_Std_MailBox_0 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Tx_Std_MailBox_4 uses Interrupt */
     },
 
-    /* CanHardwareObject_NODE3_Tx_Std_MailBox_1 Message Buffer of Can Controller ID = 0U*/
+    /* CanHardwareObject_NODE0_Tx_Std_MailBox_5 Message Buffer of Can Controller ID = 0U*/
     {
         (Can_HwHandleType)CAN_MAXMASKCOUNT, /* uIdMaskIndex */
         (uint8)0U, /* ControllerId  - based on the order from CanController list */
         CAN_STANDARD, /* ID type: EXTENDED, STANDARD, MIXED */
         CAN_TRANSMIT, /* Receive/Transmit MB configuration */
-        (Can_IdType)0x0U, /* MessageId */
+        (Can_IdType)0x303U, /* MessageId */
         (uint8)0x0U, /* Local priority bits used for arbitration */
         (Can_HwHandleType)0x7U, /* Hardware Object ID */
         #if (CAN_FD_MODE_ENABLE == STD_ON)
@@ -466,7 +466,7 @@ static CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAX
         ,(boolean)FALSE
         #endif
         /* The parameter is used to detect the MB which is use Polling or Interrupt */
-        ,(boolean)FALSE /* CanHardwareObject_NODE3_Tx_Std_MailBox_1 uses Interrupt */
+        ,(boolean)FALSE /* CanHardwareObject_NODE0_Tx_Std_MailBox_5 uses Interrupt */
     }
 };
 /*==================================================================================================*/
@@ -633,7 +633,7 @@ CONST(Can_ConfigType, CAN_CONST) CanConfigSet=
     #endif  /* (CAN_RXFIFO_ENABLE == STD_ON) */
     
     /* The index of the first HTH configured */
-    (Can_HwHandleType)6U
+    (Can_HwHandleType)3U
 };
  
 /*==================================================================================================

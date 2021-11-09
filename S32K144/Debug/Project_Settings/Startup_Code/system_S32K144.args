@@ -1,6 +1,5 @@
 -std=c99
 -DCPU_S32K144HFT0VLLT
--DDISABLE_WDOG
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/cfg"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/inc"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Os/src"
@@ -32,6 +31,8 @@
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/PduR/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/SchM/inc"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/SchM/src"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/IoHwAb/inc"
+-I"E:/mywork/myproject/My_Github/S32K144/S32K144/Bsw/IoHwAb/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/include"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/EBCfg/WorkspaceS32K144_19_06_2019/output/generated/src"
 -I"E:/mywork/myproject/My_Github/S32K144/S32K144/Mcal/Adc_TS_T40D2M10I1R0/include"

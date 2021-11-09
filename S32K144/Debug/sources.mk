@@ -59,6 +59,7 @@ Bsw/Dcm \
 Bsw/Dcm/src \
 Bsw/Dem \
 Bsw/Dem/src \
+Bsw/IoHwAb/src \
 Bsw/NVM \
 Bsw/NVM/src \
 Bsw/PduR/src \

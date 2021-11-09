@@ -17,7 +17,7 @@
 #define CANTP_ID_UdsPhyReq_Rx				(0U)
 #define CANTP_ID_UdsFunReq_Rx				(1U)
 
-#define CANTP_ID_UdsRsp_Tx					(0U)
+#define CanTpConf_CanTpTxNPdu_CanTpTxNPdu_udstx					(0U)
 
 
 extern const CanTp_ConfigType CanTpConfig;

@@ -121,12 +121,12 @@ const CanTp_RxIdType CanTp_RxIdList[] =
 	{
 		.CanTpAddressingMode =  CANTP_STANDARD,
 		.CanTpNSduIndex =   CANTP_ID_UdsPhyReq_Rx,
-        .CanTpReferringTxIndex =  CANTP_ID_UdsRsp_Tx,
+        .CanTpReferringTxIndex =  CanTpConf_CanTpTxNPdu_CanTpTxNPdu_udstx,
 	},
 	{
 		.CanTpAddressingMode =  CANTP_STANDARD,
 		.CanTpNSduIndex =   CANTP_ID_UdsFunReq_Rx,
-        .CanTpReferringTxIndex =  CANTP_ID_UdsRsp_Tx,
+        .CanTpReferringTxIndex =  CanTpConf_CanTpTxNPdu_CanTpTxNPdu_udstx,
 	},
 
 };
