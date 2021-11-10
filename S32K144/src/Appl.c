@@ -34,6 +34,11 @@ void StartupHook(void)
     Can_Init(&CanConfigSet);
 }
 
+void ShutdownHook(StatusType Error)
+{
+
+}
+
 
 int main(void) 
 {

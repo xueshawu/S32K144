@@ -496,6 +496,7 @@ VAR(OsEE_CCB, OS_VAR_INIT) osEE_ccb_var = {
   /* .app_mode    = */  INVALID_APPMODE,
   /* .last_error  = */  E_OK,
   /* .service_id  = */  OsId_Invalid,
+  /* .os_context  = */ OSEE_IDLE_CTX,
   /* .prev_s_isr_all_status = */ 0U,
   /* .prev_s_isr_os_status  = */ 0U,
   /* .s_isr_all_cnt         = */ 0U,
