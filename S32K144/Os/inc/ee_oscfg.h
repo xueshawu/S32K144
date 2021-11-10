@@ -86,7 +86,7 @@
  *
  **************************************************************************/
 
-#define OSEE_RQ_PRIO_NUM (1U)
+#define OSEE_RQ_PRIO_NUM (2U)
 
 #define OSMAXALLOWEDVALUE (65535U)
 #define OSTICKSPERBASE    (1U)
