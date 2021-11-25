@@ -168,11 +168,9 @@ CONST(CanIf_HrhConfigType, CANIF_CONST) CanIf_HrhConfig[] =
 {
 /*   HRHInfo ,    Pdu/ListIdx,   NumCanIds/NumRanges,     Controller,  ReadRxPduInfo,    CanId,  HrhRangeMask */
 
-
-
-
 { CANIF_FULL,       0    ,       1    ,   (uint8)CANIF_Can_Network_CANNODE_0,       CANIF_READ_NOTIFSTATUS,   0x7C0,       0x1FFFFFFFU }/*Can_Network_CANNODE_0_Rx_Std_MailBox_1*/,
 { CANIF_FULL,       1    ,       1    ,   (uint8)CANIF_Can_Network_CANNODE_0,       CANIF_READ_NOTIFSTATUS,   0x7DF,       0x1FFFFFFFU }/*Can_Network_CANNODE_0_Rx_Std_MailBox_2*/,
+{ CANIF_FULL,       1    ,       1    ,   (uint8)CANIF_Can_Network_CANNODE_0,       CANIF_READ_NOTIFSTATUS,   0x650,       0x1FFFFFFFU }/*Can_Network_CANNODE_0_Rx_Std_MailBox_3*/,
 };
 
 #define CANIF_STOP_SEC_CONFIG_DATA_POSTBUILD_UNSPECIFIED

@@ -905,9 +905,7 @@
                           <a:a name="IMPORTER_INFO" value="Mcu"/>
                         </d:var>
                         <d:var name="McuPeripheralClockEnable" type="BOOLEAN" 
-                               value="false">
-                          <a:a name="IMPORTER_INFO" value="Mcu"/>
-                        </d:var>
+                               value="true"/>
                         <d:var name="McuPeripheralClockFrequency" type="FLOAT" 
                                value="0.0">
                           <a:a name="IMPORTER_INFO" value="Mcu"/>

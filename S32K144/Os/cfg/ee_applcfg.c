@@ -49,18 +49,23 @@ static VAR(OsEE_stack, OS_STACK)
   osEE_task_stack_5[OSEE_STACK_WORD_LENGHT(osEE_task_stack_5_StackSize)];
 
 
+static VAR(OsEE_stack, OS_STACK)
+  osEE_task_stack_6[OSEE_STACK_WORD_LENGHT(osEE_task_stack_6_StackSize)];
+
+
 /***************************************************************************
  *
  * Init Stack Control Block
  *
  **************************************************************************/
-static VAR(OsEE_SCB, OS_VAR_INIT) osEE_scb_array[(6U)] =
+static VAR(OsEE_SCB, OS_VAR_INIT) osEE_scb_array[(7U)] =
 {
   { /* .p_tos = */  (OsEE_CTX *)OSEE_STACK_TOS(osEE_task_stack_1) },
   { /* .p_tos = */  (OsEE_CTX *)OSEE_STACK_TOS(osEE_task_stack_2) },
   { /* .p_tos = */  (OsEE_CTX *)OSEE_STACK_TOS(osEE_task_stack_3) },
   { /* .p_tos = */  (OsEE_CTX *)OSEE_STACK_TOS(osEE_task_stack_4) },
   { /* .p_tos = */  (OsEE_CTX *)OSEE_STACK_TOS(osEE_task_stack_5) },
+  { /* .p_tos = */  (OsEE_CTX *)OSEE_STACK_TOS(osEE_task_stack_6) },
   { /* .p_tos = */  NULL }
 };
 
@@ -69,7 +74,7 @@ static VAR(OsEE_SCB, OS_VAR_INIT) osEE_scb_array[(6U)] =
  * Init Stack Descriptor Block
  *
  **************************************************************************/
-static VAR(OsEE_SDB, OS_CONST) osEE_sdb_array[(6U)] =
+static VAR(OsEE_SDB, OS_CONST) osEE_sdb_array[(7U)] =
 {
   {
     /* .p_bos = */      (OsEE_CTX *)OSEE_STACK_BOS(osEE_task_stack_1),
@@ -92,8 +97,12 @@ static VAR(OsEE_SDB, OS_CONST) osEE_sdb_array[(6U)] =
     /* .stack_size = */ osEE_task_stack_5_StackSize
   },
   {
+    /* .p_bos = */      (OsEE_CTX *)OSEE_STACK_BOS(osEE_task_stack_6),
+    /* .stack_size = */ osEE_task_stack_6_StackSize
+  },
+  {
     /* .p_bos = */      (OsEE_CTX *)&__StackLimit,
-    /* .stack_size = */ (0x400U)
+    /* .stack_size = */ 0x800
   }
 };
 
@@ -176,8 +185,8 @@ static VAR(OsEE_TDB, OS_CONST)
 {
   {
     /* .hdb = */ {
-      /* .p_sdb    = */   &osEE_sdb_array[5U],
-      /* .p_scb    = */   &osEE_scb_array[5U]
+      /* .p_sdb    = */   &osEE_sdb_array[6U],
+      /* .p_scb    = */   &osEE_scb_array[6U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[0U],
     /* .tid            = */ 0U,
@@ -189,8 +198,8 @@ static VAR(OsEE_TDB, OS_CONST)
   },
   {
     /* .hdb = */ {
-      /* .p_sdb    = */   &osEE_sdb_array[0U],
-      /* .p_scb    = */   &osEE_scb_array[0U]
+      /* .p_sdb    = */   &osEE_sdb_array[1U],
+      /* .p_scb    = */   &osEE_scb_array[1U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[1U],
     /* .tid            = */ 1U,
@@ -202,8 +211,8 @@ static VAR(OsEE_TDB, OS_CONST)
   },
   {
     /* .hdb = */ {
-      /* .p_sdb    = */   &osEE_sdb_array[1U],
-      /* .p_scb    = */   &osEE_scb_array[1U]
+      /* .p_sdb    = */   &osEE_sdb_array[2U],
+      /* .p_scb    = */   &osEE_scb_array[2U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[2U],
     /* .tid            = */ 2U,
@@ -215,8 +224,8 @@ static VAR(OsEE_TDB, OS_CONST)
   },
   {
     /* .hdb = */ {
-      /* .p_sdb    = */   &osEE_sdb_array[2U],
-      /* .p_scb    = */   &osEE_scb_array[2U]
+      /* .p_sdb    = */   &osEE_sdb_array[3U],
+      /* .p_scb    = */   &osEE_scb_array[3U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[3U],
     /* .tid            = */ 3U,
@@ -228,8 +237,8 @@ static VAR(OsEE_TDB, OS_CONST)
   },
   {
     /* .hdb = */ {
-      /* .p_sdb    = */   &osEE_sdb_array[3U],
-      /* .p_scb    = */   &osEE_scb_array[3U]
+      /* .p_sdb    = */   &osEE_sdb_array[4U],
+      /* .p_scb    = */   &osEE_scb_array[4U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[4U],
     /* .tid            = */ 4U,
@@ -241,8 +250,8 @@ static VAR(OsEE_TDB, OS_CONST)
   },
   {
     /* .hdb = */ {
-      /* .p_sdb    = */   &osEE_sdb_array[4U],
-      /* .p_scb    = */   &osEE_scb_array[4U]
+      /* .p_sdb    = */   &osEE_sdb_array[5U],
+      /* .p_scb    = */   &osEE_scb_array[5U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[5U],
     /* .tid            = */ 5U,
@@ -254,8 +263,8 @@ static VAR(OsEE_TDB, OS_CONST)
   },
   {
     /* .hdb = */ {
-      /* .p_sdb    = */     &osEE_sdb_array[5U],
-      /* .p_scb    = */     &osEE_scb_array[5U]
+      /* .p_sdb    = */     &osEE_sdb_array[6U],
+      /* .p_scb    = */     &osEE_scb_array[6U]
     },
     /* .p_tcb          = */ &osEE_tcb_array[6U],
     /* .tid            = */ 6U,
@@ -516,7 +525,7 @@ VAR(OsEE_CDB, OS_CONST) osEE_cdb_var = {
   {
     /* .p_sdb_array = */ (P2SYM_VAR(OsEE_SDB, OS_APPL_CONST, TYPEDEF)[])&osEE_sdb_array,
     /* .p_scb_array = */ (P2SYM_VAR(OsEE_SCB, OS_APPL_DATA, TYPEDEF)[])&osEE_scb_array,
-    /* .stack_num   = */ (6U)
+    /* .stack_num   = */ (7U)
   },
   /* .p_ccb                         = */ &osEE_ccb_var,
   /* .p_idle_hook                   = */ idle_hook,

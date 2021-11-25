@@ -2265,10 +2265,5 @@ boolean NvM_IsBlockNoError(NvM_BlockIdType blockId)
 }
 
 
-void NvM_TestMainFunction(void)
-{
-
-}
-
 /**********************************End of the file ********************************/
 

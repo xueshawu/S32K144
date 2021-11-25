@@ -10,42 +10,49 @@ C_SRCS_QUOTED += \
 "../src/EcuM_CallOuts.c" \
 "../src/InterruptServices.c" \
 "../src/TaskEntity.c" \
+"../src/clocks_and_modes.c" \
 
 C_SRCS += \
 ../src/Appl.c \
 ../src/EcuM_CallOuts.c \
 ../src/InterruptServices.c \
 ../src/TaskEntity.c \
+../src/clocks_and_modes.c \
 
 OBJS_OS_FORMAT += \
 ./src/Appl.o \
 ./src/EcuM_CallOuts.o \
 ./src/InterruptServices.o \
 ./src/TaskEntity.o \
+./src/clocks_and_modes.o \
 
 C_DEPS_QUOTED += \
 "./src/Appl.d" \
 "./src/EcuM_CallOuts.d" \
 "./src/InterruptServices.d" \
 "./src/TaskEntity.d" \
+"./src/clocks_and_modes.d" \
 
 OBJS += \
 ./src/Appl.o \
 ./src/EcuM_CallOuts.o \
 ./src/InterruptServices.o \
 ./src/TaskEntity.o \
+./src/clocks_and_modes.o \
 
 OBJS_QUOTED += \
 "./src/Appl.o" \
 "./src/EcuM_CallOuts.o" \
 "./src/InterruptServices.o" \
 "./src/TaskEntity.o" \
+"./src/clocks_and_modes.o" \
 
 C_DEPS += \
 ./src/Appl.d \
 ./src/EcuM_CallOuts.d \
 ./src/InterruptServices.d \
 ./src/TaskEntity.d \
+./src/clocks_and_modes.d \
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -78,6 +85,14 @@ src/TaskEntity.o: ../src/TaskEntity.c
 	@echo 'Executing target #191 $<'
 	@echo 'Invoking: Standard S32DS C Compiler'
 	arm-none-eabi-gcc "@src/TaskEntity.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "src/TaskEntity.o" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+src/clocks_and_modes.o: ../src/clocks_and_modes.c
+	@echo 'Building file: $<'
+	@echo 'Executing target #192 $<'
+	@echo 'Invoking: Standard S32DS C Compiler'
+	arm-none-eabi-gcc "@src/clocks_and_modes.args" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "src/clocks_and_modes.o" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

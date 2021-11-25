@@ -37,7 +37,7 @@ To use "new" operator with EWL in C++ project the following symbol shall be defi
 /*EXTERN(_ZN10__cxxabiv119__terminate_handlerE)*/
 
 HEAP_SIZE  = DEFINED(__heap_size__)  ? __heap_size__  : 0x00000400;
-STACK_SIZE = DEFINED(__stack_size__) ? __stack_size__ : 0x00000400;
+STACK_SIZE = DEFINED(__stack_size__) ? __stack_size__ : 0x00000800;
 
 /* If symbol __flash_vector_table__=1 is defined at link time
  * the interrupt vector will not be copied to RAM.

@@ -64,3 +64,34 @@ const NvM_ConfigType NvM_Config = {
     },
     .BlockDescriptor = BlockDescriptorList,
 };
+
+
+
+
+volatile boolean Test_NvM_WriteAll_Flag = 0;
+volatile boolean Test_NvM_ReadAll_Flag = 0;
+volatile boolean Test_NvM_WriteAswBlock_Flag = 0;
+volatile boolean Test_NvM_ReadAswBlock_Flag = 0;
+void NvM_TestMainFunction(void)
+{
+	if (Test_NvM_WriteAll_Flag == 1)
+	{
+		NvM_WriteAll();
+		Test_NvM_WriteAll_Flag = 0;
+	}
+	if (Test_NvM_ReadAll_Flag == 1)
+	{
+		NvM_ReadAll();
+		Test_NvM_ReadAll_Flag = 0;
+	}
+	if (Test_NvM_WriteAswBlock_Flag == 1)
+	{
+		NvM_WriteBlock(NVM_BLOCK_ID_AswBlock, &NvM_Block_AwwBlock_DataGroup_RAM);
+		Test_NvM_WriteAswBlock_Flag = 0;
+	}
+	if (Test_NvM_ReadAswBlock_Flag == 1)
+	{
+		NvM_ReadBlock(NVM_BLOCK_ID_AswBlock, &NvM_Block_AwwBlock_DataGroup_RAM);
+		Test_NvM_ReadAswBlock_Flag = 0;
+	}
+}

@@ -1008,7 +1008,7 @@ FUNC (void, RTE_CODE) SchM_Exit_Can_CAN_EXCLUSIVE_AREA_02(void)
 FUNC (void, RTE_CODE) SchM_Exit_Can_CAN_EXCLUSIVE_AREA_03(void)
 {
     reentry_guard_03--;
-    if ((ISR_ON(msr_03))&&(0UL == reentry_guard_03))         /*if interrupts were enabled*/
+    //if ((ISR_ON(msr_03))&&(0UL == reentry_guard_03))         /*if interrupts were enabled*/
     {
       ResumeAllInterrupts();
 #ifdef _ARM_DS5_C_S32K14x_
@@ -1019,7 +1019,7 @@ FUNC (void, RTE_CODE) SchM_Exit_Can_CAN_EXCLUSIVE_AREA_03(void)
 FUNC (void, RTE_CODE) SchM_Exit_Can_CAN_EXCLUSIVE_AREA_04(void)
 {
     reentry_guard_04--;
-    if ((ISR_ON(msr_04))&&(0UL == reentry_guard_04))         /*if interrupts were enabled*/
+    //if ((ISR_ON(msr_04))&&(0UL == reentry_guard_04))         /*if interrupts were enabled*/
     {
       ResumeAllInterrupts();
 #ifdef _ARM_DS5_C_S32K14x_

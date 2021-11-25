@@ -139,22 +139,22 @@ extern "C"{
 /* Job end notification routine provided by the upper layer module (declaration) */
 /** @implements   FeeNvmJobEndNotification_Object */
 /* @violates @ref Fee_cfg_h_REF_2 Disallowed definition for macro */
-#define FEE_NVM_JOB_END_NOTIFICATION_DECL   
+#define FEE_NVM_JOB_END_NOTIFICATION_DECL   extern void NvM_JobEndNotification(void);
 
 /* Job end notification routine provided by the upper layer module */
 /** @implements   FeeNvmJobEndNotification_Object */
 /* @violates @ref Fee_cfg_h_REF_2 Disallowed definition for macro */
-#define FEE_NVM_JOB_END_NOTIFICATION        
+#define FEE_NVM_JOB_END_NOTIFICATION        NvM_JobEndNotification();
 
 /* Job error notification routine provided by the upper layer module (declaration) */
 /** @implements   FeeNvmJobErrorNotification_Object */
 /* @violates @ref Fee_cfg_h_REF_2 Disallowed definition for macro */
-#define FEE_NVM_JOB_ERROR_NOTIFICATION_DECL  
+#define FEE_NVM_JOB_ERROR_NOTIFICATION_DECL  extern void NvM_JobErrorNotification(void);
 
 /* Job error notification routine provided by the upper layer module */
 /** @implements   FeeNvmJobErrorNotification_Object */
 /* @violates @ref Fee_cfg_h_REF_2 Disallowed definition for macro */
-#define FEE_NVM_JOB_ERROR_NOTIFICATION       
+#define FEE_NVM_JOB_ERROR_NOTIFICATION       NvM_JobErrorNotification();
 
 /* Job cluster format notification routine provided by the upper layer module (declaration) */
 /* @violates @ref Fee_cfg_h_REF_2 Disallowed definition for macro */

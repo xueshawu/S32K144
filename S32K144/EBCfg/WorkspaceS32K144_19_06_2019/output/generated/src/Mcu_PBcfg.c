@@ -768,7 +768,7 @@ static CONST( Mcu_PCC_RegisterConfigType, MCU_CONST) PCC_aRegistersConfigPB0_0[M
     {
         PCC_FLEXCAN0_ADDR32,
         (
-            PCC_CLOCK_DISABLED_U32
+            PCC_CLOCK_ENABLED_U32
              | PCC_PCS_UNAVAILABLE_U32
             
         )

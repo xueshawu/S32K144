@@ -45,7 +45,7 @@ extern "C" {
  **************************************************************************/
 #define OSEE_TASK_ARRAY_SIZE      (6U)
 #define OSEE_SN_ARRAY_SIZE        (6U)
-#define OSEE_STACK_ARRAY_SIZE     (6U)
+#define OSEE_STACK_ARRAY_SIZE     (7U)
 #define OSEE_COUNTERS_ARRAY_SIZE  (1U)
 #define OSEE_ALARMS_ARRAY_SIZE    (4U)
 
@@ -65,11 +65,12 @@ extern "C" {
  * Stack Size declaration
  *
  **************************************************************************/
-#define osEE_task_stack_1_StackSize (512U)
+#define osEE_task_stack_1_StackSize (1024U)
 #define osEE_task_stack_2_StackSize (512U)
 #define osEE_task_stack_3_StackSize (512U)
 #define osEE_task_stack_4_StackSize (512U)
 #define osEE_task_stack_5_StackSize (512U)
+#define osEE_task_stack_6_StackSize (512U)
 
 /***************************************************************************
  *

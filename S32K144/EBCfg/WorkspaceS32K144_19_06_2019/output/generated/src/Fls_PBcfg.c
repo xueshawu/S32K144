@@ -176,6 +176,24 @@ extern "C"{
 /*==================================================================================================
                                      FUNCTION PROTOTYPES
 ==================================================================================================*/
+#define FLS_START_SEC_CODE
+/* 
+* @violates @ref fls_pbcfg_c_REF_1 Only preprocessor statements
+* and comments before '#include'
+*/
+#include "Fls_MemMap.h"        
+/* Declaration of Fls notification function (Fee_JobEndNotification())*/
+/* @violates @ref fls_pbcfg_c_REF_4 Object/function previously declared */
+extern FUNC( void, FLS_CODE ) Fee_JobEndNotification( void );
+/* Declaration of Fls notification function (Fee_JobErrorNotification())*/
+/* @violates @ref fls_pbcfg_c_REF_4 Object/function previously declared */
+extern FUNC( void, FLS_CODE ) Fee_JobErrorNotification( void );
+#define FLS_STOP_SEC_CODE
+/* 
+* @violates @ref fls_pbcfg_c_REF_1 Only preprocessor statements
+* and comments before '#include'
+*/
+#include "Fls_MemMap.h"
 
 #define FLS_START_SEC_CODE_AC
 /* 
@@ -396,11 +414,11 @@ CONST(Fls_ConfigType, FLS_CONST) FlsConfigSet=
     /* @violates @ref fls_pbcfg_c_REF_8 A cast should not be performed between a pointer type and an integral type.*/
     (Fls_AcWritePtrType)&Fls_Flash_AccessCode, /* FlsAcWrite */
     NULL_PTR, /* FlsACCallback */  
-    NULL_PTR, /* FlsJobEndNotification */
-    NULL_PTR, /* FlsJobErrorNotification */  
+    &Fee_JobEndNotification, /* FlsJobEndNotification */
+    &Fee_JobErrorNotification, /* FlsJobErrorNotification */  
     NULL_PTR, /* FlsStartFlashAccessNotif */
     NULL_PTR, /* FlsFinishedFlashAccessNotif */
-    MEMIF_MODE_SLOW, /* FlsDefaultMode */
+    MEMIF_MODE_FAST, /* FlsDefaultMode */
     1048576U, /* FlsMaxReadFastMode */
     1024U, /* FlsMaxReadNormalMode */
     256U, /* FlsMaxWriteFastMode */
@@ -415,7 +433,7 @@ CONST(Fls_ConfigType, FLS_CONST) FlsConfigSet=
     &FlsConfigSet_paHwCh,                           /* (*paHwCh)[] */
     &FlsConfigSet_paSectorHwAddress,                /* (*paSectorHwAddress)[] */
     NULL_PTR, /* pFlsQspiCfgConfig */
-    24259U /* configCrc */
+    30594U /* configCrc */
 };
 #define FLS_STOP_SEC_CONFIG_DATA_UNSPECIFIED
 /* 

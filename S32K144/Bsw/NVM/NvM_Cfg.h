@@ -30,14 +30,12 @@
 
 /************** Block Id define ****************************/
 #define NVM_BLOCK_ID_Admin              		0
-#define NVM_BLOCK_ID_AswImmdtBlock           	1
-#define NVM_BLOCK_ID_AswBlock           		2
-#define NVM_BLOCK_ID_BswBlock           		3
-#define NVM_BLOCK_ID_DemBlock           		4
-#define NVM_BLOCK_ID_RtcBlock           		5
+#define NVM_BLOCK_ID_AswBlock           		1
+#define NVM_BLOCK_ID_BswBlock           		2
 
 
-#define NVM_NUM_OF_NVRAM_BLOCKS		5
+
+#define NVM_NUM_OF_NVRAM_BLOCKS		2
 
 /************** Block Types define ****************************/
 
